@@ -46,7 +46,8 @@ INSTALLED_APPS = [
 ]
 
 MY_APPS = [
-    'showcase'
+    'showcase',
+    'leaderboard'
 ]
 
 INSTALLED_APPS += MY_APPS

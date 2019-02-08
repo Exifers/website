@@ -1,3 +1,4 @@
 from django.contrib import admin
+from showcase.models import ProductBuild
 
-# Register your models here.
+admin.site.register(ProductBuild)
