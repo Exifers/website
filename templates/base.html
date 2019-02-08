@@ -18,6 +18,10 @@
 
 <div class="w-75 mx-auto text-center content">
     {% include "navbar.html" %}
+
+    <h1 class="title"><a href="{% url 'showcase' %}">CYBERSTORIES</a></h1>
+    <h2 class="subtitle">A serious game to learn about cybersecurity</h2>
+
     {% block content %}
     {% endblock %}
 </div>
