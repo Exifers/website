@@ -1,1 +1,34 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block css_import %}
+    <link rel="stylesheet" href="{% static 'showcase/css/download.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1 class="mt-5">Download</h1>
+    <div class="d-flex flex-column download-container mx-auto mb-5">
+        <a href="{{ windows_build.file.url }}" download="cyberstories_windows.zip"
+           class="card bg-success mx-auto my-3 download">
+            <div class="card-body">
+                WINDOWS<br/>
+                <i class="fas fa-download"></i>
+            </div>
+        </a>
+        <a href="{{ mac_build.file.url }}" download="cyberstories_mac.zip"
+           class="card bg-success mx-auto my-3 download">
+            <div class="card-body">
+                MAC<br/>
+                <i class="fas fa-download"></i>
+            </div>
+        </a>
+        <a href="{{ linux_build.file.url }}" download="cyberstories_linux.zip"
+           class="card bg-success mx-auto my-3 download">
+            <div class="card-body">
+                LINUX<br/>
+                <i class="fas fa-download"></i>
+            </div>
+        </a>
+    </div>
+    <p>Once you've downloaded, checkout the <a href="{% url 'documentation' %}">documentation</a>.</p>
+{% endblock %}

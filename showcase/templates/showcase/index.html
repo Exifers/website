@@ -14,7 +14,9 @@
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <br/>
-    <button type="button" class="btn btn-dark mx-auto try-button">TRY OUT NOW !</button>
+    <button type="button" class="btn btn-dark mx-auto try-button" onclick="window.location='{% url 'download' %}'">
+        TRY OUT NOW !
+    </button>
 
     <div class="container mx-auto mt-5 cards">
         <div class="row">

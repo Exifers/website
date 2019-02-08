@@ -8,15 +8,21 @@ html, body {
 
 .content {
     background-color: #f9f3cc;
-}:wq
+    min-height: 100%;
+    padding-bottom: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Impact, Charcoal, sans-serif !important;
+}
 
 .title {
     font-size: 85px;
-    font-family: Impact, Charcoal, sans-serif;
 }
 
 .title a {
-  color: rgb(33, 37, 41);
+    color: rgb(33, 37, 41);
+    font-family: Impact, Charcoal, sans-serif;
 }
 
 .title a:hover {

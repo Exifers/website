@@ -1,0 +1,22 @@
+.download {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+.download:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.download-container {
+    max-width: 200px;
+}
+
+.download div {
+    line-height: 32px;
+}
+
+.download div i {
+    font-size: 30px;
+}
