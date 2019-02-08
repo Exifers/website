@@ -166,6 +166,5 @@ STATIC_URL = '/static/'
 
 # Additional directories for static file finders
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend/dist/'),
     os.path.join(BASE_DIR, 'static/')
 ]

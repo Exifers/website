@@ -1,16 +1,57 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
     Cyberstories
 {% endblock %}
 
+{% block css_import %}
+    <link rel="stylesheet" href="{% static 'showcase/css/index.css' %}">
+{% endblock %}
+
 {% block content %}
-    <h1 class="title">CYBERSTORIES</h1>
-    <h2 class="subtitle">A serious game to learn about cybersecurity</h2>
     <iframe class="m-5" width="560" height="315" src="https://www.youtube.com/embed/6yNYVJUmPN8" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
     <br/>
-    <button type="button" class="btn btn-primary mx-auto try-button">TRY OUT NOW !</button>
+    <button type="button" class="btn btn-dark mx-auto try-button">TRY OUT NOW !</button>
+
+    <div class="container mx-auto mt-5 cards">
+        <div class="row">
+            <div class="col">
+                <div class="card mx-auto my-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Virtual Reality</h5>
+                        <p class="card-text">You play the game in an immersive environment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-auto my-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Five different stories</h5>
+                        <p class="card-text">Explore cybersecurity issues through multiple situations</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <div class="card mx-auto my-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Leaderboard</h5>
+                        <p class="card-text">Compare your scores with your colleagues</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-auto my-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Company friendly</h5>
+                        <p class="card-text">Specially adapted for companies and training courses
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
