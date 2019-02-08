@@ -3,16 +3,25 @@ html, body {
 }
 
 .background {
-    background-color: rgb(243, 243, 243);;
+    background-color: #42403d;
 }
 
 .content {
-    background-color: #d2cacd;
-}
+    background-color: #f9f3cc;
+}:wq
 
 .title {
     font-size: 85px;
     font-family: Impact, Charcoal, sans-serif;
+}
+
+.title a {
+  color: rgb(33, 37, 41);
+}
+
+.title a:hover {
+    text-decoration: none;
+    color: #101010;
 }
 
 .subtitle {
