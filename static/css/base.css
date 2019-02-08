@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+}
+
+.background {
+    background-color: #cfcca9;
+}
+
+.content {
+    background-color: #b2acad;
+    min-height: 100%;
+}
+
+.title {
+    font-size: 55px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.subtitle {
+    font-size: 27px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.try-button {
+    width: 220px;
+    height: 80px;
+}
