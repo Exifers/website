@@ -12,6 +12,8 @@
 # below:
 .git
 .gitignore
+*.pyc
+frontend/node_modules/
 
 # Python pycache:
 __pycache__/

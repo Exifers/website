@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cybersecurityseriousgame",
+  "private_key_id": "e72d85c88e99ca4889b647379cc40bdd193cc31d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCy/9q6NFqAvozM\nPi0KUQtYhqwAIJXTE9JLf7DZPaVGRlts3ux/cq8X4LCKjX3X8Dn7oWMLBpvv0C3N\neE7LZJ2/mH+4lz7C8bG37L+VGClHrxZcya/pRpQwHMi/Vx/vmMua7Sww37bC4hfF\nKxx/oJQFxX0Om1w/phMIjddZ6rM0sIHizfLPjjbtSqOxj+nNt4GW4WHSwHNqyg3P\nWDUYDg2xUDSWRKxkez61LwbhQwBZd9yIcphsZu+J0iX+U10OFqZWbgag5oOhcHeS\nvU1daUlJDuKHNAf0daqctiEGOpHo/z2wBrxRS9ZvFGLUV8DLnqikoNjHUKlziGtU\noWjPZbMtAgMBAAECggEABSGTIjtV931+3mv52+Mu3BQgN3C3sBv6r0ddyRxx8cMa\njn26xycryxdvIsmjjd5ztbmOnpugj2NRrM4svrqHpce4AZFJr0pBD0YDcpawDZSr\nThr0pqSV+DsbAMEn8opYFnzYrh37neKKo+WfJNl0OiYgdka7LOfp1m5FJMK27bpa\nng/wYeh/LC0gLEqwwwUC/deCWKY66su7P1w64lm2nN73ihK6Qg6eLx0xB7Wb3Qek\nrqvotm9uD/iOEkbAbvgwvvSKFVkf/VzGsM42d3E6vBxEzqeS29+2zPtjRAx7Rfw9\nVn7m3gIC7K0UETFV830wIe1mGAnHJIq32LAkQs4n0QKBgQDjM1eQoQK/JrO2SwM4\nNFJ4PUo3P2X9SercgHKnHHKd88B0vPKA5WVQrHBgG0Uz9nFj9m+WV32OPsp3GTK1\nVvqIgeQfwnUfWUZwTGVCkoCW40BwN5HR8HNOCgThRY8IEfi3q5rzQeZuPtbZUipj\nWlQ9pyseUYLSX5EJFFytSJ4rHwKBgQDJsGLKlULTnmVHU0OC2o+kH6d+IYmT96GA\n1IJo7hSsb5VTa6Kc8fm8Mm/HWsxv6S3YjNgIHxEaJw/xu/Qiqnz+4Lfoyr8ncMIY\nUdlShBd1KuSrU5QyRoUtPS6UraCMOqhRrnMMhkhkMD1vlLM0czmSiYPlsCTMlljl\n3/mQypVkMwKBgQDTMOtpdjFua9RLVAkHGqO6PwaYumbcffRByWhJ7EiiiGzSVrx4\nkkOOLOw8ebznI2Kdj/qD3onISpe7A4I+TD6P22WpHAHxBPRT+L97lWDQYSeJ6C20\n33TfCrMkj5r33nS6jlp3Wj+PJPxjgFwEhHef459SDGS1lr3jmbjYHpNf8wKBgHVt\ncgd7If5t8Y+2hc8RC6LGH1HLmvuAqRKGKCuJupWvHeUE/RedtwaA4x3R2sepnty/\nHCSWWfG9HoZjJUBtvPr0wX8TVHpVJ1zbgsmNSM8aGys5LUacUnvFbHJ6KMicelWc\nWTXIlStn/s0Rack28SVFVXsMtFA9lSK55ecMXDCLAoGBAJFQrkkjHk1AsmOasKa2\ndqPU6sdgpKXmMDOqkvZ1PBIiDE5A30llvXMNv5KF6bQfqX8mc5ylFIl0o6cvNm1+\nFSYoNU6U0gyykcwy4bTWWDj3Jyw/yEm5UviE+dQo0LLIXpypECu0FgeXw1Ofpq8d\n48125sU/C307eTlGdop6d8oo\n-----END PRIVATE KEY-----\n",
+  "client_email": "cybersecurityseriousgameservic@cybersecurityseriousgame.iam.gserviceaccount.com",
+  "client_id": "108799082632778387894",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cybersecurityseriousgameservic%40cybersecurityseriousgame.iam.gserviceaccount.com"
+}

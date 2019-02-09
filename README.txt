@@ -10,6 +10,8 @@ Deployment informations :
       - admin :
         - username : admin
         - password : 2VNGDMqd
+- service account
+  - name : cybersecurityseriousgameserviceaccount
 
 
 Django informations :
