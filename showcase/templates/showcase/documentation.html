@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block title %}
-    Documentation
+    {% trans 'Documentation' %}
 {% endblock %}
 
 {% block content %}
-    <h1 class="mt-5">Documentation</h1>
+    <h1 class="mt-5">{% trans 'Documentation' %}</h1>
 {% endblock %}

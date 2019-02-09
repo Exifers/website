@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block title %}
-    Download
+    {% trans 'Download' %}
 {% endblock %}
 
 {% block css_import %}
@@ -10,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-    <h1 class="mt-5">Download</h1>
+    <h1 class="mt-5">{% trans 'Download' %}</h1>
     <div class="d-flex flex-column download-container mx-auto mb-5">
         <a href="{{ windows_build.file.url }}" download="cyberstories_windows.zip"
            class="card bg-success mx-auto my-3 download">
@@ -34,5 +35,10 @@
             </div>
         </a>
     </div>
-    <p>Once you've downloaded, checkout the <a href="{% url 'documentation' %}">documentation</a>.</p>
+    <p>
+        {% url 'documentation' as documentation_url %}
+        {% blocktrans %}
+            Once you've downloaded, checkout the <a href="{{ documentation_url }}">documentation</a>.
+        {% endblocktrans %}
+    </p>
 {% endblock %}

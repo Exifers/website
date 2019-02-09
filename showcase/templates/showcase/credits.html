@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block title %}
-    Credits
+    {% trans 'Credits' %}
 {% endblock %}
 
 {% block content %}
-    <h1 class="mt-5">Credits</h1>
+    <h1 class="mt-5">{% trans 'Credits' %}</h1>
 {% endblock %}

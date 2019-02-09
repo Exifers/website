@@ -1,3 +1,5 @@
+{% load i18n %}
+
 <nav class="navbar navbar-expand-lg navbar-light navbar-addons">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -8,24 +10,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item {% if request.path == '/showcase/' %}active{% endif %}">
-                <a class="nav-link" href="{% url 'showcase' %}">Home</a>
+                <a class="nav-link" href="{% url 'showcase' %}">{% trans "Home" %}</a>
             </li>
             <li class="nav-item {% if request.path == '/showcase/download' %}active{% endif %}">
-                <a class="nav-link" href="{% url 'download' %}">Download</a>
+                <a class="nav-link" href="{% url 'download' %}">{% trans "Download" %}</a>
             </li>
             <li class="nav-item {% if request.path == '/showcase/documentation' %}active{% endif %}">
-                <a class="nav-link" href="{% url 'documentation' %}">Documentation</a>
+                <a class="nav-link" href="{% url 'documentation' %}">{% trans "Documentation" %}</a>
             </li>
             <li class="nav-item {% if request.path == '/showcase/leaderboard' %}active{% endif %}">
-                <a class="nav-link" href="{% url 'leaderboard' %}">Leaderboard</a>
+                <a class="nav-link" href="{% url 'leaderboard' %}">{% trans "Leaderboard" %}</a>
             </li>
             <li class="nav-item {% if request.path == '/showcase/credits' %}active{% endif %}">
-                <a class="nav-link" href="{% url 'credits' %}">Credits</a>
+                <a class="nav-link" href="{% url 'credits' %}">{% trans "Credits" %}</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="{% trans "Search" %}" aria-label="Search">
+            <button class="btn btn-light my-2 my-sm-0" type="submit">{% trans "Search" %}</button>
         </form>
     </div>
 </nav>

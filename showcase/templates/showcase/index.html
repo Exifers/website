@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block title %}
     Cyberstories
@@ -15,7 +16,7 @@
 
     <br/>
     <button type="button" class="btn btn-dark mx-auto try-button" onclick="window.location='{% url 'download' %}'">
-        TRY OUT NOW !
+        {% trans 'TRY OUT NOW !' %}
     </button>
 
     <div class="container mx-auto mt-5 cards">

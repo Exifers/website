@@ -49,7 +49,8 @@ INSTALLED_APPS = [
 
 MY_APPS = [
     'showcase',
-    'leaderboard'
+    'leaderboard',
+    'rest_framework',
 ]
 
 INSTALLED_APPS += MY_APPS
@@ -62,6 +63,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware'
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -199,3 +201,9 @@ WEBPACK_LOADER = {
         'IGNORE': []
     }
 }
+
+# i18n
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locales/')
+]
