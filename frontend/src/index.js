@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import Leaderboard from './components/Leaderboard';
+import {store} from "./store/store";
+import {Provider} from "react-redux";
+import LeaderboardPane from "./panes/LeaderboardPane";
 
 class App extends Component {
     render() {
         return (
-            <Leaderboard/>
+            <Provider store={store}>
+                <LeaderboardPane/>
+            </Provider>
         );
     }
 }

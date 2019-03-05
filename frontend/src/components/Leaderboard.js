@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import '../resources/css/loader.css';
 import withStyles from 'react-jss';
 import classNames from 'classnames';
+import {compose} from "redux";
+import {selectId, withLeaderboardEntries} from "../actions/leaderboard";
+import {connect} from "react-redux";
 
 const styles = {
     cell: {
@@ -13,94 +16,49 @@ const styles = {
     header: {
         fontSize: '17px',
         fontWeight: 'bold'
+    },
+    pseudo: {
+        cursor: 'pointer'
     }
 };
 
+const mapDispatchToProps = dispatch => ({
+    selectId: id => dispatch(selectId(id))
+});
+
 class Leaderboard extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            data: {
-                loading: false,
-                error: null,
-                response: null
-            }
-        };
-    }
-
-    componentDidMount() {
-        this.setState({
-            data: {
-                loading: true,
-                error: null,
-                response: null
-            }
-        });
-        fetch('/leaderboard/list_leaderboard_entries')
-            .then(response => response.json())
-            .then(json => this.setState({
-                data: {
-                    loading: false,
-                    error: null,
-                    response: json
-                }
-            }))
-            .catch(error => this.setState({
-                data: {
-                    loading: false,
-                    error: error,
-                    response: null
-                }
-            }));
-    }
-
     render() {
-
-        if (this.state.data.response) {
-            return (
-                <div className={classNames('container m-4 w-75 mx-auto', this.props.classes.leaderboard)}>
-                    <div className={classNames('row', this.props.classes.header)}>
-                        <div className={classNames('col-sm p-1', this.props.classes.cell)}>
-                            Pseudo
+        return (
+            <div className={classNames('container m-4 w-75 mx-auto', this.props.classes.leaderboard)}>
+                <div className={classNames('row', this.props.classes.header)}>
+                    <div className={classNames('col-sm p-1', this.props.classes.cell)}>
+                        Pseudo
+                    </div>
+                    <div className={classNames('col-sm p-1', this.props.classes.cell)}>
+                        Score
+                    </div>
+                </div>
+                {this.props.leaderboardEntries.map((entry, index) => (
+                    <div className={'row'} key={index}>
+                        <div
+                            className={classNames('col-sm p-1', this.props.classes.cell)}>
+                            <span className={this.props.classes.pseudo}
+                                  onClick={() => this.props.selectId(entry.id)}>
+                                {entry.pseudo}
+                            </span>
                         </div>
                         <div className={classNames('col-sm p-1', this.props.classes.cell)}>
-                            Score
+                            {entry.score}
                         </div>
                     </div>
-                    {this.state.data.response.map((entry, index) => (
-                        <div className={'row'} key={index}>
-                            <div className={classNames('col-sm p-1', this.props.classes.cell)}>
-                                {entry.pseudo}
-                            </div>
-                            <div className={classNames('col-sm p-1', this.props.classes.cell)}>
-                                {entry.score}
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            );
-        }
-
-        if (this.state.data.error) {
-            return (
-                <div>An error has occurred : {String(this.state.error)}</div>
-            );
-        }
-
-        if (this.state.data.loading) {
-            return (
-                <div className="lds-ring mt-5">
-                    <div/>
-                    <div/>
-                    <div/>
-                    <div/>
-                </div>
-            );
-        }
-
-        return null;
+                ))}
+            </div>
+        );
     }
 }
 
-export default withStyles(styles)(Leaderboard);
+export default compose(
+    withLeaderboardEntries,
+    connect(null, mapDispatchToProps),
+    withStyles(styles)
+)(Leaderboard);
