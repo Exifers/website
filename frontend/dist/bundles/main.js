@@ -2275,11 +2275,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!**************************!*\
   !*** ./src/utils/url.js ***!
   \**************************/
-/*! exports provided: get_parameters */
+/*! exports provided: get_parameters, parse_parameters */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"get_parameters\", function() { return get_parameters; });\n/**\n * @name get_parameters\n * @desc Returns the parsed get parameters from the url, assuming they are correctly formatted, without any url\n *       decoding. If multiple get parameters have the same value, only the last value is taken into account.\n * @return An object\n */\nvar get_parameters = function get_parameters() {\n  var res = {};\n  window.location.search.substr(1).split('&').forEach(function (item) {\n    return res[item.split('=')[0]] = item.split('=')[1];\n  });\n  return res;\n};\n\n//# sourceURL=webpack:///./src/utils/url.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"get_parameters\", function() { return get_parameters; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"parse_parameters\", function() { return parse_parameters; });\n/**\n * @name get_parameters\n * @desc Returns the parsed get parameters from the url, assuming they are correctly formatted, without any url\n *       decoding. If multiple get parameters have the same value, only the last value is taken into account.\n * @return An object\n */\nvar get_parameters = function get_parameters() {\n  return parse_parameters(window.location.search.substr(1));\n};\nvar parse_parameters = function parse_parameters(params) {\n  var res = {};\n  params.split('&').filter(function (e) {\n    return e;\n  }).forEach(function (item) {\n    return res[item.split('=')[0]] = item.split('=')[1];\n  });\n  return res;\n};\n\n//# sourceURL=webpack:///./src/utils/url.js?");
 
 /***/ })
 
