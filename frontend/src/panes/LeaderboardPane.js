@@ -10,7 +10,7 @@ const mapStateToProps = state => ({
 class LeaderboardPane extends Component {
     render() {
         if (this.props.selectedId !== null) {
-            return <PlayerDetails id={0}/>
+            return <PlayerDetails/>
         }
         return <Leaderboard/>
     }

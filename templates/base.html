@@ -1,5 +1,6 @@
 {% load static %}
 {% load i18n %}
+{% load render_bundle from webpack_loader %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,18 +20,10 @@
     {% block css_import %}
     {% endblock %}
 </head>
-<body class="background">
 
-<div class="w-75 mx-auto text-center content">
-    {% include "navbar.html" %}
-
-    <h1 class="title"><a href="{% url 'showcase' %}">CYBERSTORIES</a></h1>
-    <h2 class="subtitle">{% trans "A serious game to learn about cybersecurity" %}</h2>
-
-    {% block content %}
-    {% endblock %}
-</div>
-
+<body>
+<div id="root" class="root"></div>
+{% render_bundle 'main' %}
 
 <!-- bootstrap 4.2.1 -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
