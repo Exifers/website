@@ -1,28 +1,21 @@
 import React, {Component} from "react";
-import {selectId, withLeaderboardEntries} from "../actions/leaderboard";
+import {withLeaderboardEntries} from "../actions/leaderboard";
 import {compose} from "redux";
-import {connect} from "react-redux";
-
-const mapStateToProps = state => ({
-    selectedId: state.leaderboard.selectedId
-});
-
-const mapDispatchToProps = dispatch => ({
-    selectId: id => dispatch(selectId(id))
-});
+import {NavLink} from "react-router-dom";
+import {get_parameters} from "../utils/url";
 
 class PlayerDetails extends Component {
     render() {
+        const player_id = get_parameters()['player_id'];
         return (
             <React.Fragment>
-                <div>Player details {this.props.selectedId}</div>
-                <div onClick={() => this.props.selectId(null)}>Return</div>
+                <div>Player details for {player_id}</div>
+                <NavLink to={'/showcase/leaderboard'}>Return</NavLink>
             </React.Fragment>
         );
     }
 }
 
 export default compose(
-    withLeaderboardEntries,
-    connect(mapStateToProps, mapDispatchToProps)
+    withLeaderboardEntries
 )(PlayerDetails);

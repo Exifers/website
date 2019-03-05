@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {compose} from "redux";
 import withStyles from "react-jss";
+import { NavLink } from "react-router-dom";
 
 const styles = {
     navigationBarPanel: {
@@ -25,21 +26,21 @@ class NavigationBarPanel extends Component {
     render() {
         return (
             <div className={this.props.classes.navigationBarPanel}>
-                <div className={this.props.classes.navigationLink}>
+                <NavLink to={'/showcase/'} className={this.props.classes.navigationLink}>
                     Home
-                </div>
-                <div className={this.props.classes.navigationLink}>
+                </NavLink>
+                <NavLink to={'/showcase/download'} className={this.props.classes.navigationLink}>
                     Download
-                </div>
-                <div className={this.props.classes.navigationLink}>
+                </NavLink>
+                <NavLink to={'/showcase/documentation'} className={this.props.classes.navigationLink}>
                     Documentation
-                </div>
-                <div className={this.props.classes.navigationLink}>
+                </NavLink>
+                <NavLink to={'/showcase/articles'} className={this.props.classes.navigationLink}>
                     Articles
-                </div>
-                <div className={this.props.classes.navigationLink}>
+                </NavLink>
+                <NavLink to={'/showcase/leaderboard'} className={this.props.classes.navigationLink}>
                     Leaderboard
-                </div>
+                </NavLink>
             </div>
         );
     }

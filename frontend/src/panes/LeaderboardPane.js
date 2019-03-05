@@ -1,19 +1,15 @@
 import React, {Component} from "react";
 import Leaderboard from "../components/Leaderboard";
 import PlayerDetails from "../components/PlayerDetails";
-import {connect} from "react-redux";
-
-const mapStateToProps = state => ({
-    selectedId: state.leaderboard.selectedId
-});
+import {get_parameters} from "../utils/url";
 
 class LeaderboardPane extends Component {
     render() {
-        if (this.props.selectedId !== null) {
+        if (get_parameters()['player_id'] !== undefined) {
             return <PlayerDetails/>
         }
         return <Leaderboard/>
     }
 }
 
-export default connect(mapStateToProps, null)(LeaderboardPane);
+export default LeaderboardPane;

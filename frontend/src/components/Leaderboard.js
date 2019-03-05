@@ -3,8 +3,8 @@ import '../resources/css/loader.css';
 import withStyles from 'react-jss';
 import classNames from 'classnames';
 import {compose} from "redux";
-import {selectId, withLeaderboardEntries} from "../actions/leaderboard";
-import {connect} from "react-redux";
+import {withLeaderboardEntries} from "../actions/leaderboard";
+import {NavLink} from "react-router-dom";
 
 const styles = {
     cell: {
@@ -22,10 +22,6 @@ const styles = {
     }
 };
 
-const mapDispatchToProps = dispatch => ({
-    selectId: id => dispatch(selectId(id))
-});
-
 class Leaderboard extends Component {
     render() {
         return (
@@ -42,10 +38,9 @@ class Leaderboard extends Component {
                     <div className={'row'} key={index}>
                         <div
                             className={classNames('col-sm p-1', this.props.classes.cell)}>
-                            <span className={this.props.classes.pseudo}
-                                  onClick={() => this.props.selectId(entry.id)}>
+                            <NavLink to={`/showcase/leaderboard?player_id=${entry.id}`} className={this.props.classes.pseudo}>
                                 {entry.pseudo}
-                            </span>
+                            </NavLink>
                         </div>
                         <div className={classNames('col-sm p-1', this.props.classes.cell)}>
                             {entry.score}
@@ -59,6 +54,5 @@ class Leaderboard extends Component {
 
 export default compose(
     withLeaderboardEntries,
-    connect(null, mapDispatchToProps),
     withStyles(styles)
 )(Leaderboard);
