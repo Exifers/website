@@ -2028,7 +2028,7 @@ eval("module.exports = function(originalModule) {\n\tif (!originalModule.webpack
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SET_AJAX_LOADING\", function() { return SET_AJAX_LOADING; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SET_AJAX_RESPONSE\", function() { return SET_AJAX_RESPONSE; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SET_AJAX_ERROR\", function() { return SET_AJAX_ERROR; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"fetchAjaxStoreData\", function() { return fetchAjaxStoreData; });\nvar SET_AJAX_LOADING = \"SET_AJAX_LOADING\";\nvar SET_AJAX_RESPONSE = \"SET_AJAX_RESPONSE\";\nvar SET_AJAX_ERROR = \"SET_AJAX_ERROR\";\nvar fetchAjaxStoreData = function fetchAjaxStoreData(id, url) {\n  return function (dispatch) {\n    dispatch({\n      type: SET_AJAX_LOADING,\n      payload: id\n    });\n    fetch(url).then(function (response) {\n      return response.json();\n    }).then(function (json) {\n      return dispatch({\n        type: SET_AJAX_RESPONSE,\n        payload: {\n          id: id,\n          response: json\n        }\n      });\n    }).catch(function (error) {\n      return dispatch({\n        type: SET_AJAX_ERROR,\n        payload: {\n          id: id,\n          error: error\n        }\n      });\n    });\n  };\n};\n\n//# sourceURL=webpack:///./src/actions/actions.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SET_AJAX_LOADING\", function() { return SET_AJAX_LOADING; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SET_AJAX_RESPONSE\", function() { return SET_AJAX_RESPONSE; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SET_AJAX_ERROR\", function() { return SET_AJAX_ERROR; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"fetchAjaxStoreData\", function() { return fetchAjaxStoreData; });\nvar SET_AJAX_LOADING = \"SET_AJAX_LOADING\";\nvar SET_AJAX_RESPONSE = \"SET_AJAX_RESPONSE\";\nvar SET_AJAX_ERROR = \"SET_AJAX_ERROR\";\nvar fetchAjaxStoreData = function fetchAjaxStoreData(id, url) {\n  return function (dispatch) {\n    dispatch({\n      type: SET_AJAX_LOADING,\n      payload: id\n    });\n    return fetch(url).then(function (response) {\n      return response.json();\n    }).then(function (json) {\n      return dispatch({\n        type: SET_AJAX_RESPONSE,\n        payload: {\n          id: id,\n          response: json\n        }\n      });\n    }).catch(function (error) {\n      return dispatch({\n        type: SET_AJAX_ERROR,\n        payload: {\n          id: id,\n          error: error\n        }\n      });\n    });\n  };\n};\n\n//# sourceURL=webpack:///./src/actions/actions.js?");
 
 /***/ }),
 
@@ -2224,18 +2224,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
-/***/ "./src/reducer/page.js":
-/*!*****************************!*\
-  !*** ./src/reducer/page.js ***!
-  \*****************************/
-/*! exports provided: pageReducer */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"pageReducer\", function() { return pageReducer; });\nvar initialState = {\n  currentPage: null\n};\nvar pageReducer = function pageReducer() {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;\n  var action = arguments.length > 1 ? arguments[1] : undefined;\n\n  switch (action.type) {\n    default:\n      return state;\n  }\n};\n\n//# sourceURL=webpack:///./src/reducer/page.js?");
-
-/***/ }),
-
 /***/ "./src/reducer/reducer.js":
 /*!********************************!*\
   !*** ./src/reducer/reducer.js ***!
@@ -2244,7 +2232,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"reducer\", function() { return reducer; });\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var _ajax__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ajax */ \"./src/reducer/ajax.js\");\n/* harmony import */ var _page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./page */ \"./src/reducer/page.js\");\n\n\n\nvar reducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"combineReducers\"])({\n  ajax: _ajax__WEBPACK_IMPORTED_MODULE_1__[\"ajaxReducer\"],\n  page: _page__WEBPACK_IMPORTED_MODULE_2__[\"pageReducer\"]\n});\n\n//# sourceURL=webpack:///./src/reducer/reducer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"reducer\", function() { return reducer; });\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var _ajax__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ajax */ \"./src/reducer/ajax.js\");\n\n\nvar reducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"combineReducers\"])({\n  ajax: _ajax__WEBPACK_IMPORTED_MODULE_1__[\"ajaxReducer\"]\n});\n\n//# sourceURL=webpack:///./src/reducer/reducer.js?");
 
 /***/ }),
 
