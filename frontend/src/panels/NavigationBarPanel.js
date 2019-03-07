@@ -17,8 +17,16 @@ const styles = {
         cursor: "pointer",
         transition: "all 0.2s",
         "&:hover": {
-            backgroundColor: "#6899dd"
-        }
+            backgroundColor: "#6899dd",
+            textDecoration: "none"
+        },
+        display: "flex"
+    },
+    navigationLinkContent: {
+        margin: "auto auto",
+        textDecoration: "none",
+        color: "#555",
+        fontSize: "22px"
     }
 };
 
@@ -27,19 +35,19 @@ class NavigationBarPanel extends Component {
         return (
             <div className={this.props.classes.navigationBarPanel}>
                 <NavLink to={'/showcase/'} className={this.props.classes.navigationLink}>
-                    Home
+                    <span className={this.props.classes.navigationLinkContent}>Home</span>
                 </NavLink>
                 <NavLink to={'/showcase/download'} className={this.props.classes.navigationLink}>
-                    Download
+                    <span className={this.props.classes.navigationLinkContent}>Download</span>
                 </NavLink>
                 <NavLink to={'/showcase/documentation'} className={this.props.classes.navigationLink}>
-                    Documentation
+                    <span className={this.props.classes.navigationLinkContent}>Documentation</span>
                 </NavLink>
                 <NavLink to={'/showcase/articles'} className={this.props.classes.navigationLink}>
-                    Articles
+                    <span className={this.props.classes.navigationLinkContent}>Articles</span>
                 </NavLink>
                 <NavLink to={'/showcase/leaderboard'} className={this.props.classes.navigationLink}>
-                    Leaderboard
+                    <span className={this.props.classes.navigationLinkContent}>Leaderboard</span>
                 </NavLink>
             </div>
         );

@@ -7,7 +7,7 @@ test('ajaxReducer initial state', () => {
 
 test('ajaxReducer loading', () => {
     expect(
-        ajaxReducer(undefined, {type: SET_AJAX_LOADING, payload: "leaderboard_entries"})
+        ajaxReducer(undefined, {type: SET_AJAX_LOADING, payload: 'leaderboard_entries'})
     ).toEqual(
         {
             leaderboard_entries: {
@@ -23,13 +23,13 @@ test('ajaxReducer error', () => {
     expect(
         ajaxReducer(
             undefined,
-            {type: SET_AJAX_ERROR, payload: {id: "leaderboard_entries", error: "Not found"}}
+            {type: SET_AJAX_ERROR, payload: {id: 'leaderboard_entries', error: 'Not found'}}
         )
     ).toEqual(
         {
             leaderboard_entries: {
                 loading: false,
-                error: "Not found",
+                error: 'Not found',
                 response: null
             }
         }
@@ -42,7 +42,7 @@ test('ajaxReducer response', () => {
             undefined,
             {
                 type: SET_AJAX_RESPONSE,
-                payload: {id: "leaderboard_entries", response: [{pseudo:"John", score:100}]}
+                payload: {id: 'leaderboard_entries', response: [{pseudo:'John', score:100}]}
             }
         )
     ).toEqual(
@@ -50,7 +50,7 @@ test('ajaxReducer response', () => {
             leaderboard_entries: {
                 loading: false,
                 error: null,
-                response: [{pseudo:"John", score:100}]
+                response: [{pseudo:'John', score:100}]
             }
         }
     );

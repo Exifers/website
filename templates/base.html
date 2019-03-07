@@ -23,6 +23,13 @@
 
 <body>
 <div id="root" class="root"></div>
+
+<script type="text/javascript">
+    let windows_build_file_url = "{{ windows_build_file_url }}";
+    let mac_build_file_url = "{{ mac_build_file_url }}";
+    let linux_build_file_url = "{{ linux_build_file_url }}";
+</script>
+
 {% render_bundle 'main' %}
 
 <!-- bootstrap 4.2.1 -->

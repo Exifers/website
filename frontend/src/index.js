@@ -5,7 +5,7 @@ import {Provider} from "react-redux";
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import IndexPage from "./pages/IndexPage";
 import DocumentationPage from "./pages/DocumentationPage";
-import DownloadPage from "./pages/DownloadPage";
+import DownloadPage from "./pages/DownloadPage2";
 import ArticlesPage from "./pages/ArticlesPage";
 import LeaderboardPage from "./pages/LeaderboardPage";
 
