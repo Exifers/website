@@ -36,12 +36,15 @@ export const withAjaxStoreData = (id, url) => (WrappedComponent) => {
 
                     if (this.props.loading) {
                         return (
-                            <div className="lds-ring mt-5">
-                                <div/>
-                                <div/>
-                                <div/>
-                                <div/>
-                            </div>
+                            <React.Fragment>
+                                <br/>
+                                <div className="lds-ring mt-5 mx-auto">
+                                    <div/>
+                                    <div/>
+                                    <div/>
+                                    <div/>
+                                </div>
+                            </React.Fragment>
                         );
                     }
 

@@ -19,14 +19,17 @@ const styles = {
     },
     buttonContainer: {
         maxWidth: "200px"
+    },
+    wrapper: {
+        marginTop: "3rem",
+        textAlign: "center"
     }
 };
 
 class DownloadPanel extends Component {
     render() {
         return (
-            <React.Fragment>
-                <h1 className="mt-5">Download</h1>
+            <div className={this.props.classes.wrapper}>
                 <div
                     className={
                         classNames(
@@ -64,7 +67,7 @@ class DownloadPanel extends Component {
                     you
                     've downloaded, checkout the documentation.
                 </p>
-            </React.Fragment>
+            </div>
         );
     }
 }

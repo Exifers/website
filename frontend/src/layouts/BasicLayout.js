@@ -44,8 +44,8 @@ class BasicLayout extends Component {
                     {header}
                 </div>
                 <div className={this.props.classes.body}>
-                    <div className={this.props.classes.content}>{content}</div>
                     <div>{navbar}</div>
+                    <div className={this.props.classes.content}>{content}</div>
                 </div>
                 <div className={this.props.classes.footer}>
                     {footer}
