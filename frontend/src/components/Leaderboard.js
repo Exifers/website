@@ -38,12 +38,20 @@ class Leaderboard extends Component {
                     <div className={'row'} key={index}>
                         <div
                             className={classNames('col-sm p-1', this.props.classes.cell)}>
-                            <NavLink to={`/showcase/leaderboard?player_id=${entry.id}`} className={this.props.classes.pseudo}>
+                            <NavLink to={`/showcase/leaderboard?player_id=${entry.id}`}
+                                     className={this.props.classes.pseudo}>
                                 {entry.pseudo}
                             </NavLink>
                         </div>
                         <div className={classNames('col-sm p-1', this.props.classes.cell)}>
-                            {entry.score}
+                            {Math.max(...entry.gameResults.map(
+                                current => (
+                                    + current.stage1Score
+                                    + current.stage2Score
+                                    + current.stage3Score
+                                    + current.stage4Score
+                                )
+                            ))/4}
                         </div>
                     </div>
                 ))}

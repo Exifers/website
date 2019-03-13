@@ -26,9 +26,9 @@
 
 <script type="text/javascript">
     {% autoescape off %}
-    let windows_build_file_url = "{{ windows_build_file_url }}";
-    let mac_build_file_url = "{{ mac_build_file_url }}";
-    let linux_build_file_url = "{{ linux_build_file_url }}";
+    let windows_build_file_url = "{{ windows_build_file_url.file.url }}";
+    let mac_build_file_url = "{{ mac_build_file_url.file.url }}";
+    let linux_build_file_url = "{{ linux_build_file_url.file.url }}";
     {% endautoescape %}
 </script>
 

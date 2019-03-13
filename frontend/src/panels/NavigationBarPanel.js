@@ -13,26 +13,31 @@ const styles = {
     },
     navigationLink: {
         height: "80px",
-        textAlign: "center",
         cursor: "pointer",
-        transition: "all 0.2s",
+        transition: "all 0.3s",
         "&:hover": {
-            backgroundColor: "#6899dd",
+            backgroundColor: "#6fa3eb",
             textDecoration: "none"
         },
         "&:hover span": {
             color: "white !important"
         },
-        display: "flex",
+        display: "flex"
     },
     navigationLinkContent: {
-        margin: "auto auto",
+        margin: "auto 0px auto 15px",
         textDecoration: "none",
         color: "#7194d2",
         fontSize: "22px"
     },
     activeNavigationLink: {
         fontWeight: "bold"
+    },
+    separator: {
+        backgroundColor: "#6fa3eb",
+        height: "1px",
+        margin: "0px auto 0px auto",
+        width: "80%"
     }
 };
 
@@ -44,18 +49,22 @@ class NavigationBarPanel extends Component {
                          activeClassName={this.props.classes.activeNavigationLink}>
                     <span className={this.props.classes.navigationLinkContent}>Home</span>
                 </NavLink>
+                <span className={this.props.classes.separator}/>
                 <NavLink exact to={'/showcase/download'} className={this.props.classes.navigationLink}
                          activeClassName={this.props.classes.activeNavigationLink}>
                     <span className={this.props.classes.navigationLinkContent}>Download</span>
                 </NavLink>
+                <span className={this.props.classes.separator}/>
                 <NavLink exact to={'/showcase/documentation'} className={this.props.classes.navigationLink}
                          activeClassName={this.props.classes.activeNavigationLink}>
                     <span className={this.props.classes.navigationLinkContent}>Documentation</span>
                 </NavLink>
+                <span className={this.props.classes.separator}/>
                 <NavLink exact to={'/showcase/articles'} className={this.props.classes.navigationLink}
                          activeClassName={this.props.classes.activeNavigationLink}>
                     <span className={this.props.classes.navigationLinkContent}>Articles</span>
                 </NavLink>
+                <span className={this.props.classes.separator}/>
                 <NavLink exact to={'/showcase/leaderboard'} className={this.props.classes.navigationLink}
                          activeClassName={this.props.classes.activeNavigationLink}>
                     <span className={this.props.classes.navigationLinkContent}>Leaderboard</span>

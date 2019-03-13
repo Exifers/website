@@ -8,7 +8,7 @@ class Player(models.Model):
         return self.pseudo
 
 
-class GameResults(models.Model):
+class GameResult(models.Model):
     player = models.ForeignKey(Player, on_delete=models.CASCADE, related_name='gameResults')
 
     stage1Score = models.FloatField()

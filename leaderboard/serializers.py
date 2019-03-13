@@ -1,4 +1,4 @@
-from leaderboard.models import GameResults, Player
+from leaderboard.models import GameResult, Player
 from rest_framework.serializers import ModelSerializer
 
 
@@ -24,7 +24,7 @@ class LeaderboardEntrySerializer(ModelSerializer):
 
 class GameResultsSerializer(ModelSerializer):
     class Meta:
-        model = GameResults
+        model = GameResult
         fields = '__all__'
 
 
@@ -33,4 +33,4 @@ class PlayerSerializer(ModelSerializer):
 
     class Meta:
         model = Player
-        field = '__all__'
+        fields = '__all__'
