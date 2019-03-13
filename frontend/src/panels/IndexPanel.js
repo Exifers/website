@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {LargeLink} from "../elements/buttons";
 import withStyles from "react-jss";
 import classNames from "classnames";
+import vr from "../resources/images/vr.png";
 
 const styles = {
     video: {
@@ -14,6 +15,16 @@ const styles = {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center"
+    },
+    vrImage: {
+        width: "auto"
+    },
+    pitchTitle: {
+        fontFamily: "Russo One, sans-serif",
+        fontSize: "30px"
+    },
+    greyBackground: {
+        backgroundColor: "#f2f2f2"
     }
 };
 
@@ -29,6 +40,15 @@ class IndexPanel extends Component {
                 <LargeLink className={this.props.classes.tryButton} to={'/showcase/download'}>
                     TRY OUT NOW !
                 </LargeLink>
+                <div className={classNames("w-100 mt-3 text-center", this.props.classes.greyBackground)}>
+                    <div className={"mx-auto mt-3 text-center"}>
+                        <div className={classNames("m-3", this.props.classes.pitchTitle)}>
+                            Discover virtual reality
+                        </div>
+                        <img src={vr} alt={'Man with a virtual reality headset'}
+                             className={this.props.classes.vrImage}/>
+                    </div>
+                </div>
                 <div
                     className="container mx-auto mt-5 cards">
                     <div
