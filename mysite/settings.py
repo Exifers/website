@@ -16,7 +16,6 @@ from google.oauth2 import service_account
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -33,6 +32,8 @@ DEBUG = True
 # See https://docs.djangoproject.com/en/2.1/ref/settings/
 ALLOWED_HOSTS = ['*']
 
+# Use a local database
+LOCAL_DB = True
 
 # Application definition
 
@@ -44,13 +45,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
-    'webpack_loader'
+    'webpack_loader',
+    'rest_framework',
 ]
 
 MY_APPS = [
     'showcase',
-    'leaderboard',
-    'rest_framework',
+    'leaderboard'
 ]
 
 INSTALLED_APPS += MY_APPS
@@ -86,7 +87,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
@@ -94,6 +94,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # See https://docs.djangoproject.com/en/2.1/ref/databases/#mysql-db-api-drivers
 # for more information
 import pymysql  # noqa: 402
+
 pymysql.install_as_MySQLdb()
 
 # [START db_setup]
@@ -110,7 +111,7 @@ rityseriousgamedatabase',
             'NAME': 'cybersecurityseriousgamedatabase',
         }
     }
-else:
+elif not LOCAL_DB:
     # Running locally so connect to either a local MySQL instance or connect to
     # Cloud SQL via the proxy. To start the proxy via command line:
     #
@@ -127,6 +128,14 @@ else:
             'PASSWORD': '2VNGDMqd',
         }
     }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
 # [END db_setup]
 
 
@@ -148,7 +157,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
@@ -161,7 +169,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
@@ -185,13 +192,12 @@ GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
     os.path.join(BASE_DIR, 'mysite/CyberSecuritySeriousGame-e72d85c88e99.json')
 )
 
-
 # Django Webpack Loader
 
 WEBPACK_LOADER = {
     'DEFAULT': {
         'CACHE': not DEBUG,
-        'BUNDLE_DIR_NAME': 'bundles/',  # must end with slash
+        'BUNDLE_DIR_NAME': 'bundles/', # must end with slash
         'STATS_FILE': os.path.join(
             BASE_DIR,
             'frontend/assets/webpack-stats.json'

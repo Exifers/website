@@ -4,15 +4,16 @@ import withStyles from "react-jss";
 
 const styles = {
     headerPanel: {
-        backgroundColor: "#999",
-        height: "100px"
+        backgroundColor: "black",
+        height: "100px",
+        borderBottom: "5px solid #ffc000"
     }
 };
 
 class HeaderPanel extends Component {
     render() {
         return (
-            <div className={this.props.classes.headerPanel}></div>
+            <div className={this.props.classes.headerPanel}/>
         );
     }
 }

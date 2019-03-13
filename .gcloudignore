@@ -15,6 +15,7 @@
 *.pyc
 frontend/node_modules/
 env
+db.sqlite3
 
 # Python pycache:
 __pycache__/

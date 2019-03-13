@@ -1,12 +1,12 @@
 import React, {Component} from "react";
 import {compose} from "redux";
 import withStyles from "react-jss";
-import { NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const styles = {
     navigationBarPanel: {
-        backgroundColor: "#ddd",
-        width: "250px",
+        backgroundColor: "#b4c7e7",
+        width: "200px",
         height: "100%",
         display: "flex",
         flexDirection: "column"
@@ -20,13 +20,19 @@ const styles = {
             backgroundColor: "#6899dd",
             textDecoration: "none"
         },
-        display: "flex"
+        "&:hover span": {
+            color: "white !important"
+        },
+        display: "flex",
     },
     navigationLinkContent: {
         margin: "auto auto",
         textDecoration: "none",
-        color: "#555",
+        color: "#7194d2",
         fontSize: "22px"
+    },
+    activeNavigationLink: {
+        fontWeight: "bold"
     }
 };
 
@@ -34,19 +40,24 @@ class NavigationBarPanel extends Component {
     render() {
         return (
             <div className={this.props.classes.navigationBarPanel}>
-                <NavLink to={'/showcase/'} className={this.props.classes.navigationLink}>
+                <NavLink exact to={'/showcase/'} className={this.props.classes.navigationLink}
+                         activeClassName={this.props.classes.activeNavigationLink}>
                     <span className={this.props.classes.navigationLinkContent}>Home</span>
                 </NavLink>
-                <NavLink to={'/showcase/download'} className={this.props.classes.navigationLink}>
+                <NavLink exact to={'/showcase/download'} className={this.props.classes.navigationLink}
+                         activeClassName={this.props.classes.activeNavigationLink}>
                     <span className={this.props.classes.navigationLinkContent}>Download</span>
                 </NavLink>
-                <NavLink to={'/showcase/documentation'} className={this.props.classes.navigationLink}>
+                <NavLink exact to={'/showcase/documentation'} className={this.props.classes.navigationLink}
+                         activeClassName={this.props.classes.activeNavigationLink}>
                     <span className={this.props.classes.navigationLinkContent}>Documentation</span>
                 </NavLink>
-                <NavLink to={'/showcase/articles'} className={this.props.classes.navigationLink}>
+                <NavLink exact to={'/showcase/articles'} className={this.props.classes.navigationLink}
+                         activeClassName={this.props.classes.activeNavigationLink}>
                     <span className={this.props.classes.navigationLinkContent}>Articles</span>
                 </NavLink>
-                <NavLink to={'/showcase/leaderboard'} className={this.props.classes.navigationLink}>
+                <NavLink exact to={'/showcase/leaderboard'} className={this.props.classes.navigationLink}
+                         activeClassName={this.props.classes.activeNavigationLink}>
                     <span className={this.props.classes.navigationLinkContent}>Leaderboard</span>
                 </NavLink>
             </div>

@@ -1,7 +1,8 @@
-from leaderboard.models import LeaderboardEntry
+from leaderboard.models import GameResults, Player
 from rest_framework.serializers import ModelSerializer
 
 
+'''
 class LeaderboardEntrySerializer(ModelSerializer):
 
     def create(self, validated_data):
@@ -18,3 +19,18 @@ class LeaderboardEntrySerializer(ModelSerializer):
     class Meta:
         model = LeaderboardEntry
         fields = '__all__'
+'''
+
+
+class GameResultsSerializer(ModelSerializer):
+    class Meta:
+        model = GameResults
+        fields = '__all__'
+
+
+class PlayerSerializer(ModelSerializer):
+    gameResults = GameResultsSerializer(many=True)
+
+    class Meta:
+        model = Player
+        field = '__all__'

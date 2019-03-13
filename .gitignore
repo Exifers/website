@@ -2,3 +2,5 @@
 */migrations/*
 .static
 env
+db.sqlite3
+*.swp

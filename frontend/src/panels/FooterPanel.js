@@ -4,15 +4,16 @@ import withStyles from "react-jss";
 
 const styles = {
     footerPanel: {
-        backgroundColor: "#999",
-        height: "100px"
+        backgroundColor: "black",
+        height: "100px",
+        borderTop: "5px solid #ffc000"
     }
 };
 
 class FooterPanel extends Component {
     render() {
         return (
-            <div className={this.props.classes.footerPanel}></div>
+            <div className={this.props.classes.footerPanel}/>
         );
     }
 }

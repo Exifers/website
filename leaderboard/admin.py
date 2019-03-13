@@ -1,4 +1,5 @@
 from django.contrib import admin
-from leaderboard.models import LeaderboardEntry
+from leaderboard.models import Player, GameResults
 
-admin.site.register(LeaderboardEntry)
+admin.site.register(Player)
+admin.site.register(GameResults)
