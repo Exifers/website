@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fe802f5-7943-4337-861d-4b9b59a84a8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/FeatureCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/elements/PitchTitle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/panes/PresentationPane.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/resources/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/utils/color.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tests/utils/color.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/webpack-stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/webpack-stats.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/bundles/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/FooterPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/FooterPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/IndexPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/IndexPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/NavigationBarPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/NavigationBarPanel.js" afterDir="false" />
-    </list>
+    <list default="true" id="9fe802f5-7943-4337-861d-4b9b59a84a8d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/src/panels/NavigationBarPanel.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="505">
-              <caret line="64" column="62" lean-forward="true" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
+              <caret line="64" column="62" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -103,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/resources/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="69" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+            <state relative-caret-position="120">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -250,7 +232,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="76" />
     <option name="y" value="27" />
     <option name="width" value="1900" />
@@ -641,16 +623,15 @@
       <workItem from="1552485188719" duration="3198000" />
       <workItem from="1552490396713" duration="1926000" />
       <workItem from="1552493402040" duration="8839000" />
-      <workItem from="1552566134652" duration="1814000" />
+      <workItem from="1552566134652" duration="1937000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63207000" />
+    <option name="totallyTimeSpent" value="63330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26040554" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1064,7 +1045,7 @@
     <entry file="file://$PROJECT_DIR$/frontend/src/panels/NavigationBarPanel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
-          <caret line="64" column="62" lean-forward="true" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
+          <caret line="64" column="62" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1073,8 +1054,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/resources/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="69" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
