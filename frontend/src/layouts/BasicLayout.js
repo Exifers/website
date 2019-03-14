@@ -21,11 +21,19 @@ const styles = {
         flexGrow: "0"
     },
     content: {
-        flexGrow: "1"
+        flexGrow: "1",
+        display: "flex",
+        flexDirection: "raw"
     },
     footer: {
         width: "100%",
         flexGrow: "0"
+    },
+    innerContent: {
+        flexGrow: "3"
+    },
+    rightFiller: {
+        flexGrow: "1"
     }
 };
 
@@ -35,7 +43,8 @@ class BasicLayout extends Component {
             header,
             content,
             footer,
-            navbar
+            navbar,
+            filler
         } = this.props;
 
         return (
@@ -45,7 +54,10 @@ class BasicLayout extends Component {
                 </div>
                 <div className={this.props.classes.body}>
                     <div>{navbar}</div>
-                    <div className={this.props.classes.content}>{content}</div>
+                    <div className={this.props.classes.content}>
+                        <div className={this.props.classes.innerContent}>{content}</div>
+                        <div className={this.props.classes.rightFiller}>{filler}</div>
+                    </div>
                 </div>
                 <div className={this.props.classes.footer}>
                     {footer}

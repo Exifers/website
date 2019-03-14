@@ -22,16 +22,19 @@ const styles = {
         "&:hover span": {
             color: "white !important"
         },
-        display: "flex"
+        display: "flex",
     },
     navigationLinkContent: {
         margin: "auto 0px auto 15px",
         textDecoration: "none",
         color: "#7194d2",
-        fontSize: "22px"
+        fontSize: "20px",
+        fontFamily: "Russo One, sans-serif",
+        fontStyle: "italic"
     },
     activeNavigationLink: {
-        fontWeight: "bold"
+        fontWeight: "bold",
+        color: "#4a618a !important"
     },
     separator: {
         backgroundColor: "#6fa3eb",

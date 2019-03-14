@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import classNames from "classnames";
 import withStyles from "react-jss";
+import NavLink from "react-router-dom/es/NavLink";
 
 const styles = {
     button: {
@@ -65,7 +66,7 @@ class DownloadPanel extends Component {
                 <p>
                     Once
                     you
-                    've downloaded, checkout the documentation.
+                    've downloaded, checkout the <NavLink exact to={'/showcase/documentation'}>documentation</NavLink>.
                 </p>
             </div>
         );
