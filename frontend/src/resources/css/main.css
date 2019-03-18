@@ -3,7 +3,7 @@
     url("../../resources/images/cyber_background.png");
 }
 
-.cyberBackgroundLight {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+.cyberBackgroundLight, body {
+    background: linear-gradient(rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.96)),
     url("../../resources/images/cyber_background.png");
 }

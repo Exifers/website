@@ -33,7 +33,8 @@ const styles = {
         flexGrow: "3"
     },
     rightFiller: {
-        flexGrow: "1"
+        width: "200px",
+        backgroundColor: "#b4c7e7"
     }
 };
 

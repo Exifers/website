@@ -1,7 +1,9 @@
 import React, {Component} from "react";
 import {compose} from "redux";
 import withStyles from "react-jss";
-import {NavLink} from "react-router-dom";
+import NavigationBarLink from "../components/NavigationBarLink";
+import NavigationBarSubLink from "../components/NavigationBarSubLink";
+import NavigationBarSubLinkGroup from "../components/NavigationBarSubLinkGroup";
 
 const styles = {
     navigationBarPanel: {
@@ -10,31 +12,6 @@ const styles = {
         height: "100%",
         display: "flex",
         flexDirection: "column"
-    },
-    navigationLink: {
-        height: "80px",
-        cursor: "pointer",
-        transition: "all 0.3s",
-        "&:hover": {
-            backgroundColor: "#6fa3eb",
-            textDecoration: "none"
-        },
-        "&:hover span": {
-            color: "white !important"
-        },
-        display: "flex",
-    },
-    navigationLinkContent: {
-        margin: "auto 0px auto 15px",
-        textDecoration: "none",
-        color: "#7194d2",
-        fontSize: "20px",
-        fontFamily: "Russo One, sans-serif",
-        fontStyle: "italic"
-    },
-    activeNavigationLink: {
-        fontWeight: "bold",
-        color: "#4a618a !important"
     },
     separator: {
         backgroundColor: "#6fa3eb",
@@ -48,30 +25,40 @@ class NavigationBarPanel extends Component {
     render() {
         return (
             <div className={this.props.classes.navigationBarPanel}>
-                <NavLink exact to={'/showcase/'} className={this.props.classes.navigationLink}
-                         activeClassName={this.props.classes.activeNavigationLink}>
-                    <span className={this.props.classes.navigationLinkContent}>Home</span>
-                </NavLink>
+
+                <NavigationBarLink to={'/showcase/'}>Home</NavigationBarLink>
                 <span className={this.props.classes.separator}/>
-                <NavLink exact to={'/showcase/download'} className={this.props.classes.navigationLink}
-                         activeClassName={this.props.classes.activeNavigationLink}>
-                    <span className={this.props.classes.navigationLinkContent}>Download</span>
-                </NavLink>
+                <NavigationBarLink to={'/showcase/download'}>Download</NavigationBarLink>
                 <span className={this.props.classes.separator}/>
-                <NavLink exact to={'/showcase/documentation'} className={this.props.classes.navigationLink}
-                         activeClassName={this.props.classes.activeNavigationLink}>
-                    <span className={this.props.classes.navigationLinkContent}>Documentation</span>
-                </NavLink>
+                <NavigationBarLink to={'/showcase/documentation'}>Documentation</NavigationBarLink>
                 <span className={this.props.classes.separator}/>
-                <NavLink exact to={'/showcase/articles'} className={this.props.classes.navigationLink}
-                         activeClassName={this.props.classes.activeNavigationLink}>
-                    <span className={this.props.classes.navigationLinkContent}>Articles</span>
-                </NavLink>
+                <NavigationBarLink to={'/showcase/articles'}
+                                   subLinks={(isHovered, onSubLinkPointerEnter, onSubLinkPointerLeave) => (
+                                       <NavigationBarSubLinkGroup
+                                           shouldExtend={isHovered}
+                                           onPointerEnter={onSubLinkPointerEnter}
+                                           onPointerLeave={onSubLinkPointerLeave}>
+                                           <NavigationBarSubLink to={'/showcase/articles/ads'}>
+                                               Ads & Popups
+                                           </NavigationBarSubLink>
+                                           <NavigationBarSubLink
+                                               to={'/showcase/articles/password'}>
+                                               Passwords
+                                           </NavigationBarSubLink>
+                                           <NavigationBarSubLink
+                                               to={'/showcase/articles/virus'}>
+                                               Virus
+                                           </NavigationBarSubLink>
+                                           <NavigationBarSubLink
+                                               to={'/showcase/articles/wifi'}>
+                                               Wifi
+                                           </NavigationBarSubLink>
+                                       </NavigationBarSubLinkGroup>
+                                   )}>
+                    Articles
+                </NavigationBarLink>
                 <span className={this.props.classes.separator}/>
-                <NavLink exact to={'/showcase/leaderboard'} className={this.props.classes.navigationLink}
-                         activeClassName={this.props.classes.activeNavigationLink}>
-                    <span className={this.props.classes.navigationLinkContent}>Leaderboard</span>
-                </NavLink>
+                <NavigationBarLink to={'/showcase/leaderboard'}>Leaderboard</NavigationBarLink>
             </div>
         );
     }

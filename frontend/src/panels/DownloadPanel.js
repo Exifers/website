@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import classNames from "classnames";
 import withStyles from "react-jss";
 import NavLink from "react-router-dom/es/NavLink";
+import PitchTitle from "../elements/PitchTitle";
 
 const styles = {
     button: {
@@ -31,6 +32,7 @@ class DownloadPanel extends Component {
     render() {
         return (
             <div className={this.props.classes.wrapper}>
+                <PitchTitle>Download Cyberstories</PitchTitle>
                 <div
                     className={
                         classNames(

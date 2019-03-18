@@ -33,7 +33,9 @@ class IndexPanel extends Component {
     render() {
         return (
             <div className={this.props.classes.wrapper}>
-                <PitchTitle className={classNames("mx-auto", this.props.classes.title)}>A virtual reality serious game about cybersecurity</PitchTitle>
+                <PitchTitle className={classNames("mx-auto", this.props.classes.title)}>A VR serious game
+                    about cybersecurity</PitchTitle>
+                <p className={"mx-auto"}>Check our presentation video</p>
                 <iframe className={classNames("m-5", this.props.classes.video)} width="560" height="315"
                         src="https://www.youtube.com/embed/6yNYVJUmPN8"
                         frameBorder="0"
@@ -45,17 +47,23 @@ class IndexPanel extends Component {
 
                 <PresentationPane
                     grey={true}
-                    image={vr}
-                    alt={'A man with a virtual reality headset'}
                     title={'Discover virtual reality'}
+                >
+                    <img
+                        src={vr}
+                        alt={'A man with a virtual reality headset'}
                     />
+                </PresentationPane>
 
                 <PresentationPane
                     grey={false}
-                    image={training}
-                    alt={'A man teaching something to a group of people'}
                     title={'Train your employees'}
+                >
+                    <img
+                        src={training}
+                        alt={'A man teaching something to a group of people'}
                     />
+                </PresentationPane>
 
                 <div
                     className="container mx-auto mt-5 cards">
