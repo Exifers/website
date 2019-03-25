@@ -3,19 +3,23 @@ import {compose} from "redux";
 import withStyles from "react-jss";
 import classNames from "classnames";
 import "../resources/images/cyber_background.png";
+import InnerFooter from "../components/InnerFooter";
 
 const styles = {
     footerPanel: {
         backgroundColor: "black",
         height: "180px",
-        borderTop: "5px solid #ffc000"
+        borderTop: "5px solid #ffc000",
+        display: "flex"
     }
 };
 
 class FooterPanel extends Component {
     render() {
         return (
-            <div className={classNames(this.props.classes.footerPanel, "cyberBackground")}/>
+            <div className={classNames(this.props.classes.footerPanel, "cyberBackground")}>
+                <InnerFooter/>
+            </div>
         );
     }
 }

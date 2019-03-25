@@ -3,13 +3,14 @@ import HeaderPanel from "../panels/HeaderPanel";
 import NavigationBarPanel from "../panels/NavigationBarPanel";
 import FooterPanel from "../panels/FooterPanel";
 import BasicLayout from "../layouts/BasicLayout";
+import AdsPanel from "../panels/AdsPanel";
 
 class AdsPage extends Component {
     render() {
         return (
             <BasicLayout
                 header={<HeaderPanel/>}
-                content={<div>Ads</div>}
+                content={<AdsPanel/>}
                 navbar={<NavigationBarPanel/>}
                 footer={<FooterPanel/>}
                 />

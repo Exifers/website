@@ -3,6 +3,7 @@ import classNames from "classnames";
 import withStyles from "react-jss";
 import NavLink from "react-router-dom/es/NavLink";
 import PitchTitle from "../elements/PitchTitle";
+import InnerFooter from "../components/InnerFooter";
 
 const styles = {
     button: {
@@ -65,11 +66,6 @@ class DownloadPanel extends Component {
                         </div>
                     </a>
                 </div>
-                <p>
-                    Once
-                    you
-                    've downloaded, checkout the <NavLink exact to={'/showcase/documentation'}>documentation</NavLink>.
-                </p>
             </div>
         );
     }

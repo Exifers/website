@@ -16,7 +16,8 @@ class PresentationPane extends Component {
             <div className={
                 classNames(
                     "w-100 pt-3 text-center",
-                    this.props.grey && this.props.classes.greyBackground
+                    this.props.grey && this.props.classes.greyBackground,
+                    this.props.className
                 )}>
                 <div className={"mx-auto mt-3 text-center"}>
                     <PitchTitle>{this.props.title}</PitchTitle>

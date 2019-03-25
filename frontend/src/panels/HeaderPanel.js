@@ -15,6 +15,28 @@ const styles = {
     logo: {
         margin: "10px",
         maxHeight: "250px"
+    },
+    search: {
+        color: "#ccc",
+        cursor: "pointer",
+        "&:hover": {
+            color: "#fff"
+        },
+        fontSize: "20px",
+        position: "absolute",
+        top: "20px",
+        right: "20px"
+    },
+    language: {
+        position: "absolute",
+        color: "#ccc",
+        fontWeight: "bold",
+        top: "20px",
+        right: "60px",
+        cursor: "pointer",
+        "&:hover": {
+            color: "#fff"
+        }
     }
 };
 
@@ -25,6 +47,8 @@ class HeaderPanel extends Component {
                 <NavLink exact to={'/showcase/'}>
                     <img src={logo} alt={"logo"} className={this.props.classes.logo}/>
                 </NavLink>
+                <i className={classNames("fas fa-search", this.props.classes.search)}/>
+                <span className={this.props.classes.language}>En <i className="fas fa-caret-down"/></span>
             </div>
         );
     }

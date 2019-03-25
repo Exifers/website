@@ -14,10 +14,10 @@ const styles = {
         flexDirection: "column"
     },
     separator: {
-        backgroundColor: "#6fa3eb",
+        backgroundColor: "#a5b5d2",
         height: "1px",
         margin: "0px auto 0px auto",
-        width: "80%"
+        width: "100%"
     }
 };
 
@@ -59,6 +59,7 @@ class NavigationBarPanel extends Component {
                 </NavigationBarLink>
                 <span className={this.props.classes.separator}/>
                 <NavigationBarLink to={'/showcase/leaderboard'}>Leaderboard</NavigationBarLink>
+                <span className={this.props.classes.separator}/>
             </div>
         );
     }
