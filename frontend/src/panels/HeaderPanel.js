@@ -5,6 +5,8 @@ import logo from "../resources/images/logo.png";
 import NavLink from "react-router-dom/es/NavLink";
 import "../resources/css/main.css";
 import classNames from "classnames";
+import LanguageSelectionDropdown from "../components/LanguageSelectionDropdown";
+import SearchInput from "../components/SearchInput";
 
 const styles = {
     headerPanel: {
@@ -17,26 +19,14 @@ const styles = {
         maxHeight: "250px"
     },
     search: {
-        color: "#ccc",
-        cursor: "pointer",
-        "&:hover": {
-            color: "#fff"
-        },
-        fontSize: "20px",
         position: "absolute",
         top: "20px",
         right: "20px"
     },
     language: {
         position: "absolute",
-        color: "#ccc",
-        fontWeight: "bold",
         top: "20px",
-        right: "60px",
-        cursor: "pointer",
-        "&:hover": {
-            color: "#fff"
-        }
+        right: "60px"
     }
 };
 
@@ -47,8 +37,8 @@ class HeaderPanel extends Component {
                 <NavLink exact to={'/showcase/'}>
                     <img src={logo} alt={"logo"} className={this.props.classes.logo}/>
                 </NavLink>
-                <i className={classNames("fas fa-search", this.props.classes.search)}/>
-                <span className={this.props.classes.language}>En <i className="fas fa-caret-down"/></span>
+                <SearchInput className={classNames(this.props.classes.search)}/>
+                <LanguageSelectionDropdown className={this.props.classes.language}/>
             </div>
         );
     }

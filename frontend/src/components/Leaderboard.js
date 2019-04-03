@@ -18,7 +18,12 @@ const styles = {
         fontWeight: 'bold'
     },
     pseudo: {
-        cursor: 'pointer'
+        cursor: 'pointer',
+        color: 'grey',
+        '&:hover': {
+            textDecoration: 'none',
+            color: 'grey'
+        }
     }
 };
 

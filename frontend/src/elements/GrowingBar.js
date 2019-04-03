@@ -1,20 +1,15 @@
 import React, {Component} from "react";
 import classNames from "classnames";
 import withStyles from "react-jss";
+import {lerpColor} from "../utils/color";
 
 const styles = {
     growingBar: {
-        height: '15px',
-        transition: 'all 1.4s',
-        transitionTimingFunction: 'ease'
+        height: '15px'
     },
-    redBar: {
-        backgroundColor: '#ff392b',
-        width: '10px'
-    },
-    greenBar: {
-        backgroundColor: '#1dcf44',
-        width: '300px'
+    wrapper: {
+        display: 'flex',
+        flexDirection: 'row'
     }
 };
 
@@ -22,24 +17,49 @@ class GrowingBar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            expanded: false
+            width: 0
         };
+
+        this.finalWidth = this.props.value;
+        this.maxScore = 100;
     }
 
     componentDidMount() {
-        setTimeout(() => this.setState({
-            expanded: true
-        }), 0);
+        let count = 0;
+        const intervalId = setInterval(() => {
+            if (this.state.width < this.finalWidth) {
+                this.setState(state => ({
+                    width: state.width + 1
+                }));
+            }
+            if (count++ >= this.finalWidth) {
+                window.clearInterval(intervalId)
+            }
+        }, 3);
     }
 
     render() {
+        const color = lerpColor('#ff0000', '#00ff00', this.state.width / 100);
         return (
-            <span
-                className={classNames(
-                    "m-1",
-                    this.props.classes.growingBar,
-                    this.state.expanded ? this.props.classes.greenBar : this.props.classes.redBar
-                )}/>
+            <div className={this.props.classes.wrapper}>
+                <div
+                    className={classNames(
+                        "m-1",
+                        this.props.classes.growingBar
+                    )}
+                    style={{
+                        width: this.state.width,
+                        backgroundColor: color
+                    }}
+                />
+                <div
+                    style={{
+                        color: color,
+                        fontWeight: 'bold'
+                    }}
+                    >{this.state.width} %
+                </div>
+            </div>
         );
     }
 }
