@@ -1,7 +1,7 @@
-from leaderboard.models import Player
-from leaderboard.serializers import PlayerSerializer
+from leaderboard.models import Player, GameResult, Token
+from leaderboard.serializers import PlayerSerializer, GameResultsSerializer
 from rest_framework.exceptions import PermissionDenied
-from rest_framework.generics import ListAPIView, CreateAPIView
+from rest_framework.generics import ListCreateAPIView, CreateAPIView, UpdateAPIView
 
 '''
 class ListLeaderboardEntries(ListAPIView):
@@ -20,6 +20,11 @@ class CreateLeaderboardEntry(CreateAPIView):
 '''
 
 
-class ListPlayers(ListAPIView):
+class ListCreatePlayers(ListCreateAPIView):
     serializer_class = PlayerSerializer
     queryset = Player.objects.all()
+
+
+class CreateGameResult(CreateAPIView):
+    serializer_class = GameResultsSerializer
+

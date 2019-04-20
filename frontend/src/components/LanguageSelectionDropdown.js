@@ -35,7 +35,7 @@ class LanguageSelectionDropdown extends Component {
         super(props);
         this.state = {
             opened: false,
-            selectedLanguage: 'En'
+            selectedLanguage: 'Fr'
         };
 
         this.handleClick = this.handleClick.bind(this);

@@ -32,29 +32,30 @@ class NavigationBarPanel extends Component {
                 <span className={this.props.classes.separator}/>
                 <NavigationBarLink to={'/showcase/documentation'}>Documentation</NavigationBarLink>
                 <span className={this.props.classes.separator}/>
-                <NavigationBarLink to={'/showcase/articles'}
-                                   subLinks={(isHovered, onSubLinkPointerEnter, onSubLinkPointerLeave) => (
-                                       <NavigationBarSubLinkGroup
-                                           shouldExtend={isHovered}
-                                           onPointerEnter={onSubLinkPointerEnter}
-                                           onPointerLeave={onSubLinkPointerLeave}>
-                                           <NavigationBarSubLink to={'/showcase/articles/ads'}>
-                                               Ads & Popups
-                                           </NavigationBarSubLink>
-                                           <NavigationBarSubLink
-                                               to={'/showcase/articles/password'}>
-                                               Passwords
-                                           </NavigationBarSubLink>
-                                           <NavigationBarSubLink
-                                               to={'/showcase/articles/virus'}>
-                                               Virus
-                                           </NavigationBarSubLink>
-                                           <NavigationBarSubLink
-                                               to={'/showcase/articles/wifi'}>
-                                               Wifi
-                                           </NavigationBarSubLink>
-                                       </NavigationBarSubLinkGroup>
-                                   )}>
+                <NavigationBarLink
+                    to={'/showcase/articles'}
+                    subLinks={(isHovered, onSubLinkPointerEnter, onSubLinkPointerLeave) => (
+                        <NavigationBarSubLinkGroup
+                            shouldExtend={isHovered}
+                            onPointerEnter={onSubLinkPointerEnter}
+                            onPointerLeave={onSubLinkPointerLeave}>
+                            <NavigationBarSubLink to={'/showcase/articles/ads'}>
+                                Ads & Popups
+                            </NavigationBarSubLink>
+                            <NavigationBarSubLink
+                                to={'/showcase/articles/password'}>
+                                Passwords
+                            </NavigationBarSubLink>
+                            <NavigationBarSubLink
+                                to={'/showcase/articles/virus'}>
+                                Virus
+                            </NavigationBarSubLink>
+                            <NavigationBarSubLink
+                                to={'/showcase/articles/wifi'}>
+                                Wifi
+                            </NavigationBarSubLink>
+                        </NavigationBarSubLinkGroup>
+                    )}>
                     Articles
                 </NavigationBarLink>
                 <span className={this.props.classes.separator}/>

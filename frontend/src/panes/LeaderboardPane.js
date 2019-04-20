@@ -7,8 +7,7 @@ import withStyles from "react-jss";
 const styles = {
     wrapper: {
         display: "flex",
-        flexDirection: "column",
-        textAlign: "center"
+        flexDirection: "column"
     }
 };
 

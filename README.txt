@@ -18,3 +18,9 @@ Django informations :
 - superuser
   - username : admin
   - password : wYLvP8bJ
+
+Gmail account :
+- Prénom : cyberstories
+- Nom : project
+- nom d'utilisateur : cyberstoriesseriousgame
+- mot de passe : 3MzNZFYU

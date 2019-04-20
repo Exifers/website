@@ -11,7 +11,8 @@ const styles = {
         border: '1px solid rgba(100, 100, 100, 0.3)'
     },
     leaderboard: {
-        border: '1px solid rgba(100, 100, 100, 0.3)'
+        border: '1px solid rgba(100, 100, 100, 0.3)',
+        textAlign: 'center'
     },
     header: {
         fontSize: '17px',
@@ -22,44 +23,95 @@ const styles = {
         color: 'grey',
         '&:hover': {
             textDecoration: 'none',
+            fontWeight: 'bold',
             color: 'grey'
         }
+    },
+    input: {
+        width: '180px',
+        marginBottom: '15px'
     }
 };
 
 class Leaderboard extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            search: ''
+        };
+
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(event) {
+        const value = event.target.value;
+        this.setState({search: value});
+    }
+
     render() {
+        const filter = (entry) => {
+            if (this.state.search === '') {
+                return true;
+            }
+            try {
+                return entry.pseudo.includes(this.state.search);
+            } catch (e) {
+                return true;
+            }
+        };
+
+        const sort = (entry1, entry2) => {
+            return globalScore(entry1) < globalScore(entry2);
+        };
+
+        const globalScore = (entry) => (
+            Math.max(...entry.gameResults.map(
+                current => (
+                    +current.stage1Score
+                    + current.stage2Score
+                    + current.stage3Score
+                    + current.stage4Score
+                )
+            )) / 4
+        );
+
         return (
-            <div className={classNames('container m-4 w-75 mx-auto', this.props.classes.leaderboard)}>
-                <div className={classNames('row', this.props.classes.header)}>
-                    <div className={classNames('col-sm p-1', this.props.classes.cell)}>
-                        Pseudo
-                    </div>
-                    <div className={classNames('col-sm p-1', this.props.classes.cell)}>
-                        Score
-                    </div>
-                </div>
-                {this.props.leaderboardEntries.map((entry, index) => (
-                    <div className={'row'} key={index}>
-                        <div
-                            className={classNames('col-sm p-1', this.props.classes.cell)}>
-                            <NavLink to={`/showcase/leaderboard?player_id=${entry.id}`}
-                                     className={this.props.classes.pseudo}>
-                                {entry.pseudo}
-                            </NavLink>
+            <div className={'m-4 w-75 mx-auto'}>
+                <input type={'text'} className={this.props.classes.input} value={this.state.search}
+                       onChange={this.handleChange} placeholder={'Search pseudo'}/>
+                <p>Click on a pseudo to see score details.</p>
+                <div className={classNames('container', this.props.classes.leaderboard)}>
+                    <div className={classNames('row', this.props.classes.header)}>
+                        <div className={classNames('col-sm p-1', this.props.classes.cell)}>
+                            Pseudo
                         </div>
                         <div className={classNames('col-sm p-1', this.props.classes.cell)}>
-                            {Math.max(...entry.gameResults.map(
-                                current => (
-                                    + current.stage1Score
-                                    + current.stage2Score
-                                    + current.stage3Score
-                                    + current.stage4Score
-                                )
-                            ))/4}
+                            Best average score
                         </div>
                     </div>
-                ))}
+                    {this.props.leaderboardEntries.filter(filter).sort(sort).map((entry, index) => (
+                        <div className={'row'} key={index}>
+                            <div
+                                className={classNames('col-sm p-1', this.props.classes.cell)}>
+                                <NavLink to={`/showcase/leaderboard?player_id=${entry.id}`}
+                                         className={this.props.classes.pseudo}>
+                                    {entry.pseudo} {index === 0 ? <i className="fas fa-trophy"/> : null}
+                                </NavLink>
+                            </div>
+                            <div className={classNames('col-sm p-1', this.props.classes.cell)}>
+                                {Math.max(...entry.gameResults.map(
+                                    current => (
+                                        +current.stage1Score
+                                        + current.stage2Score
+                                        + current.stage3Score
+                                        + current.stage4Score
+                                    )
+                                )) / 4}
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         );
     }

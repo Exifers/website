@@ -3,13 +3,14 @@ import HeaderPanel from "../panels/HeaderPanel";
 import NavigationBarPanel from "../panels/NavigationBarPanel";
 import FooterPanel from "../panels/FooterPanel";
 import BasicLayout from "../layouts/BasicLayout";
+import VirusPanel from "../panels/VirusPanel";
 
 class VirusPage extends Component {
     render() {
         return (
             <BasicLayout
                 header={<HeaderPanel/>}
-                content={<div>Virus</div>}
+                content={<VirusPanel/>}
                 navbar={<NavigationBarPanel/>}
                 footer={<FooterPanel/>}
                 />

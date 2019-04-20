@@ -1,6 +1,9 @@
-from django.urls import path
-from leaderboard.endpoints import ListPlayers
+from django.conf.urls import url
+from leaderboard.endpoints import ListCreatePlayers, CreateGameResult
+from leaderboard.views import gameresult_visible
 
 urlpatterns = [
-    path('list_players', ListPlayers.as_view(), name='list_players')
+    url('players/$', ListCreatePlayers.as_view(), name='list_players'),
+    url('gameresults/$', CreateGameResult.as_view(), name='create_gameresult'),
+    url('gameresult_visible/(?P<pk>\d+)/$', gameresult_visible, name='gameresult_visible'),
 ]
