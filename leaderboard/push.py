@@ -11,7 +11,8 @@ def push_players():
     players_response.render()
 
     channel_layer = get_channel_layer()
+    print("Sending websocket :" + str(players_response.content))
     async_to_sync(channel_layer.group_send)('leaderboard', {
         'type': 'chat_message',
-        'message': players_response.content
+        'message': players_response.content.decode('utf-8')
     })

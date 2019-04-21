@@ -72,9 +72,10 @@ export const withWebSocketStoreData = (id, url) => (WrappedComponent) => {
                         'ws://' + window.location.host +
                         url);
 
-                    webSocket.onmessage = (e) => (
-                        this.props.update(JSON.parse(JSON.parse(e.data).message))
-                    );
+                    webSocket.onmessage = (e) => {
+                        console.log("received ws");
+                        this.props.update(JSON.parse(JSON.parse(e.data).message));
+                    };
 
                     webSocket.onClose = () => console.warn("Websocket closed unexpectedly");
                 }
