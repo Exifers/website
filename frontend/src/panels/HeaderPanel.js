@@ -7,6 +7,8 @@ import "../resources/css/main.css";
 import classNames from "classnames";
 import LanguageSelectionDropdown from "../components/LanguageSelectionDropdown";
 import SearchInput from "../components/SearchInput";
+import FacebookLink from "../elements/FacebookLink";
+import TwitterLink from "../elements/TwitterLink";
 
 const styles = {
     headerPanel: {
@@ -19,14 +21,27 @@ const styles = {
         maxHeight: "250px"
     },
     search: {
-        position: "absolute",
-        top: "20px",
-        right: "20px"
+        marginTop: '2px'
     },
     language: {
-        position: "absolute",
-        top: "20px",
-        right: "60px"
+        float: 'right'
+    },
+    iconsWrapper: {
+        position: 'absolute',
+        display: 'flex',
+        flexDirection: 'row',
+        top: '15px',
+        right: '25px',
+        height: '50px'
+    },
+    languageWrapper: {
+        width: '45px'
+    },
+    facebook: {
+        marginRight: '15px'
+    },
+    twitter: {
+        marginRight: '15px'
     }
 };
 
@@ -37,8 +52,14 @@ class HeaderPanel extends Component {
                 <NavLink exact to={'/'}>
                     <img src={logo} alt={"logo"} className={this.props.classes.logo}/>
                 </NavLink>
-                <SearchInput className={classNames(this.props.classes.search)}/>
-                <LanguageSelectionDropdown className={this.props.classes.language}/>
+                <div className={this.props.classes.iconsWrapper}>
+                    <TwitterLink to={'https://twitter.com/Cyberstories1'} className={classNames(this.props.classes.twitter)}/>
+                    <FacebookLink to={'https://www.facebook.com/Cyberstories-299621230935351/'} className={this.props.classes.facebook}/>
+                    <SearchInput className={classNames(this.props.classes.search)}/>
+                    <div className={this.props.classes.languageWrapper}>
+                        <LanguageSelectionDropdown className={this.props.classes.language}/>
+                    </div>
+                </div>
             </div>
         );
     }

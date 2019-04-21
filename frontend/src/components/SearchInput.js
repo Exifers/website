@@ -13,13 +13,12 @@ const styles = {
         fontSize: "20px"
     },
     input: {
-        transition: 'all 1s'
+        transition: 'all 1s',
+        height: '10px',
+        marginRight: '10px'
     },
-    inputOpened: {
-        width: 'auto'
-    },
+    inputOpened: {},
     inputClosed: {
-        width: '0px',
         display: 'none'
     }
 };
@@ -28,7 +27,8 @@ class SearchInput extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            opened: false
+            opened: false,
+            width: 0
         };
 
         this.handleClick = this.handleClick.bind(this);
@@ -47,17 +47,29 @@ class SearchInput extends Component {
     }
 
     open() {
-
+        for (let i = 0; i <= 100; i++) {
+            setTimeout(() => (
+                this.setState({
+                    width: i
+                })
+            ), 10 * i);
+        }
     }
 
     close() {
-
+        for (let i = 0; i <= 100; i++) {
+            setTimeout(() => (
+                this.setState({
+                    width: 100 - i
+                })
+            ), 10 * i);
+        }
     }
 
     render() {
         return (
             <React.Fragment>
-                <input type={'text'} className={
+                <input type={'text'} style={{width: this.state.width}} className={
                     classNames(
                         this.props.classes.input,
                         this.state.opened ? this.props.classes.inputOpened : this.props.classes.inputClosed,

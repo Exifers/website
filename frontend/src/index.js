@@ -12,6 +12,7 @@ import VirusPage from "./pages/VirusPage";
 import PasswordPage from "./pages/PasswordPage";
 import AdsPage from "./pages/AdsPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import GameResultVisiblePage from "./pages/GameResultVisiblePage";
 
 class App extends Component {
     render() {
@@ -19,15 +20,16 @@ class App extends Component {
             <Provider store={store}>
                 <Router>
                     <Switch>
-                        <Route exact path={"/download"}          component={DownloadPage}/>
-                        <Route exact path={"/documentation"}     component={DocumentationPage}/>
-                        <Route exact path={"/articles/ads"}      component={AdsPage}/>
-                        <Route exact path={"/articles/password"} component={PasswordPage}/>
-                        <Route exact path={"/articles/virus"}    component={VirusPage}/>
-                        <Route exact path={"/articles/wifi"}     component={WifiPage}/>
-                        <Route exact path={"/leaderboard"}       component={LeaderboardPage}/>
-                        <Route exact path={"/"}                  component={IndexPage}/>
-                        <Route                                   component={NotFoundPage}/>
+                        <Route exact path={"/download"}           component={DownloadPage}/>
+                        <Route exact path={"/documentation"}      component={DocumentationPage}/>
+                        <Route exact path={"/articles/ads"}       component={AdsPage}/>
+                        <Route exact path={"/articles/password"}  component={PasswordPage}/>
+                        <Route exact path={"/articles/virus"}     component={VirusPage}/>
+                        <Route exact path={"/articles/wifi"}      component={WifiPage}/>
+                        <Route exact path={"/leaderboard"}        component={LeaderboardPage}/>
+                        <Route exact path={"/gameresult_visible"} component={GameResultVisiblePage}/>
+                        <Route exact path={"/"}                   component={IndexPage}/>
+                        <Route                                    component={NotFoundPage}/>
                     </Switch>
                 </Router>
             </Provider>

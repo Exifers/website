@@ -62,7 +62,7 @@ class LanguageSelectionDropdown extends Component {
         popup.setAttribute('class', this.props.classes.popup);
         popup.setAttribute('id', this.popupId);
         let top = spanRect.y + spanRect.height + 2;
-        let left = spanRect.x;
+        let left = spanRect.x - spanRect.width;
         popup.style.top = top + 'px';
         popup.style.left = left + 'px';
         let enLang = document.createElement('div');
