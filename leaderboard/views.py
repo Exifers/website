@@ -1,6 +1,7 @@
 from django.core.exceptions import PermissionDenied
 from django.http import HttpResponse
 from leaderboard.models import Token, GameResult
+from leaderboard.push import push_players
 
 
 def gameresult_visible(request, pk):
@@ -19,5 +20,7 @@ def gameresult_visible(request, pk):
     if gameresult:
         gameresult.visible = True
         gameresult.save()
+
+        push_players()
 
     return HttpResponse("done")

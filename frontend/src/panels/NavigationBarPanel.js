@@ -33,7 +33,7 @@ class NavigationBarPanel extends Component {
                 <NavigationBarLink to={'/showcase/documentation'}>Documentation</NavigationBarLink>
                 <span className={this.props.classes.separator}/>
                 <NavigationBarLink
-                    to={'/showcase/articles'}
+                    to={'/showcase/'}
                     subLinks={(isHovered, onSubLinkPointerEnter, onSubLinkPointerLeave) => (
                         <NavigationBarSubLinkGroup
                             shouldExtend={isHovered}

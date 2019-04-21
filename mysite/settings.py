@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'webpack_loader',
     'rest_framework',
+    'channels'
 ]
 
 MY_APPS = [
@@ -220,3 +221,18 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "cyberstoriesseriousgame@gmail.com"
 EMAIL_HOST_PASSWORD = "3MzNZFYU"
+
+# Email template
+TEMPLATED_EMAIL_BACKEND = 'templated_email.backends.vanilla_django'
+TEMPLATED_EMAIL_TEMPLATE_DIR = 'emails/'
+
+# Websocket Django channels
+ASGI_APPLICATION = "mysite.routing.application"
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}

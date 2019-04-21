@@ -3,7 +3,7 @@ import '../resources/css/loader.css';
 import withStyles from 'react-jss';
 import classNames from 'classnames';
 import {compose} from "redux";
-import {withLeaderboardEntries} from "../actions/leaderboard";
+import {withLeaderboardEntries, withWebsocketLeaderboardEntries} from "../actions/leaderboard";
 import {NavLink} from "react-router-dom";
 
 const styles = {
@@ -55,7 +55,7 @@ class Leaderboard extends Component {
                 return true;
             }
             try {
-                return entry.pseudo.includes(this.state.search);
+                return entry.pseudo.toUpperCase().includes(this.state.search.toUpperCase());
             } catch (e) {
                 return true;
             }
@@ -90,27 +90,25 @@ class Leaderboard extends Component {
                             Best average score
                         </div>
                     </div>
-                    {this.props.leaderboardEntries.filter(filter).sort(sort).map((entry, index) => (
-                        <div className={'row'} key={index}>
-                            <div
-                                className={classNames('col-sm p-1', this.props.classes.cell)}>
-                                <NavLink to={`/showcase/leaderboard?player_id=${entry.id}`}
-                                         className={this.props.classes.pseudo}>
-                                    {entry.pseudo} {index === 0 ? <i className="fas fa-trophy"/> : null}
-                                </NavLink>
+                    {this.props.leaderboardEntries
+                        .filter(filter)
+                        .filter(entry => entry.gameResults.length > 0)
+                        .sort(sort)
+                        .map((entry, index) => (
+                            <div className={'row'} key={index}>
+                                <div
+                                    className={classNames('col-sm p-1', this.props.classes.cell)}>
+                                    <NavLink to={`/showcase/leaderboard?player_id=${entry.id}`}
+                                             className={this.props.classes.pseudo}>
+                                        {entry.pseudo} {index === 0 ? <i className="fas fa-trophy"/> : null}
+                                    </NavLink>
+                                </div>
+                                <div className={classNames('col-sm p-1', this.props.classes.cell)}>
+                                    {globalScore(entry)}
+                                </div>
                             </div>
-                            <div className={classNames('col-sm p-1', this.props.classes.cell)}>
-                                {Math.max(...entry.gameResults.map(
-                                    current => (
-                                        +current.stage1Score
-                                        + current.stage2Score
-                                        + current.stage3Score
-                                        + current.stage4Score
-                                    )
-                                )) / 4}
-                            </div>
-                        </div>
-                    ))}
+                        ))
+                    }
                 </div>
             </div>
         );
@@ -118,6 +116,7 @@ class Leaderboard extends Component {
 }
 
 export default compose(
+    withWebsocketLeaderboardEntries,
     withLeaderboardEntries,
     withStyles(styles)
 )(Leaderboard);

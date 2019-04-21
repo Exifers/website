@@ -45,7 +45,7 @@ class PlayerDetails extends Component {
                 <h3>{player_data.pseudo}</h3>
                 <div className={"mx-auto"}>
                     {player_data.gameResults.sort(sort).map((gameResult, index) => (
-                            <React.Fragment>
+                            <React.Fragment key={index}>
                                 {index === 0 ? (
                                     <h6>Best score : {globalScore(gameResult)} %</h6>
                                 ) : index === 1 ? (

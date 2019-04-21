@@ -12,6 +12,16 @@ const styles = {
 };
 
 class LeaderboardPane extends Component {
+    componentDidMount() {
+        let chatSocket = new WebSocket(
+            'ws://' + window.location.host +
+            '/ws/leaderboard/');
+
+        chatSocket.onmessage = (e) => {
+            JSON.parse(e)
+        };
+    }
+
     render() {
         let content = <Leaderboard/>;
         if (get_parameters()['player_id'] !== undefined) {

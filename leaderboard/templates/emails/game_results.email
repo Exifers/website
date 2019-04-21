@@ -1,0 +1,32 @@
+{% block subject %}Your score on Cyberstories{% endblock %}
+
+{% block html %}
+    <body style="min-height:400px;text-align:center;font-size:17px;margin-left:10%;margin-right:10%;background-color:#eaf0f9;padding:100px;">
+    <img src="https://zupimages.net/up/19/16/fzw5.png" style="width:40%;height:auto;min-width:350px"/>
+    <p>
+        Hi {{ username }},
+        here are your score on <a href="http://{{ host }}/">Cyberstories</a>.
+    </p>
+
+    <p>
+        stage 1 : {{ scores.stage1Score }}%<br/>
+        stage 2 : {{ scores.stage2Score }}%<br/>
+        stage 3 : {{ scores.stage3Score }}%<br/>
+        stage 4 : {{ scores.stage4Score }}%<br/>
+    </p>
+
+    <p>To share those results on the <a href="http://{{ host }}/showcase/leaderboard">leaderboard</a>, you can follow
+        this link :<br/>
+        <a href="{{ gameresult_visible_link }}">{{ gameresult_visible_link }}</a>
+    </p>
+
+    <p>
+        Thank you for playing !
+    </p>
+
+    <br/>
+    <p>
+        The Cyberstories team
+    </p>
+    </body>
+{% endblock %}

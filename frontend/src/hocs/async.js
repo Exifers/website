@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {connect} from 'react-redux';
-import {fetchAjaxStoreData} from "../actions/actions";
+import {fetchAjaxStoreData, updateAjaxStoreData} from "../actions/actions";
 
 export const withAjaxStoreData = (id, url) => (WrappedComponent) => {
 
@@ -25,7 +25,7 @@ export const withAjaxStoreData = (id, url) => (WrappedComponent) => {
 
                 render() {
                     if (this.props.response) {
-                        return <WrappedComponent {...{[id]:this.props.response}} {...this.props}/>
+                        return <WrappedComponent {...{[id]: this.props.response}} {...this.props}/>
                     }
 
                     if (this.props.error) {
@@ -53,4 +53,40 @@ export const withAjaxStoreData = (id, url) => (WrappedComponent) => {
             }
         )
     );
+};
+
+export const withWebSocketStoreData = (id, url) => (WrappedComponent) => {
+    const mapStateToProps = state => ({
+        response: state.ajax[id] && state.ajax[id].response
+    });
+
+    const mapDispatchToProps = dispatch => ({
+        update: (response) => dispatch(updateAjaxStoreData(id, response))
+    });
+
+    return (
+        connect(mapStateToProps, mapDispatchToProps)(
+            class extends Component {
+                componentDidMount() {
+                    let webSocket = new WebSocket(
+                        'ws://' + window.location.host +
+                        url);
+
+                    webSocket.onmessage = (e) => (
+                        this.props.update(JSON.parse(JSON.parse(e.data).message))
+                    );
+
+                    webSocket.onClose = () => console.warn("Websocket closed unexpectedly");
+                }
+
+                render() {
+                    return (
+                        <WrappedComponent {...{[id]: this.props.response}} {...this.props}>
+                            {this.props.children}
+                        </WrappedComponent>
+                    );
+                }
+            }
+        )
+    )
 };
