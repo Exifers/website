@@ -26,32 +26,32 @@ class NavigationBarPanel extends Component {
         return (
             <div className={this.props.classes.navigationBarPanel}>
 
-                <NavigationBarLink to={'/showcase/'}>Home</NavigationBarLink>
+                <NavigationBarLink to={'/'}>Home</NavigationBarLink>
                 <span className={this.props.classes.separator}/>
-                <NavigationBarLink to={'/showcase/download'}>Download</NavigationBarLink>
+                <NavigationBarLink to={'/download'}>Download</NavigationBarLink>
                 <span className={this.props.classes.separator}/>
-                <NavigationBarLink to={'/showcase/documentation'}>Documentation</NavigationBarLink>
+                <NavigationBarLink to={'/documentation'}>Documentation</NavigationBarLink>
                 <span className={this.props.classes.separator}/>
                 <NavigationBarLink
-                    to={'/showcase/'}
+                    to={'/'}
                     subLinks={(isHovered, onSubLinkPointerEnter, onSubLinkPointerLeave) => (
                         <NavigationBarSubLinkGroup
                             shouldExtend={isHovered}
                             onPointerEnter={onSubLinkPointerEnter}
                             onPointerLeave={onSubLinkPointerLeave}>
-                            <NavigationBarSubLink to={'/showcase/articles/ads'}>
+                            <NavigationBarSubLink to={'/articles/ads'}>
                                 Ads & Popups
                             </NavigationBarSubLink>
                             <NavigationBarSubLink
-                                to={'/showcase/articles/password'}>
+                                to={'/articles/password'}>
                                 Passwords
                             </NavigationBarSubLink>
                             <NavigationBarSubLink
-                                to={'/showcase/articles/virus'}>
+                                to={'/articles/virus'}>
                                 Virus
                             </NavigationBarSubLink>
                             <NavigationBarSubLink
-                                to={'/showcase/articles/wifi'}>
+                                to={'/articles/wifi'}>
                                 Wifi
                             </NavigationBarSubLink>
                         </NavigationBarSubLinkGroup>
@@ -59,7 +59,7 @@ class NavigationBarPanel extends Component {
                     Articles
                 </NavigationBarLink>
                 <span className={this.props.classes.separator}/>
-                <NavigationBarLink to={'/showcase/leaderboard'}>Leaderboard</NavigationBarLink>
+                <NavigationBarLink to={'/leaderboard'}>Leaderboard</NavigationBarLink>
                 <span className={this.props.classes.separator}/>
             </div>
         );

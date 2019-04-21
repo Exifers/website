@@ -1,5 +1,6 @@
 from django.core.exceptions import PermissionDenied
-from django.http import HttpResponse
+from django.shortcuts import redirect
+from django.urls import reverse
 from leaderboard.models import Token, GameResult
 from leaderboard.push import push_players
 
@@ -23,4 +24,4 @@ def gameresult_visible(request, pk):
 
         push_players()
 
-    return HttpResponse("done")
+    return redirect(reverse('showcase') + 'gameresult_visible', permanent=True)

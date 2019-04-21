@@ -98,9 +98,9 @@ class Leaderboard extends Component {
                             <div className={'row'} key={index}>
                                 <div
                                     className={classNames('col-sm p-1', this.props.classes.cell)}>
-                                    <NavLink to={`/showcase/leaderboard?player_id=${entry.id}`}
+                                    <NavLink to={`/leaderboard/?player_id=${entry.id}`}
                                              className={this.props.classes.pseudo}>
-                                        {entry.pseudo} {index === 0 ? <i className="fas fa-trophy"/> : null}
+                                        {entry.pseudo}
                                     </NavLink>
                                 </div>
                                 <div className={classNames('col-sm p-1', this.props.classes.cell)}>

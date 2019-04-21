@@ -2,7 +2,7 @@ import {withAjaxStoreData, withWebSocketStoreData} from "../hocs/async";
 
 export const withLeaderboardEntries = withAjaxStoreData(
     "leaderboardEntries",
-    "/leaderboard/list_players"
+    "/leaderboard/players/"
 );
 
 export const withWebsocketLeaderboardEntries = withWebSocketStoreData(

@@ -66,7 +66,7 @@ class PlayerDetails extends Component {
                         )
                     )}
                 </div>
-                <NavLink to={'/showcase/leaderboard'} className={this.props.classes.returnButton}>Back</NavLink>
+                <NavLink to={'/leaderboard'} className={this.props.classes.returnButton}>Back</NavLink>
             </div>
         );
     }
