@@ -32,14 +32,14 @@ class PasswordPanel extends Component {
                 <ArticleSection>Compléxité des mots de passe</ArticleSection>
                 <p>Un mot de passe pour être sûr doit être suffisamment complexe. Pour cela, on considère souvent qu'il
                     doit prendre au moins trois classes de caractères. Une classe de caractères peut être par exemple :
-                    <ul>
-                        <li>les lettres minuscules</li>
-                        <li>les lettres majuscules</li>
-                        <li>les nombres</li>
-                        <li>les caractères de ponctuation</li>
-                        <li>les caractères spéciaux</li>
-                    </ul>
                 </p>
+                <ul>
+                    <li>les lettres minuscules</li>
+                    <li>les lettres majuscules</li>
+                    <li>les nombres</li>
+                    <li>les caractères de ponctuation</li>
+                    <li>les caractères spéciaux</li>
+                </ul>
                 <p>Ainsi par exemple, le mot de passe : "lulu12" est typiquement insuffisant car il ne possède que deux
                     classes de caractères, tandis que le mot de passe "lulu12C" est suffisamment bon.</p>
                 <p>La longueur idéale d'un mot de passe est d'au moins huit caractères.</p>

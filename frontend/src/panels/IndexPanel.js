@@ -84,7 +84,7 @@ class IndexPanel extends Component {
                     />
                 </PresentationPane>
 
-                <LargeLink className={this.props.classes.tryButton} to={'/showcase/download'}>
+                <LargeLink className={this.props.classes.tryButton} to={'/download'}>
                     TRY OUT NOW !
                 </LargeLink>
             </div>

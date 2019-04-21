@@ -34,7 +34,7 @@ class HeaderPanel extends Component {
     render() {
         return (
             <div className={classNames(this.props.classes.headerPanel, "cyberBackground")}>
-                <NavLink exact to={'/showcase/'}>
+                <NavLink exact to={'/'}>
                     <img src={logo} alt={"logo"} className={this.props.classes.logo}/>
                 </NavLink>
                 <SearchInput className={classNames(this.props.classes.search)}/>

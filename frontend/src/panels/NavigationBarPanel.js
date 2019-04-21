@@ -4,6 +4,7 @@ import withStyles from "react-jss";
 import NavigationBarLink from "../components/NavigationBarLink";
 import NavigationBarSubLink from "../components/NavigationBarSubLink";
 import NavigationBarSubLinkGroup from "../components/NavigationBarSubLinkGroup";
+import NavigationBarLinkGroup from "../components/NavigationBarLinkGroup";
 
 const styles = {
     navigationBarPanel: {
@@ -32,8 +33,7 @@ class NavigationBarPanel extends Component {
                 <span className={this.props.classes.separator}/>
                 <NavigationBarLink to={'/documentation'}>Documentation</NavigationBarLink>
                 <span className={this.props.classes.separator}/>
-                <NavigationBarLink
-                    to={'/'}
+                <NavigationBarLinkGroup
                     subLinks={(isHovered, onSubLinkPointerEnter, onSubLinkPointerLeave) => (
                         <NavigationBarSubLinkGroup
                             shouldExtend={isHovered}
@@ -57,7 +57,7 @@ class NavigationBarPanel extends Component {
                         </NavigationBarSubLinkGroup>
                     )}>
                     Articles
-                </NavigationBarLink>
+                </NavigationBarLinkGroup>
                 <span className={this.props.classes.separator}/>
                 <NavigationBarLink to={'/leaderboard'}>Leaderboard</NavigationBarLink>
                 <span className={this.props.classes.separator}/>

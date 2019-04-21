@@ -6,7 +6,6 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import IndexPage from "./pages/IndexPage";
 import DocumentationPage from "./pages/DocumentationPage";
 import DownloadPage from "./pages/DownloadPage2";
-import ArticlesPage from "./pages/ArticlesPage";
 import LeaderboardPage from "./pages/LeaderboardPage";
 import WifiPage from "./pages/WifiPage";
 import VirusPage from "./pages/VirusPage";
@@ -22,7 +21,6 @@ class App extends Component {
                     <Switch>
                         <Route exact path={"/download"}          component={DownloadPage}/>
                         <Route exact path={"/documentation"}     component={DocumentationPage}/>
-                        <Route exact path={"/articles"}          component={ArticlesPage}/>
                         <Route exact path={"/articles/ads"}      component={AdsPage}/>
                         <Route exact path={"/articles/password"} component={PasswordPage}/>
                         <Route exact path={"/articles/virus"}    component={VirusPage}/>

@@ -34,11 +34,10 @@ class InnerFooter extends Component {
         return (
             <div className={this.props.classes.wrapper}>
                 <div className={this.props.classes.footer}>
-                    <NavLink to={'/showcase/'} className={this.props.classes.link}>Home</NavLink>
-                    <NavLink to={'/showcase/download'} className={this.props.classes.link}>Download</NavLink>
-                    <NavLink to={'/showcase/documentation'} className={this.props.classes.link}>Documentation</NavLink>
-                    <NavLink to={'/showcase/articles'} className={this.props.classes.link}>Articles</NavLink>
-                    <NavLink to={'/showcase/leaderboard'} className={this.props.classes.link}>Leaderboard</NavLink>
+                    <NavLink to={'/'} className={this.props.classes.link}>Home</NavLink>
+                    <NavLink to={'/download'} className={this.props.classes.link}>Download</NavLink>
+                    <NavLink to={'/documentation'} className={this.props.classes.link}>Documentation</NavLink>
+                    <NavLink to={'/leaderboard'} className={this.props.classes.link}>Leaderboard</NavLink>
                 </div>
             </div>
         );

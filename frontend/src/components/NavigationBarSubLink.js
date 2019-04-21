@@ -25,6 +25,9 @@ const styles = {
         "&:hover span": {
             color: "white !important"
         }
+    },
+    activeNavigationBarSubLink: {
+        fontWeight: "bold",
     }
 };
 
@@ -32,6 +35,7 @@ class NavigationBarSubLink extends Component {
     render() {
         return (
             <NavLink className={this.props.classes.navigationBarSubLink}
+                     activeClassName={this.props.classes.activeNavigationBarSubLink}
                      exact to={this.props.to}
             >
                 <span>{this.props.children}</span>

@@ -31,42 +31,15 @@ const styles = {
 };
 
 class NavigationBarLink extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            hovered: false
-        };
-
-        this.onSubLinkPointerEnter = this.onSubLinkPointerEnter.bind(this);
-        this.onSubLinkPointerLeave = this.onSubLinkPointerLeave.bind(this);
-    }
-
-    onSubLinkPointerEnter() {
-        this.setState({hovered:true});
-    }
-
-    onSubLinkPointerLeave() {
-        this.setState({hovered:false});
-    }
-
     render(props) {
         return (
-            <React.Fragment>
                 <NavLink exact to={this.props.to} className={this.props.classes.navigationLink}
-                         activeClassName={this.props.classes.activeNavigationLink}
-                         onPointerEnter={() => this.setState({hovered: true})}
-                         onPointerLeave={() => this.setState({hovered: false})}>
+                         activeClassName={this.props.classes.activeNavigationLink}>
                     <span
                         className={this.props.classes.navigationLinkContent}>
                         {this.props.children}
                     </span>
                 </NavLink>
-                {this.props.subLinks ? this.props.subLinks(
-                    this.state.hovered,
-                    this.onSubLinkPointerEnter,
-                    this.onSubLinkPointerLeave
-                ) : null}
-            </React.Fragment>
         );
     }
 }
