@@ -1,11 +1,12 @@
 import React, {Component} from "react";
 import classNames from "classnames";
 import withStyles from "react-jss";
-import {lerpColor} from "../utils/color";
+import {lerpColor, lerpColor3} from "../utils/color";
 
 const styles = {
     growingBar: {
-        height: '15px'
+        height: '14px',
+        borderRadius: '7px'
     },
     wrapper: {
         display: 'flex',
@@ -35,13 +36,13 @@ class GrowingBar extends Component {
             if (count++ >= this.finalWidth) {
                 window.clearInterval(intervalId)
             }
-        }, 3);
+        }, 1);
     }
 
     render() {
-        const color = lerpColor('#ff0000', '#00ff00', this.state.width / 100);
+        const color = lerpColor3('#ff2a2a', '#ffaa00', '#69d453', this.state.width / 100);
         return (
-            <div className={this.props.classes.wrapper}>
+            <div className={classNames(this.props.classes.wrapper, this.props.className)}>
                 <div
                     className={classNames(
                         "m-1",

@@ -5,13 +5,13 @@ import classNames from 'classnames';
 import {compose} from "redux";
 import {withLeaderboardEntries, withWebsocketLeaderboardEntries} from "../actions/leaderboard";
 import {NavLink} from "react-router-dom";
+import GrowingBar from "../elements/GrowingBar";
 
 const styles = {
     cell: {
-        border: '1px solid rgba(100, 100, 100, 0.3)'
+        borderBottom: '1px solid rgba(100, 100, 100, 0.3)'
     },
     leaderboard: {
-        border: '1px solid rgba(100, 100, 100, 0.3)',
         textAlign: 'center'
     },
     header: {
@@ -30,6 +30,9 @@ const styles = {
     input: {
         width: '180px',
         marginBottom: '15px'
+    },
+    bar: {
+        marginLeft: '100px'
     }
 };
 
@@ -78,9 +81,8 @@ class Leaderboard extends Component {
 
         return (
             <div className={'m-4 w-75 mx-auto'}>
-                <input type={'text'} className={this.props.classes.input} value={this.state.search}
-                       onChange={this.handleChange} placeholder={'Search pseudo'}/>
-                <p>Click on a pseudo to see score details.</p>
+                <br/>
+                <br/>
                 <div className={classNames('container', this.props.classes.leaderboard)}>
                     <div className={classNames('row', this.props.classes.header)}>
                         <div className={classNames('col-sm p-1', this.props.classes.cell)}>
@@ -88,6 +90,9 @@ class Leaderboard extends Component {
                         </div>
                         <div className={classNames('col-sm p-1', this.props.classes.cell)}>
                             Best average score
+                        </div>
+                        <div className={classNames('col-sm p-1', this.props.classes.cell)}>
+                            Number of games
                         </div>
                     </div>
                     {this.props.leaderboardEntries
@@ -104,12 +109,21 @@ class Leaderboard extends Component {
                                     </NavLink>
                                 </div>
                                 <div className={classNames('col-sm p-1', this.props.classes.cell)}>
-                                    {globalScore(entry)}
+                                    <GrowingBar value={globalScore(entry)} className={this.props.classes.bar}/>
+                                </div>
+                                <div className={classNames('col-sm p-1', this.props.classes.cell)}>
+                                    {entry.gameResults.length > 10 ? '10+' : entry.gameResults.length}
                                 </div>
                             </div>
                         ))
                     }
                 </div>
+                <br/>
+                <br/>
+                <br/>
+                <input type={'text'} className={this.props.classes.input} value={this.state.search}
+                       onChange={this.handleChange} placeholder={'Search pseudo'}/>
+                <p>Click on a pseudo to see score details.</p>
             </div>
         );
     }

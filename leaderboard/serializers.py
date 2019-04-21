@@ -1,5 +1,6 @@
 from leaderboard.emails import send_game_results_email
 from leaderboard.models import GameResult, Player, Token
+from rest_framework.fields import DateField
 from rest_framework.serializers import ModelSerializer, ListSerializer
 from templated_email import send_templated_mail
 
@@ -11,6 +12,8 @@ class FilteredGameResultsSerializer(ListSerializer):
 
 
 class GameResultsSerializer(ModelSerializer):
+    date = DateField(format="%Y/%m/%d")
+
     def create(self, validated_data):
         game_result = super(GameResultsSerializer, self).create(validated_data)
         token = Token.objects.create(game_result=game_result)
