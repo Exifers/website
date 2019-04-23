@@ -6,6 +6,7 @@ import {compose} from "redux";
 import {withLeaderboardEntries, withWebsocketLeaderboardEntries} from "../actions/leaderboard";
 import {NavLink} from "react-router-dom";
 import GrowingBar from "../elements/GrowingBar";
+import PitchTitle from "../elements/PitchTitle";
 
 const styles = {
     cell: {
@@ -82,6 +83,7 @@ class Leaderboard extends Component {
         return (
             <div className={'m-4 w-75 mx-auto'}>
                 <br/>
+                    <PitchTitle className={'text-center'}>Leaderboard</PitchTitle>
                 <br/>
                 <div className={classNames('container', this.props.classes.leaderboard)}>
                     <div className={classNames('row', this.props.classes.header)}>
