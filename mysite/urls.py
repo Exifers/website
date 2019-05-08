@@ -19,5 +19,6 @@ urlpatterns = [
          name='password_reset_confirm'),
     path('accounts/reset/done/', auth_views.PasswordResetCompleteView.as_view(template_name='showcase/index.html'),
          name='password_reset_complete'),
+    path('register/', include('register.urls')),
     re_path('.*', include('showcase.urls'))
 ]

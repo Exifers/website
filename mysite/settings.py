@@ -47,12 +47,13 @@ INSTALLED_APPS = [
     'django_extensions',
     'webpack_loader',
     'rest_framework',
-    'channels'
+    'channels',
 ]
 
 MY_APPS = [
     'showcase',
-    'leaderboard'
+    'leaderboard',
+    'register'
 ]
 
 INSTALLED_APPS += MY_APPS
