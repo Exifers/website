@@ -63,5 +63,15 @@
     <script>
         const csrf_token = '{{ csrf_token }}';
         const form_errors = '{{ form.errors }}';
+
+        {% if request.user.is_authenticated %}
+            const user_authenticated = true;
+            const username = '{{ request.user.username }}';
+            const email = '{{ request.user.email }}';
+        {% else %}
+            const user_authenticated = false;
+            const username = 'unknown';
+            const email = 'unknown';
+        {% endif %}
     </script>
 {% endblock %}

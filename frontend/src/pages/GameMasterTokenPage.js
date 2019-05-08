@@ -1,20 +1,20 @@
 import React, {Component} from "react";
 import withStyles from "react-jss";
 import {compose} from "redux";
-import HeaderPanel from "../panels/HeaderPanel";
-import FooterPanel from "../panels/FooterPanel";
 import NavigationBarPanel from "../panels/NavigationBarPanel";
-import LoginPanel from "../panels/LoginPanel";
+import FooterPanel from "../panels/FooterPanel";
+import HeaderPanel from "../panels/HeaderPanel";
 import BasicLayout from "../layouts/BasicLayout";
+import GameMasterTokenPanel from "../panels/GameMasterTokenPanel";
 
 const styles = {};
 
-class LoginPage extends Component {
+class GameMasterTokenPage extends Component {
     render() {
         return (
             <BasicLayout
                 header={<HeaderPanel/>}
-                content={<LoginPanel/>}
+                content={<GameMasterTokenPanel/>}
                 navbar={<NavigationBarPanel/>}
                 footer={<FooterPanel/>}
             />
@@ -22,10 +22,10 @@ class LoginPage extends Component {
     }
 }
 
-LoginPage.propTypes = {};
+GameMasterTokenPage.propTypes = {};
 
-LoginPage.defaultProps = {};
+GameMasterTokenPage.defaultProps = {};
 
 export default compose(
     withStyles(styles)
-)(LoginPage);
+)(GameMasterTokenPage);

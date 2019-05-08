@@ -10,6 +10,7 @@ import SearchInput from "../components/SearchInput";
 import FacebookLink from "../elements/FacebookLink";
 import TwitterLink from "../elements/TwitterLink";
 import ProfileDropDown from "../elements/ProfileDropDown";
+import LoginRegisterLinks from "../elements/LoginRegisterLinks";
 
 const styles = {
     headerPanel: {
@@ -61,10 +62,13 @@ class HeaderPanel extends Component {
                     <img src={logo} alt={"logo"} className={this.props.classes.logo}/>
                 </NavLink>
                 <div className={this.props.classes.iconsWrapper}>
-                    <TwitterLink to={'https://twitter.com/Cyberstories1'} className={classNames(this.props.classes.twitter)}/>
-                    <FacebookLink to={'https://www.facebook.com/Cyberstories-299621230935351/'} className={this.props.classes.facebook}/>
+                    <TwitterLink to={'https://twitter.com/Cyberstories1'}
+                                 className={classNames(this.props.classes.twitter)}/>
+                    <FacebookLink to={'https://www.facebook.com/Cyberstories-299621230935351/'}
+                                  className={this.props.classes.facebook}/>
                     <SearchInput className={classNames(this.props.classes.search)}/>
-                    <ProfileDropDown className={this.props.classes.profile}/>
+                    {user_authenticated ? <ProfileDropDown className={this.props.classes.profile}/> :
+                        <LoginRegisterLinks/>}
                 </div>
             </div>
         );

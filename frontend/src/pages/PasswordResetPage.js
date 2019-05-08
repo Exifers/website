@@ -1,31 +1,31 @@
 import React, {Component} from "react";
 import withStyles from "react-jss";
 import {compose} from "redux";
-import HeaderPanel from "../panels/HeaderPanel";
 import FooterPanel from "../panels/FooterPanel";
 import NavigationBarPanel from "../panels/NavigationBarPanel";
-import LoginPanel from "../panels/LoginPanel";
+import HeaderPanel from "../panels/HeaderPanel";
 import BasicLayout from "../layouts/BasicLayout";
+import PasswordResetPanel from "../panels/PasswordResetPanel";
 
 const styles = {};
 
-class LoginPage extends Component {
+class PasswordResetPage extends Component {
     render() {
         return (
             <BasicLayout
                 header={<HeaderPanel/>}
-                content={<LoginPanel/>}
+                content={<PasswordResetPanel/>}
                 navbar={<NavigationBarPanel/>}
                 footer={<FooterPanel/>}
-            />
+                />
         );
     }
 }
 
-LoginPage.propTypes = {};
+PasswordResetPage.propTypes = {};
 
-LoginPage.defaultProps = {};
+PasswordResetPage.defaultProps = {};
 
 export default compose(
     withStyles(styles)
-)(LoginPage);
+)(PasswordResetPage);

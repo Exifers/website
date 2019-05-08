@@ -27,9 +27,10 @@ class ProfileDropDown extends Component {
                 </div>
 
                 <div className={'dropdown-menu'} aria-labelledby={'profileDropDownButton'}>
-                    <Link className={'dropdown-item'} to={'/'}>Profile</Link>
+                    <Link className={'dropdown-item'} to={'/accounts/profile/'}>Profile</Link>
+                    <Link className={'dropdown-item'} to={'/game_master/token/'}>Master a game</Link>
                     <Link className={'dropdown-item'} to={'/'}>My games</Link>
-                    <Link className={'dropdown-item'} to={'/'}>Logout</Link>
+                    <a className={'dropdown-item'} href={'/accounts/logout/'}>Logout</a>
                 </div>
             </div>
         );
@@ -39,7 +40,7 @@ class ProfileDropDown extends Component {
 ProfileDropDown.propTypes = {};
 
 ProfileDropDown.defaultProps = {
-    username: 'Emmanuel'
+    username: username || 'unknown'
 };
 
 export default compose(

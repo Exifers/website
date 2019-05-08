@@ -13,9 +13,11 @@ urlpatterns = [
          auth_views.PasswordChangeDoneView.as_view(template_name='showcase/index.html'), name='password_change_done'),
     path('accounts/password_reset/', auth_views.PasswordResetView.as_view(template_name='showcase/index.html')),
     path('accounts/password_reset/done/',
-         auth_views.PasswordResetDoneView.as_view(template_name='showcase/index.html')),
-    path('accounts/reset/<uid64>/<token>/',
-         auth_views.PasswordResetConfirmView.as_view(template_name='showcase/index.html')),
-    path('accounts/reset/done/', auth_views.PasswordResetCompleteView.as_view(template_name='showcase/index.html')),
+         auth_views.PasswordResetDoneView.as_view(template_name='showcase/index.html'), name='password_reset_done'),
+    path('accounts/reset/<uidb64>/<token>/',
+         auth_views.PasswordResetConfirmView.as_view(template_name='showcase/index.html'),
+         name='password_reset_confirm'),
+    path('accounts/reset/done/', auth_views.PasswordResetCompleteView.as_view(template_name='showcase/index.html'),
+         name='password_reset_complete'),
     re_path('.*', include('showcase.urls'))
 ]
