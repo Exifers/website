@@ -13,6 +13,10 @@ import PasswordPage from "./pages/PasswordPage";
 import AdsPage from "./pages/AdsPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import GameResultVisiblePage from "./pages/GameResultVisiblePage";
+import LoginPage from "./pages/LoginPage";
+import ProfilePage from "./pages/ProfilePage";
+import PasswordChangePage from "./pages/PasswordChangePage";
+import PasswordChangeDonePage from "./pages/PasswordChangeDonePage";
 
 class App extends Component {
     render() {
@@ -20,16 +24,21 @@ class App extends Component {
             <Provider store={store}>
                 <Router>
                     <Switch>
-                        <Route exact path={"/download"}           component={DownloadPage}/>
-                        <Route exact path={"/documentation"}      component={DocumentationPage}/>
-                        <Route exact path={"/articles/ads"}       component={AdsPage}/>
-                        <Route exact path={"/articles/password"}  component={PasswordPage}/>
-                        <Route exact path={"/articles/virus"}     component={VirusPage}/>
-                        <Route exact path={"/articles/wifi"}      component={WifiPage}/>
-                        <Route exact path={"/leaderboard"}        component={LeaderboardPage}/>
-                        <Route exact path={"/gameresult_visible"} component={GameResultVisiblePage}/>
-                        <Route exact path={"/"}                   component={IndexPage}/>
-                        <Route                                    component={NotFoundPage}/>
+                        <Route exact path={"/download/"}                     component={DownloadPage}/>
+                        <Route exact path={"/documentation/"}                component={DocumentationPage}/>
+                        <Route exact path={"/articles/ads/"}                 component={AdsPage}/>
+                        <Route exact path={"/articles/password/"}            component={PasswordPage}/>
+                        <Route exact path={"/articles/virus/"}               component={VirusPage}/>
+                        <Route exact path={"/articles/wifi/"}                component={WifiPage}/>
+                        <Route exact path={"/leaderboard/"}                  component={LeaderboardPage}/>
+                        <Route exact path={"/gameresult_visible/"}           component={GameResultVisiblePage}/>
+                        <Route exact path={"/accounts/login/"}               component={LoginPage}/>
+                        <Route exact path={"/accounts/profile/"}             component={ProfilePage}/>
+                        <Route exact path={"/accounts/logout/"}              component={IndexPage}/>
+                        <Route exact path={"/accounts/password_change/"}     component={PasswordChangePage}/>
+                        <Route extat path={"/accounts/password_change/done"} component={PasswordChangeDonePage}/>
+                        <Route exact path={"/"}                              component={IndexPage}/>
+                        <Route                                               component={NotFoundPage}/>
                     </Switch>
                 </Router>
             </Provider>

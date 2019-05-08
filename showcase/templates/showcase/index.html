@@ -58,3 +58,10 @@
         </div>
     </div>
 {% endblock %}
+
+{% block javascript %}
+    <script>
+        const csrf_token = '{{ csrf_token }}';
+        const form_errors = '{{ form.errors }}';
+    </script>
+{% endblock %}
