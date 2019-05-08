@@ -12,7 +12,7 @@ const styles = {
         textAlign: 'center'
     },
     gameResult: {
-        marginBottom: "3rem"
+        marginBottom: "3rem",
     },
     returnButton: {
         color: "#7194d2",
@@ -21,6 +21,8 @@ const styles = {
             color: "#4a618a",
             textDecoration: "none"
         }
+    },
+    gameResultWrapper: {
     }
 };
 
@@ -45,7 +47,7 @@ class PlayerDetails extends Component {
                 <h3>{player_data.pseudo}</h3>
                 <div className={"mx-auto"}>
                     {player_data.gameResults.sort(sort).map((gameResult, index) => (
-                            <React.Fragment key={index}>
+                            <div key={index} className={index !== 0 ? this.props.classes.gameResultWrapper : ''}>
                                 {index === 0 ? (
                                     <h6>Best score : {globalScore(gameResult)} %</h6>
                                 ) : index === 1 ? (
@@ -62,7 +64,7 @@ class PlayerDetails extends Component {
                                         gameResult.stage4Score,
                                     ]}
                                 />
-                            </React.Fragment>
+                            </div>
                         )
                     )}
                 </div>

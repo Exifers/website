@@ -3,7 +3,8 @@ from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.core.validators import validate_email
-from django.http import HttpResponseBadRequest, HttpResponse
+from django.http import HttpResponse
+from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from register.models import Profile
 
@@ -38,4 +39,4 @@ def register(request):
 
         return HttpResponse('Account created', status=201)
     else:
-        return HttpResponseBadRequest('POST request expected')
+        return render(request, 'showcase/index.html')

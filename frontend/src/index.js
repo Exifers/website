@@ -22,6 +22,7 @@ import PasswordResetDonePage from "./pages/PasswordResetDonePage";
 import PasswordResetConfirmPage from "./pages/PasswordResetConfirmPage";
 import PasswordResetCompletePage from "./pages/PasswordResetCompletePage";
 import GameMasterTokenPage from "./pages/GameMasterTokenPage";
+import RegisterPage from "./pages/RegisterPage";
 
 class App extends Component {
     render() {
@@ -47,6 +48,7 @@ class App extends Component {
                         <Route exact path={"/accounts/reset/:uid64/:token/"}  component={PasswordResetConfirmPage}/>
                         <Route exact path={"/accounts/reset/done/"}           component={PasswordResetCompletePage}/>
                         <Route exact path={"/game_master/token/"}             component={GameMasterTokenPage}/>
+                        <Route exact path={"/register/register/"}             component={RegisterPage}/>
                         <Route exact path={"/"}                               component={IndexPage}/>
                         <Route                                                component={NotFoundPage}/>
                     </Switch>
