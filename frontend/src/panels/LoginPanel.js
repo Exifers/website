@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import withStyles from "react-jss";
 import {compose} from "redux";
+import NavLink from "react-router-dom/es/NavLink";
 
 const styles = {
     wrapper: {
@@ -29,6 +30,7 @@ class LoginPanel extends Component {
                     </div>
                     <button type="submit" className="btn btn-dark">Login</button>
                 </form>
+                <NavLink to={'/accounts/password_reset/'}>Lost password ?</NavLink>
             </div>
         );
     }

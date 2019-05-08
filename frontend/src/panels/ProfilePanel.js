@@ -35,7 +35,7 @@ class ProfilePanel extends Component {
                 </ul>
                 <br/>
                 <NavLink to={'/accounts/password_change/'} type={'button'} className={'btn btn-dark'}>Change password</NavLink><br/><br/><br/>
-                <button type={'button'} className={'btn btn-primary'}>Become game master</button><br/><br/><br/><br/>
+                <NavLink to={'/game_master/token'} type={'button'} className={'btn btn-primary'}>Become game master</NavLink><br/><br/><br/><br/>
                 <button type={'button'} className={'btn btn-danger'}>Delete account</button>
             </div>
         );
