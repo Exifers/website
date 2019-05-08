@@ -15,6 +15,7 @@ const styles = {
             color: "white !important"
         },
         display: "flex",
+        outline: '0'
     },
     activeNavigationLink: {
         fontWeight: "bold",

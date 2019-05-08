@@ -18,7 +18,8 @@ const styles = {
 class FacebookLink extends Component {
     render() {
         return (
-            <a className={classNames("fab fa-facebook", this.props.classes.glyphicon, this.props.className)}
+            <a target="_blank" rel="noopener noreferrer"
+               className={classNames("fab fa-facebook", this.props.classes.glyphicon, this.props.className)}
                href={this.props.to}/>
         );
     }
