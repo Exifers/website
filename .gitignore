@@ -1,5 +1,4 @@
 *.pyc
-*/migrations/*
 .static
 env
 db.sqlite3
