@@ -8,9 +8,9 @@ urlpatterns = [
         TemplateView.as_view(
             template_name='showcase/index.html',
             extra_context={
-                'windows_build_file_url': ProductBuild.objects.filter(platform='WINDOWS').first(),
-                'mac_build_file_url': ProductBuild.objects.filter(platform='MAC').first(),
-                'linux_build_file_url': ProductBuild.objects.filter(platform='LINUX').first(),
+                'windows_builds': ProductBuild.objects.filter(platform='WINDOWS'),
+                'mac_builds': ProductBuild.objects.filter(platform='MAC'),
+                'linux_builds': ProductBuild.objects.filter(platform='LINUX'),
             }
         ),
         name='showcase'
