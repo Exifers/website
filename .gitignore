@@ -1,5 +1,5 @@
 *.pyc
-.static
+staticfiles
 env
 db.sqlite3
 *.swp
