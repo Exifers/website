@@ -1,4 +1,4 @@
-Deployment informations :
+GCP Deployment informations :
 - sql instance
   - name : cybersecurityseriousgamedatabase
   - root password : 8zhHYeBu
@@ -14,7 +14,7 @@ Deployment informations :
   - name : cybersecurityseriousgameserviceaccount
 
 
-Django informations :
+GCP Django informations :
 - superuser
   - username : admin
   - password : wYLvP8bJ
