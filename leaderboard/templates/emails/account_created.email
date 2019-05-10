@@ -14,7 +14,7 @@
 
     <p>
         You can play our game with a virtual reality setup such as HTC Vive or Oculus Rift. Then you can choose to share
-        your results in the <a href="http://{{ host }}/showcase/leaderboard">leaderboard</a>.
+        your results in the <a href="http://{{ host }}/leaderboard">leaderboard</a>.
     </p>
 
     <br/>

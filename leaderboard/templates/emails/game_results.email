@@ -15,7 +15,7 @@
         stage 4 : {{ scores.stage4Score }}%<br/>
     </p>
 
-    <p>To share those results on the <a href="http://{{ host }}/showcase/leaderboard">leaderboard</a>, you can follow
+    <p>To share those results on the <a href="http://{{ host }}/leaderboard">leaderboard</a>, you can follow
         this link :<br/>
         <a href="{{ gameresult_visible_link }}">{{ gameresult_visible_link }}</a>
     </p>
