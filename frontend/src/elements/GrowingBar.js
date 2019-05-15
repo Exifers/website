@@ -21,19 +21,28 @@ class GrowingBar extends Component {
             width: 0
         };
 
-        this.finalWidth = this.props.value;
         this.maxScore = 100;
+
+        this.grow = this.grow.bind(this);
+    }
+
+    componentWillReceiveProps(nextProps, nextContext) {
+        this.grow(nextProps.value);
     }
 
     componentDidMount() {
+        this.grow(this.props.value);
+    }
+
+    grow(value) {
         let count = 0;
         const intervalId = setInterval(() => {
-            if (this.state.width < this.finalWidth) {
+            if (this.state.width < value) {
                 this.setState(state => ({
                     width: state.width + 1
                 }));
             }
-            if (count++ >= this.finalWidth) {
+            if (count++ >= value) {
                 window.clearInterval(intervalId)
             }
         }, 1);
@@ -58,7 +67,7 @@ class GrowingBar extends Component {
                         color: color,
                         fontWeight: 'bold'
                     }}
-                    >{this.state.width} %
+                >{this.state.width} %
                 </div>
             </div>
         );

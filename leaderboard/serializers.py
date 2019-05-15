@@ -1,8 +1,9 @@
-from leaderboard.emails import send_game_results_email
+from django.conf import settings
+from leaderboard.emails import send_game_results_email, send_templated_mail_wrapper
 from leaderboard.models import GameResult, Player, Token
+from leaderboard.push import push_players
 from rest_framework.fields import DateField
 from rest_framework.serializers import ModelSerializer, ListSerializer
-from templated_email import send_templated_mail
 
 
 class FilteredGameResultsSerializer(ListSerializer):
@@ -29,6 +30,8 @@ class GameResultsSerializer(ModelSerializer):
             game_result=game_result,
             token=token
         )
+        if not settings.SEND_EMAILS:
+            push_players()
         return game_result
 
     class Meta:
@@ -42,7 +45,7 @@ class PlayerSerializer(ModelSerializer):
 
     def create(self, validated_data):
         if validated_data['email'] is not None:
-            send_templated_mail(
+            send_templated_mail_wrapper(
                 template_name='account_created',
                 from_email='cyberstories@gmail.com',
                 recipient_list=[validated_data['email']],

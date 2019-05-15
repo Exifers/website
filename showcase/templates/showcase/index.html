@@ -61,8 +61,8 @@
 
 {% block javascript %}
     <script>
-        const csrf_token = '{{ csrf_token }}';
-        const form_errors = '{{ form.errors }}';
+        let csrf_token = '{{ csrf_token }}';
+        let form_errors = '{{ form.errors }}';
 
         {% if request.user.is_authenticated %}
             const user_authenticated = true;

@@ -24,6 +24,7 @@ class LeaderboardConsumer(WebsocketConsumer):
 
     # Receive message from WebSocket
     def receive(self, text_data):
+        print('WS:receiving from ws')
         message = text_data
 
         # Send message to room group
@@ -37,6 +38,7 @@ class LeaderboardConsumer(WebsocketConsumer):
 
     # Receive message from room group
     def chat_message(self, event):
+        print('WS: receiving from group')
         message = event['message']
 
         # Send message to WebSocket

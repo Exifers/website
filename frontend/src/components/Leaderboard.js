@@ -101,8 +101,8 @@ class Leaderboard extends Component {
                         .filter(filter)
                         .filter(entry => entry.gameResults.length > 0)
                         .sort(sort)
-                        .map((entry, index) => (
-                            <div className={'row'} key={index}>
+                        .map((entry) => (
+                            <div className={'row'} key={entry.pseudo}>
                                 <div
                                     className={classNames('col-sm p-1', this.props.classes.cell)}>
                                     <NavLink to={`/leaderboard/?player_id=${entry.id}`}
@@ -111,7 +111,7 @@ class Leaderboard extends Component {
                                     </NavLink>
                                 </div>
                                 <div className={classNames('col-sm p-1', this.props.classes.cell)}>
-                                    <GrowingBar value={globalScore(entry)} className={this.props.classes.bar}/>
+                                    <GrowingBar value={(() => {console.log(globalScore(entry)); return globalScore(entry);})()} className={this.props.classes.bar}/>
                                 </div>
                                 <div className={classNames('col-sm p-1', this.props.classes.cell)}>
                                     {entry.gameResults.length > 10 ? '10+' : entry.gameResults.length}

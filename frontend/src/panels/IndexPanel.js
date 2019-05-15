@@ -48,8 +48,7 @@ class IndexPanel extends Component {
                 <PitchTitle className={classNames("mx-auto", this.props.classes.title)}>A serious game in virtual
                     reality about cybersecurity !</PitchTitle>
                 <iframe className={classNames("m-5", this.props.classes.video)} width="560" height="315"
-                        src="https://www.youtube.com/embed/6yNYVJUmPN8"
-                        frameBorder="0"
+                        src="https://www.youtube.com/embed/hyDthmfeCDk" frameBorder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen/>
 

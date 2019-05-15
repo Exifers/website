@@ -1,5 +1,6 @@
 import uuid
 
+from django.conf import settings
 from django.db import models
 
 
@@ -21,7 +22,7 @@ class GameResult(models.Model):
 
     date = models.DateField(auto_now_add=True)
 
-    visible = models.BooleanField(default=False)
+    visible = models.BooleanField(default=settings.SCORES_VISIBLE_BY_DEFAULT)
 
     def __str__(self):
         return self.player.pseudo + '_' + str(self.date)

@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import withStyles from "react-jss";
 import {compose} from "redux";
 import NavLink from "react-router-dom/es/NavLink";
+import {Field, Form, Formik} from "formik";
+import {valuesToFormData} from "../utils/formData";
 
 const styles = {
     wrapper: {
@@ -15,21 +17,35 @@ class LoginPanel extends Component {
     render() {
         return (
             <div className={this.props.classes.wrapper}>
-                {form_errors ? <p dangerouslySetInnerHTML={{__html:form_errors}}/> : null}
-                <form className={this.props.classes.form} method={'POST'}>
-                    <input type={'hidden'} value={csrf_token} name={'csrfmiddlewaretoken'}/>
-                    <div className="form-group">
-                        <label htmlFor="usernameInput">Username</label>
-                        <input type="text" className="form-control" id="usernameInput"
-                               placeholder="Username" autoFocus name={'username'}/>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="passwordInput">Password</label>
-                        <input type="password" className="form-control" id="passwordInput"
-                               placeholder="Password" name={'password'}/>
-                    </div>
-                    <button type="submit" className="btn btn-dark">Login</button>
-                </form>
+                <Formik
+                    onSubmit={(values, actions) => {
+                        values['csrfmiddlewaretoken'] = csrf_token;
+                        fetch('/accounts/login/', {
+                            method: 'POST',
+                            body: valuesToFormData(values)
+                        })
+                            .then(response => response.json())
+                            .then(json => {
+                                actions.setSubmitting(false);
+                            })
+                            .catch(error => {
+                                console.log(error);
+                                actions.setSubmitting(false);
+                                actions.setErrors(error);
+                            });
+                    }}
+                    >
+                    {({errors, status, touched, isSubmitting}) => (
+                        <Form className={this.props.classes.form}>
+                            <Field type="text" className="form-control" id="usernameInput"
+                                   placeholder="Username" autoFocus name={'username'}/>
+                            {errors.username && touched.username && <div>{errors.username}</div>}
+                            <Field type="password" className="form-control" id="passwordInput"
+                                   placeholder="Password" name={'password'}/>
+                            <button type="submit" disabled={isSubmitting} className="btn btn-dark">Login</button>
+                        </Form>
+                    )}
+                </Formik>
                 <NavLink to={'/accounts/password_reset/'}>Lost password ?</NavLink>
             </div>
         );
