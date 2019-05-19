@@ -1,0 +1,6 @@
+before_script:
+  - apt-get update -qq && apt-get install -y -qq npm
+
+rspec:
+  script:
+    - cd frontend && npm test
