@@ -1,15 +1,9 @@
-before_script:
-  # frontend prerequisites
-  - apt-get install -y curl
-  - curl -sL https://deb.nodesource.com/setup_10.x | bash - # npm and nodejs PPA
-  - apt-get install nodejs # contains nodejs and npm
-
-  # backend prerequisites
-  - apt-get install -y python3-pip
-  - pip3 install -r requirements.txt
 
 frontend-tests:
   script:
+    - apt-get install -y curl
+    - curl -sL https://deb.nodesource.com/setup_10.x | bash - # npm and nodejs PPA
+    - apt-get install nodejs # contains nodejs and npm
     - cd frontend
     - npm install jest
     - npm run test
@@ -17,4 +11,6 @@ frontend-tests:
 
 backend-tests:
   script:
+    - apt-get install -y python3-pip
+    - pip3 install -r requirements.txt
     - python3 manage.py test 
