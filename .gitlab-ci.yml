@@ -5,6 +5,7 @@ before_script:
   - apt-get install nodejs # contains nodejs and npm
 
   # backend prerequisites
+  - apt-get install -y python3-pip
   - pip3 install -r requirements.txt
 
 frontend-tests:
