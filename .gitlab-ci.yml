@@ -1,8 +1,8 @@
 before_script:
   - apt-get install -y curl
-  - curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+  - curl -sL https://deb.nodesource.com/setup_10.x | -E bash - # npm and nodejs PPA
   - apt-get install nodejs
 
-rspec:
+test:
   script:
     - cd frontend && npm test
