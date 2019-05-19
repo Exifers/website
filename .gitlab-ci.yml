@@ -1,6 +1,6 @@
 before_script:
   - apt-get install -y curl
-  - curl -sL https://deb.nodesource.com/setup_10.x | -E bash - # npm and nodejs PPA
+  - curl -sL https://deb.nodesource.com/setup_10.x | bash - # npm and nodejs PPA
   - apt-get install nodejs
 
 test:
