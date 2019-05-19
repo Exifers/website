@@ -1,6 +1,7 @@
 
 frontend-tests:
   script:
+    - apt-get update
     - apt-get install -y curl
     - curl -sL https://deb.nodesource.com/setup_10.x | bash - # npm and nodejs PPA
     - apt-get install nodejs # contains nodejs and npm
@@ -11,6 +12,7 @@ frontend-tests:
 
 backend-tests:
   script:
+    - apt-get update
     - apt-get install -y python3-pip
     - pip3 install -r requirements.txt
     - python3 manage.py test 
