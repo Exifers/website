@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fe802f5-7943-4337-861d-4b9b59a84a8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/GameMasterPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/panels/GameMasterPanel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/utils/formData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leaderboard/decorators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/business_settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/webpack-stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/webpack-stats.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/bundles/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Leaderboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/elements/GrowingBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/GrowingBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/hocs/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hocs/async.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/GameMasterTokenPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/GameMasterTokenPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/IndexPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/IndexPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/LoginPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/LoginPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leaderboard/consumers.py" beforeDir="false" afterPath="$PROJECT_DIR$/leaderboard/consumers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leaderboard/emails.py" beforeDir="false" afterPath="$PROJECT_DIR$/leaderboard/emails.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leaderboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/leaderboard/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leaderboard/push.py" beforeDir="false" afterPath="$PROJECT_DIR$/leaderboard/push.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leaderboard/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/leaderboard/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/showcase/templates/showcase/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/showcase/templates/showcase/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/panels/IndexPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="49" column="78" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
+            <state relative-caret-position="375">
+              <caret line="47" column="98" selection-start-line="47" selection-start-column="98" selection-end-line="47" selection-end-column="98" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -533,16 +509,15 @@
       <workItem from="1557563654002" duration="572000" />
       <workItem from="1557584819316" duration="2301000" />
       <workItem from="1557689858288" duration="4237000" />
-      <workItem from="1557903285188" duration="10014000" />
+      <workItem from="1557903285188" duration="10318000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195451000" />
+    <option name="totallyTimeSpent" value="195755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24759872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -983,8 +958,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/panels/IndexPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="49" column="78" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
+        <state relative-caret-position="375">
+          <caret line="47" column="98" selection-start-line="47" selection-start-column="98" selection-end-line="47" selection-end-column="98" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
