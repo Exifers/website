@@ -55,6 +55,7 @@ LOCAL_DB = True
 # Application definition
 
 INSTALLED_APPS = [
+    'channels',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -64,7 +65,6 @@ INSTALLED_APPS = [
     'django_extensions',
     'webpack_loader',
     'rest_framework',
-    'channels',
 ]
 
 MY_APPS = [
@@ -216,11 +216,12 @@ TEMPLATED_EMAIL_TEMPLATE_DIR = 'emails/'
 
 # Websocket Django channels
 ASGI_APPLICATION = "mysite.routing.application"
+REDIS_HOST = (os.environ["REDIS_URL"], 14909) if PRODUCTION else ('127.0.0.1', 6379)
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            "hosts": [('127.0.0.1', 6379)],
+            "hosts": [REDIS_HOST],
         },
     },
 }
