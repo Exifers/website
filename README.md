@@ -34,10 +34,10 @@ The go to http://localhost:8000 to see the website.
 # Licence
 Epita
 
-# Authors
-Emmanuel Meric de Bellefon
-Axel Vigny
-Laxman Thayalan
-Maxime Lacombe
+# Contributors
+- Emmanuel Meric de Bellefon
+- Axel Vigny
+- Laxman Thayalan
+- Maxime Lacombe
 
 Epita, MTI, promo 2020
