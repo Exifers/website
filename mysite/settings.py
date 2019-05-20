@@ -216,12 +216,11 @@ TEMPLATED_EMAIL_TEMPLATE_DIR = 'emails/'
 
 # Websocket Django channels
 ASGI_APPLICATION = "mysite.routing.application"
-REDIS_HOST = (os.environ["REDIS_URL"], 14909) if PRODUCTION else ('127.0.0.1', 6379)
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            "hosts": [REDIS_HOST],
+            "hosts": [os.environ.get('REDIS_URL', 'redis://localhost:6379')],
         },
     },
 }
