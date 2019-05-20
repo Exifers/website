@@ -17,11 +17,6 @@ from mysite.business_settings import *
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
-sentry_sdk.init(
-    dsn="https://cd73368f734a46e29d2320949f2bdf7f@sentry.io/1463018",
-    integrations=[DjangoIntegration()]
-)
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -39,6 +34,12 @@ if 'PRODUCTION' in os.environ:
 if PRODUCTION:
     SECURE_SSL_REDIRECT = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+if PRODUCTION:
+    sentry_sdk.init(
+        dsn="https://cd73368f734a46e29d2320949f2bdf7f@sentry.io/1463018",
+        integrations=[DjangoIntegration()]
+    )
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = not PRODUCTION

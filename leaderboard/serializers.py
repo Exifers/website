@@ -16,6 +16,7 @@ class GameResultsSerializer(ModelSerializer):
     date = DateField(format="%Y/%m/%d")
 
     def create(self, validated_data):
+        raise "Sentry Test"
         game_result = super(GameResultsSerializer, self).create(validated_data)
         token = Token.objects.create(game_result=game_result)
         send_game_results_email(
