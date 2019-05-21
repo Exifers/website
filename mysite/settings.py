@@ -188,7 +188,7 @@ GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
 WEBPACK_LOADER = {
     'DEFAULT': {
         'CACHE': not DEBUG,
-        'BUNDLE_DIR_NAME': 'bundles/', # must end with slash
+        'BUNDLE_DIR_NAME': 'bundles/',  # must end with slash
         'STATS_FILE': os.path.join(
             BASE_DIR,
             'frontend/assets/webpack-stats.json'

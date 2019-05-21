@@ -22,4 +22,4 @@ backend-lint:
     - apt-get update
     - apt-get install -y python3-pip
     - pip3 install -r requirements.txt
-    - find . -name  '*.py' -not -path './env/*' -not -path '*/migrations/*' -exec flake8 {} \+
+    - find . -name  '*.py' -not -path './env/*' -not -path '*/migrations/*' -exec flake8 --max-line-length=120 {} \+

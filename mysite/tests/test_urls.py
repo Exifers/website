@@ -72,4 +72,3 @@ class UrlsTests(TestCase):
     def test_register(self):
         response = self.client.get('/accounts/register/')
         self.assertEqual(response.status_code, 200)
-

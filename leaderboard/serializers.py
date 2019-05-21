@@ -1,4 +1,3 @@
-from django.conf import settings
 from leaderboard.emails import send_game_results_email, send_templated_mail_wrapper
 from leaderboard.models import GameResult, Player, Token
 from leaderboard.push import push_players
