@@ -15,4 +15,11 @@ backend-tests:
     - apt-get update
     - apt-get install -y python3-pip
     - pip3 install -r requirements.txt
-    - python3 manage.py test 
+    - python3 manage.py test
+
+backend-lint:
+  script:
+    - apt-get update
+    - apt-get install -y python3-pip
+    - pip3 install -r requirements.txt
+    - find . -name  '*.py' -not -path './env/*' -not -path '*/migrations/*' -exec flake8 {} \+
