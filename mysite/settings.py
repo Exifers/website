@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 import dj_database_url
 from google.oauth2 import service_account
-from mysite.business_settings import *
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
@@ -43,6 +42,8 @@ if PRODUCTION:
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = not PRODUCTION
+
+SEND_EMAILS = True
 
 # SECURITY WARNING: App Engine's security features ensure that it is safe to
 # have ALLOWED_HOSTS = ['*'] when the app is deployed. If you deploy a Django
