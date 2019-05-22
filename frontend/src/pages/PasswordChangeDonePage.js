@@ -1,31 +1,31 @@
-import React, {Component} from "react";
-import withStyles from "react-jss";
-import {compose} from "redux";
-import BasicLayout from "../layouts/BasicLayout";
-import HeaderPanel from "../panels/HeaderPanel";
-import FooterPanel from "../panels/FooterPanel";
-import NavigationBarPanel from "../panels/NavigationBarPanel";
-import PasswordChangeDonePanel from "../panels/PasswordChangeDonePanel";
+import React, { Component } from 'react'
+import withStyles from 'react-jss'
+import { compose } from 'redux'
+import BasicLayout from '../layouts/BasicLayout'
+import HeaderPanel from '../panels/HeaderPanel'
+import FooterPanel from '../panels/FooterPanel'
+import NavigationBarPanel from '../panels/NavigationBarPanel'
+import PasswordChangeDonePanel from '../panels/PasswordChangeDonePanel'
 
-const styles = {};
+const styles = {}
 
 class PasswordChangeDonePage extends Component {
-    render() {
-        return (
-            <BasicLayout
-                header={<HeaderPanel/>}
-                footer={<FooterPanel/>}
-                navbar={<NavigationBarPanel/>}
-                content={<PasswordChangeDonePanel/>}
-                />
-        );
-    }
+  render () {
+    return (
+      <BasicLayout
+        header={<HeaderPanel/>}
+        footer={<FooterPanel/>}
+        navbar={<NavigationBarPanel/>}
+        content={<PasswordChangeDonePanel/>}
+      />
+    )
+  }
 }
 
-PasswordChangeDonePage.propTypes = {};
+PasswordChangeDonePage.propTypes = {}
 
-PasswordChangeDonePage.defaultProps = {};
+PasswordChangeDonePage.defaultProps = {}
 
 export default compose(
-    withStyles(styles)
-)(PasswordChangeDonePage);
+  withStyles(styles)
+)(PasswordChangeDonePage)

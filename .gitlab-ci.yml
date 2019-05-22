@@ -7,6 +7,7 @@ frontend-tests:
     - apt-get install nodejs # contains nodejs and npm
     - cd frontend
     - npm install jest
+    - npm run build
     - npm run test
     - cd ..
 

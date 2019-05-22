@@ -2,8 +2,96 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fe802f5-7943-4337-861d-4b9b59a84a8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/emmanuel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/emmanuel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/bundles/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/actions/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/actions/leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/actions/leaderboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ArticleHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ArticleHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ArticleInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ArticleInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ArticleSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ArticleSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ArticleWarning.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ArticleWarning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/FeatureCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/FeatureCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/GameResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/GameResult.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/IndexPresentationCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/IndexPresentationCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/InnerFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/InnerFooter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/LanguageSelectionDropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LanguageSelectionDropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Leaderboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavigationBarLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavigationBarLink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavigationBarLinkGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavigationBarLinkGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavigationBarSubLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavigationBarSubLink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavigationBarSubLinkGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavigationBarSubLinkGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/PlayerDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PlayerDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/SearchInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/SearchInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/elements/FacebookLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/FacebookLink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/elements/GrowingBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/GrowingBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/elements/LoginRegisterLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/LoginRegisterLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/elements/PitchTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/PitchTitle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/elements/ProfileDropDown.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/ProfileDropDown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/elements/TwitterLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/TwitterLink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/elements/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/buttons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/hocs/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hocs/async.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/AdsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/AdsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/DocumentationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/DocumentationPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/DownloadPage2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/DownloadPage2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/GameMasterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/GameMasterPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/GameMasterTokenPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/GameMasterTokenPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/GameResultVisiblePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/GameResultVisiblePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/IndexPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/IndexPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/LeaderboardPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/LeaderboardPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/NotFoundPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/NotFoundPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordChangeDonePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordChangeDonePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordChangePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordChangePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordResetCompletePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordResetCompletePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordResetConfirmPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordResetConfirmPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordResetDonePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordResetDonePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordResetPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordResetPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/RegisterPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/VirusPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/VirusPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/WifiPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/WifiPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/AdsPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/AdsPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/FooterPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/FooterPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/GameMasterPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/GameMasterPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/GameMasterTokenPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/GameMasterTokenPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/GameResultVisiblePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/GameResultVisiblePanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/IndexPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/IndexPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/LoginPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/LoginPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/NavigationBarPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/NavigationBarPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/NotfoundPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/NotfoundPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordChangeDonePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordChangeDonePanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordChangePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordChangePanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetCompletePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordResetCompletePanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetDonePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordResetDonePanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/RegisterPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/RegisterPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/VirusPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/VirusPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/WifiPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/WifiPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panes/LeaderboardPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/LeaderboardPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panes/PresentationPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/PresentationPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/reducer/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducer/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/reducer/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducer/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/color.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/color.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/formData.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/formData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/url.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/url.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tests/actions/actions.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tests/actions/actions.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tests/reducer/ajax.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tests/reducer/ajax.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tests/utils/color.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tests/utils/color.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tests/utils/url.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tests/utils/url.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,102 +119,94 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/leaderboard/urls.py">
+        <entry file="file://$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+            <state relative-caret-position="535">
+              <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordChangePanel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordPanel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/panels/VirusPanel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="815">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/store/store.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/leaderboard/serializers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="190" column="39" selection-start-line="190" selection-start-column="39" selection-end-line="190" selection-end-column="39" />
-              <folding>
-                <element signature="e#307#316#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/tests/test_urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="785">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/tests/actions/actions.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#98#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/tests/reducer/ajax.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/tests/utils/color.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-545">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/tests/utils/url.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/utils/formData.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/utils/url.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/utils/color.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="630">
+              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="815">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
             </state>
           </provider>
         </entry>
@@ -148,7 +228,6 @@
       <find>this.state</find>
       <find>this</find>
       <find>'</find>
-      <find>&quot;</find>
       <find>OnClick</find>
       <find>style</find>
       <find>parseColor</find>
@@ -165,17 +244,18 @@
       <find>this.props.valu</find>
       <find>player</find>
       <find>follow</find>
+      <find>&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>&quot;</replace>
-      <replace>'</replace>
       <replace>formatColor</replace>
       <replace>toEqual2</replace>
       <replace>}).</replace>
       <replace>).</replace>
       <replace>));</replace>
       <replace>self.player</replace>
+      <replace>'</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/frontend/src</dir>
@@ -188,57 +268,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordResetCompletePanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/LeaderboardPage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/LoginPage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/NotFoundPage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/PasswordChangeDonePage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/PasswordChangePage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/PasswordPage.js" />
         <option value="$PROJECT_DIR$/frontend/src/pages/PasswordResetCompletePage.js" />
-        <option value="$PROJECT_DIR$/frontend/src/elements/LoginRegisterLinks.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/pages/GameMasterTokenPage.js" />
-        <option value="$PROJECT_DIR$/frontend/src/elements/ProfileDropDown.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js" />
-        <option value="$PROJECT_DIR$/register/models.py" />
-        <option value="$PROJECT_DIR$/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/frontend/src/components/GameResult.js" />
-        <option value="$PROJECT_DIR$/frontend/src/components/PlayerDetails.js" />
-        <option value="$PROJECT_DIR$/register/views.py" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/PasswordResetConfirmPage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/PasswordResetDonePage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/PasswordResetPage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/ProfilePage.js" />
         <option value="$PROJECT_DIR$/frontend/src/pages/RegisterPage.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/RegisterPanel.js" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/leaderboard/templates/emails/account_created.email" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js" />
-        <option value="$PROJECT_DIR$/showcase/templates/showcase/index.html" />
-        <option value="$PROJECT_DIR$/frontend/src/utils/formData.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/LoginPanel.js" />
-        <option value="$PROJECT_DIR$/mysite/business_settings.py" />
-        <option value="$PROJECT_DIR$/leaderboard/emails.py" />
-        <option value="$PROJECT_DIR$/leaderboard/decorators.py" />
-        <option value="$PROJECT_DIR$/leaderboard/consumers.py" />
-        <option value="$PROJECT_DIR$/frontend/src/hocs/async.js" />
-        <option value="$PROJECT_DIR$/frontend/src/components/Leaderboard.js" />
-        <option value="$PROJECT_DIR$/frontend/src/elements/GrowingBar.js" />
-        <option value="$PROJECT_DIR$/frontend/src/index.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/GameMasterTokenPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/pages/GameMasterPage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/VirusPage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/WifiPage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/AdsPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/FooterPanel.js" />
         <option value="$PROJECT_DIR$/frontend/src/panels/GameMasterPanel.js" />
         <option value="$PROJECT_DIR$/frontend/src/panels/IndexPanel.js" />
-        <option value="$PROJECT_DIR$/register/tests/tests_urls.py" />
-        <option value="$PROJECT_DIR$/register/tests/test_urls.py" />
-        <option value="$PROJECT_DIR$/leaderboard/push.py" />
-        <option value="$PROJECT_DIR$/leaderboard/views.py" />
-        <option value="$PROJECT_DIR$/leaderboard/tests/test_urls.py" />
-        <option value="$PROJECT_DIR$/showcase/tests/urls.py" />
-        <option value="$PROJECT_DIR$/showcase/tests/test_urls.py" />
-        <option value="$PROJECT_DIR$/leaderboard/models.py" />
-        <option value="$PROJECT_DIR$/showcase/urls.py" />
-        <option value="$PROJECT_DIR$/register/urls.py" />
-        <option value="$PROJECT_DIR$/register/admin.py" />
-        <option value="$PROJECT_DIR$/game/views.py" />
-        <option value="$PROJECT_DIR$/game/tests.py" />
-        <option value="$PROJECT_DIR$/game/models.py" />
-        <option value="$PROJECT_DIR$/game/admin.py" />
-        <option value="$PROJECT_DIR$/leaderboard/urls.py" />
-        <option value="$PROJECT_DIR$/leaderboard/serializers.py" />
-        <option value="$PROJECT_DIR$/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/mysite/tests/test_urls.py" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/LoginPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/NavigationBarPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordChangeDonePanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordResetCompletePanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordResetDonePanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/RegisterPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/WifiPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/LeaderboardPane.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/PresentationPane.js" />
+        <option value="$PROJECT_DIR$/frontend/src/reducer/ajax.js" />
+        <option value="$PROJECT_DIR$/frontend/src/reducer/reducer.js" />
+        <option value="$PROJECT_DIR$/frontend/src/utils/formData.js" />
+        <option value="$PROJECT_DIR$/frontend/src/utils/url.js" />
+        <option value="$PROJECT_DIR$/frontend/tests/actions/actions.test.js" />
+        <option value="$PROJECT_DIR$/frontend/tests/reducer/ajax.test.js" />
+        <option value="$PROJECT_DIR$/frontend/tests/utils/color.test.js" />
+        <option value="$PROJECT_DIR$/frontend/tests/utils/url.test.js" />
+        <option value="$PROJECT_DIR$/frontend/src/hocs/async.js" />
+        <option value="$PROJECT_DIR$/frontend/src/index.js" />
+        <option value="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/GameMasterTokenPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/GameResultVisiblePanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/NotfoundPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordChangePanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/VirusPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/store/store.js" />
+        <option value="$PROJECT_DIR$/frontend/src/utils/color.js" />
       </list>
     </option>
   </component>
@@ -276,6 +356,99 @@
               <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="elements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hocs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="panels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="panes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reducer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -520,17 +693,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/node_modules/eslint" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="" />
-    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/frontend/node_modules/eslint" />
+    <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/frontend/node_modules/eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -624,23 +797,25 @@
       <workItem from="1557903285188" duration="10318000" />
       <workItem from="1558259872619" duration="1107000" />
       <workItem from="1558371824475" duration="4898000" />
-      <workItem from="1558386626862" duration="8537000" />
+      <workItem from="1558386626862" duration="10212000" />
+      <workItem from="1558456491809" duration="2539000" />
+      <workItem from="1558508736517" duration="11869000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210297000" />
+    <option name="totallyTimeSpent" value="226380000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="7" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.255603" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26093918" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3293348" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -662,20 +837,70 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/GameMasterTokenPanel.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/LeaderboardPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="41" column="71" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/index.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/LoginPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="51" column="96" selection-start-line="51" selection-start-column="96" selection-end-line="51" selection-end-column="96" />
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/NotFoundPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordChangeDonePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordChangePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetCompletePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -684,22 +909,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetConfirmPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetDonePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/GameMasterPage.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/ProfilePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/RegisterPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/VirusPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/WifiPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/AdsPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/FooterPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -708,268 +999,143 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/panels/GameMasterPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/GameMasterTokenPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/elements/GrowingBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="15">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/panels/IndexPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/tests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/tests.py" />
-    <entry file="file://$PROJECT_DIR$/leaderboard/tests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/test/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="531" column="8" selection-start-line="531" selection-start-column="8" selection-end-line="531" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/business_settings.py" />
-    <entry file="file://$PROJECT_DIR$/leaderboard/emails.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leaderboard/endpoints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="790">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leaderboard/push.py">
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/LoginPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        <state relative-caret-position="790">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leaderboard/decorators.py">
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/NavigationBarPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leaderboard/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="775">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/test/testcases.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="972" column="6" selection-start-line="972" selection-start-column="6" selection-end-line="972" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/tests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/contrib/auth/signals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/contrib/auth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/contrib/auth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="266" column="42" selection-start-line="266" selection-start-column="42" selection-end-line="266" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/contrib/auth/tokens.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leaderboard/tests/test_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/showcase/tests/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/showcase/tests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/tests/test_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/showcase/tests/test_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leaderboard/models.py">
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordChangeDonePanel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/showcase/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leaderboard/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leaderboard/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordResetCompletePanel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="190" column="39" selection-start-line="190" selection-start-column="39" selection-end-line="190" selection-end-column="39" />
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="e#307#316#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/tests/test_urls.py">
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordResetDonePanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="785">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/RegisterPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/WifiPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/LeaderboardPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/PresentationPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/reducer/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/reducer/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/utils/formData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/utils/url.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/tests/actions/actions.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="90">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
           <folding>
             <element signature="e#0#98#0" expanded="true" />
           </folding>
@@ -978,8 +1144,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/tests/reducer/ajax.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="475">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
@@ -988,25 +1154,139 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/tests/utils/color.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-545">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="-215">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/utils/formData.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/tests/utils/url.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        <state relative-caret-position="300">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/utils/url.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/hocs/async.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="555">
+          <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/GameMasterTokenPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/GameResultVisiblePanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/NotfoundPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordChangePanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panels/VirusPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/store/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/utils/color.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
         </state>
       </provider>
     </entry>

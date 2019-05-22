@@ -1,31 +1,31 @@
-import React, {Component} from "react";
-import withStyles from "react-jss";
-import {compose} from "redux";
-import NavigationBarPanel from "../panels/NavigationBarPanel";
-import FooterPanel from "../panels/FooterPanel";
-import HeaderPanel from "../panels/HeaderPanel";
-import BasicLayout from "../layouts/BasicLayout";
-import GameMasterTokenPanel from "../panels/GameMasterTokenPanel";
+import React, { Component } from 'react'
+import withStyles from 'react-jss'
+import { compose } from 'redux'
+import NavigationBarPanel from '../panels/NavigationBarPanel'
+import FooterPanel from '../panels/FooterPanel'
+import HeaderPanel from '../panels/HeaderPanel'
+import BasicLayout from '../layouts/BasicLayout'
+import GameMasterTokenPanel from '../panels/GameMasterTokenPanel'
 
-const styles = {};
+const styles = {}
 
 class GameMasterTokenPage extends Component {
-    render() {
-        return (
-            <BasicLayout
-                header={<HeaderPanel/>}
-                content={<GameMasterTokenPanel/>}
-                navbar={<NavigationBarPanel/>}
-                footer={<FooterPanel/>}
-            />
-        );
-    }
+  render () {
+    return (
+      <BasicLayout
+        header={<HeaderPanel/>}
+        content={<GameMasterTokenPanel/>}
+        navbar={<NavigationBarPanel/>}
+        footer={<FooterPanel/>}
+      />
+    )
+  }
 }
 
-GameMasterTokenPage.propTypes = {};
+GameMasterTokenPage.propTypes = {}
 
-GameMasterTokenPage.defaultProps = {};
+GameMasterTokenPage.defaultProps = {}
 
 export default compose(
-    withStyles(styles)
-)(GameMasterTokenPage);
+  withStyles(styles)
+)(GameMasterTokenPage)

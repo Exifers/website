@@ -4,9 +4,9 @@
  * @return {FormData}
  */
 export const valuesToFormData = (values) => {
-    let formData = new FormData();
-    for (let key in values) {
-        formData.append(key, values[key]);
-    }
-    return formData;
-};
+  let formData = new FormData()
+  for (let key in values) {
+    formData.append(key, values[key])
+  }
+  return formData
+}

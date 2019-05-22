@@ -1,31 +1,31 @@
-import React, {Component} from "react";
-import withStyles from "react-jss";
-import {compose} from "redux";
-import HeaderPanel from "../panels/HeaderPanel";
-import FooterPanel from "../panels/FooterPanel";
-import NavigationBarPanel from "../panels/NavigationBarPanel";
-import LoginPanel from "../panels/LoginPanel";
-import BasicLayout from "../layouts/BasicLayout";
+import React, { Component } from 'react'
+import withStyles from 'react-jss'
+import { compose } from 'redux'
+import HeaderPanel from '../panels/HeaderPanel'
+import FooterPanel from '../panels/FooterPanel'
+import NavigationBarPanel from '../panels/NavigationBarPanel'
+import LoginPanel from '../panels/LoginPanel'
+import BasicLayout from '../layouts/BasicLayout'
 
-const styles = {};
+const styles = {}
 
 class LoginPage extends Component {
-    render() {
-        return (
-            <BasicLayout
-                header={<HeaderPanel/>}
-                content={<LoginPanel/>}
-                navbar={<NavigationBarPanel/>}
-                footer={<FooterPanel/>}
-            />
-        );
-    }
+  render () {
+    return (
+      <BasicLayout
+        header={<HeaderPanel/>}
+        content={<LoginPanel/>}
+        navbar={<NavigationBarPanel/>}
+        footer={<FooterPanel/>}
+      />
+    )
+  }
 }
 
-LoginPage.propTypes = {};
+LoginPage.propTypes = {}
 
-LoginPage.defaultProps = {};
+LoginPage.defaultProps = {}
 
 export default compose(
-    withStyles(styles)
-)(LoginPage);
+  withStyles(styles)
+)(LoginPage)
