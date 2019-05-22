@@ -9,18 +9,18 @@ const styles = {
   }
 }
 
-class PasswordResetDonePanel extends Component {
+class PasswordChangeDonePane extends Component {
   render () {
     return (
-      <div className={this.props.classes.wrapper}>An email has been sent to you to reset your password.</div>
+      <div className={this.props.classes.wrapper}>Password change done !</div>
     )
   }
 }
 
-PasswordResetDonePanel.propTypes = {}
+PasswordChangeDonePane.propTypes = {}
 
-PasswordResetDonePanel.defaultProps = {}
+PasswordChangeDonePane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(PasswordResetDonePanel)
+)(PasswordChangeDonePane)

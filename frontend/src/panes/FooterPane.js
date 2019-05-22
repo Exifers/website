@@ -14,7 +14,7 @@ const styles = {
   }
 }
 
-class FooterPanel extends Component {
+class FooterPane extends Component {
   render () {
     return (
       <div className={classNames(this.props.classes.footerPanel, 'cyberBackground')}>
@@ -26,4 +26,4 @@ class FooterPanel extends Component {
 
 export default compose(
   withStyles(styles)
-)(FooterPanel)
+)(FooterPane)

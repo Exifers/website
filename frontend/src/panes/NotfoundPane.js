@@ -14,7 +14,7 @@ const styles = {
   }
 }
 
-class NotfoundPanel extends Component {
+class NotfoundPane extends Component {
   render () {
     return (
       <div className={this.props.classes.wrapper}>
@@ -27,10 +27,10 @@ class NotfoundPanel extends Component {
   }
 }
 
-NotfoundPanel.propTypes = {}
+NotfoundPane.propTypes = {}
 
-NotfoundPanel.defaultProps = {}
+NotfoundPane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(NotfoundPanel)
+)(NotfoundPane)

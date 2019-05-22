@@ -15,7 +15,7 @@ const styles = {
   }
 }
 
-class ProfilePanel extends Component {
+class ProfilePane extends Component {
   render () {
     return (
       <div className={this.props.classes.wrapper}>
@@ -50,10 +50,10 @@ class ProfilePanel extends Component {
   }
 }
 
-ProfilePanel.propTypes = {}
+ProfilePane.propTypes = {}
 
-ProfilePanel.defaultProps = {}
+ProfilePane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(ProfilePanel)
+)(ProfilePane)

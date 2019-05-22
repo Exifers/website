@@ -2,16 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fe802f5-7943-4337-861d-4b9b59a84a8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/hocs/layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/LoginPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/LoginPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordChangePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordChangePanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/showcase/templates/showcase/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/showcase/templates/showcase/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/bundles/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/IndexPresentationCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/IndexPresentationCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/elements/ProfileDropDown.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/ProfileDropDown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/AdsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/AdsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/DocumentationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/DocumentationPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/DownloadPage2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/DownloadPage2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/GameMasterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/GameMasterPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/GameMasterTokenPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/GameMasterTokenPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/GameResultVisiblePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/GameResultVisiblePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/IndexPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/IndexPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/LeaderboardPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/LeaderboardPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/NotFoundPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/NotFoundPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordChangeDonePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordChangeDonePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordChangePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordChangePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordResetCompletePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordResetCompletePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordResetConfirmPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordResetConfirmPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordResetDonePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordResetDonePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordResetPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordResetPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/RegisterPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/VirusPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/VirusPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/WifiPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/WifiPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/AdsPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/AdsPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/DownloadPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/FooterPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/FooterPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/GameMasterPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/GameMasterPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/GameMasterTokenPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/GameMasterTokenPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/GameResultVisiblePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/GameResultVisiblePane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/HeaderPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/IndexPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/IndexPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/LoginPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/LoginPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/NavigationBarPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/NavigationBarPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/NotfoundPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/NotfoundPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordChangeDonePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/PasswordChangeDonePane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordChangePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/PasswordChangePane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/PasswordPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetCompletePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/PasswordResetCompletePane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/PasswordResetConfirmPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetDonePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/PasswordResetDonePane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/PasswordResetPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/ProfilePane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/RegisterPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/RegisterPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/VirusPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/VirusPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panels/WifiPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/WifiPane.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,67 +78,106 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/components/SearchInput.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetCompletePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#74#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetConfirmPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#72#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetDonePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#66#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/showcase/templates/showcase/index.html">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="68" column="59" lean-forward="true" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/pages/DownloadPage2.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/ProfilePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/RegisterPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/VirusPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/WifiPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -108,28 +186,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/DocumentationPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="32" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/utils/color.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+            <state relative-caret-position="45">
+              <caret line="3" column="62" lean-forward="true" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,8 +232,8 @@
       <find>follow</find>
       <find>&quot;</find>
       <find>form_errors</find>
-      <find>username</find>
       <find>csrf</find>
+      <find>username</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -194,6 +257,44 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/AdsPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/DownloadPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/FooterPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/GameMasterPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/GameMasterTokenPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/GameResultVisiblePanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/HeaderPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/IndexPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/LoginPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/NavigationBarPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/NotfoundPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/PasswordChangeDonePanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/PasswordChangePanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/PasswordPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/PasswordResetCompletePanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/PasswordResetConfirmPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/PasswordResetDonePanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/PasswordResetPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/ProfilePanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/RegisterPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/VirusPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/WifiPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" />
+        <option value="$PROJECT_DIR$/frontend/src/hocs/layout.js" />
+        <option value="$PROJECT_DIR$/frontend/src/index.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/AdsPage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/elements/ProfileDropDown.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/HeaderPane.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/DownloadPage2.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/GameMasterPage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/GameMasterTokenPage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/GameResultVisiblePage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/IndexPage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/LeaderboardPage.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/LoginPage.js" />
         <option value="$PROJECT_DIR$/frontend/src/pages/NotFoundPage.js" />
         <option value="$PROJECT_DIR$/frontend/src/pages/PasswordChangeDonePage.js" />
         <option value="$PROJECT_DIR$/frontend/src/pages/PasswordChangePage.js" />
@@ -206,45 +307,7 @@
         <option value="$PROJECT_DIR$/frontend/src/pages/RegisterPage.js" />
         <option value="$PROJECT_DIR$/frontend/src/pages/VirusPage.js" />
         <option value="$PROJECT_DIR$/frontend/src/pages/WifiPage.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/AdsPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/FooterPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/GameMasterPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/IndexPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/NavigationBarPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordChangeDonePanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordResetCompletePanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordResetDonePanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/RegisterPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/WifiPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panes/LeaderboardPane.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panes/PresentationPane.js" />
-        <option value="$PROJECT_DIR$/frontend/src/reducer/ajax.js" />
-        <option value="$PROJECT_DIR$/frontend/src/reducer/reducer.js" />
-        <option value="$PROJECT_DIR$/frontend/src/utils/formData.js" />
-        <option value="$PROJECT_DIR$/frontend/src/utils/url.js" />
-        <option value="$PROJECT_DIR$/frontend/tests/actions/actions.test.js" />
-        <option value="$PROJECT_DIR$/frontend/tests/reducer/ajax.test.js" />
-        <option value="$PROJECT_DIR$/frontend/tests/utils/color.test.js" />
-        <option value="$PROJECT_DIR$/frontend/tests/utils/url.test.js" />
-        <option value="$PROJECT_DIR$/frontend/src/hocs/async.js" />
-        <option value="$PROJECT_DIR$/frontend/src/index.js" />
-        <option value="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/GameMasterTokenPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/GameResultVisiblePanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/NotfoundPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/VirusPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/store/store.js" />
-        <option value="$PROJECT_DIR$/frontend/src/utils/color.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordChangePanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/LoginPanel.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js" />
-        <option value="$PROJECT_DIR$/showcase/templates/showcase/index.html" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js" />
+        <option value="$PROJECT_DIR$/frontend/src/pages/DocumentationPage.js" />
       </list>
     </option>
   </component>
@@ -325,13 +388,6 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="panels" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -520,7 +576,7 @@
               <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="hocs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -531,7 +587,7 @@
               <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="panels" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -629,18 +685,19 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/panes" />
+      <recent name="$PROJECT_DIR$/frontend/src/panels" />
+      <recent name="$PROJECT_DIR$/frontend" />
+      <recent name="$PROJECT_DIR$/frontend/src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/elements" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/showcase/templates/showcase" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src/panels" />
-      <recent name="$PROJECT_DIR$/frontend" />
-      <recent name="$PROJECT_DIR$/frontend/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -726,12 +783,12 @@
       <workItem from="1558386626862" duration="10212000" />
       <workItem from="1558456491809" duration="2539000" />
       <workItem from="1558508736517" duration="12459000" />
-      <workItem from="1558529386290" duration="980000" />
+      <workItem from="1558529386290" duration="3076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227950000" />
+    <option name="totallyTimeSpent" value="230046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -764,385 +821,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordChangePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetCompletePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetConfirmPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetDonePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/ProfilePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/RegisterPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/VirusPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/WifiPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/AdsPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/FooterPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/GameMasterPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/IndexPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/LoginPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/NavigationBarPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordResetDonePanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/RegisterPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/WifiPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panes/LeaderboardPane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panes/PresentationPane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/reducer/ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/reducer/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/utils/formData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/utils/url.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/tests/actions/actions.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#98#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/tests/reducer/ajax.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/tests/utils/color.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-215">
-          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/tests/utils/url.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/hocs/async.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/GameMasterTokenPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/GameResultVisiblePanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordChangePanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordChangeDonePanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/NotfoundPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordResetCompletePanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/VirusPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/store/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/utils/color.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/SearchInput.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1153,44 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/pages/DownloadPage2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/showcase/templates/showcase/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="68" column="59" lean-forward="true" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -1198,10 +838,427 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/DownloadPane.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+        <state relative-caret-position="390">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/FooterPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/GameMasterPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/GameResultVisiblePane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/IndexPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/LeaderboardPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/LoginPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/NavigationBarPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/NotfoundPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/PasswordChangeDonePane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/PasswordChangePane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/PasswordPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/PasswordResetCompletePane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/PasswordResetConfirmPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/PasswordResetDonePane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/PasswordResetPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/PresentationPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/ProfilePane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/RegisterPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/VirusPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/WifiPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/GameMasterTokenPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="86" column="15" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="37" column="74" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/hocs/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/HeaderPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/showcase/templates/showcase/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="68" column="59" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/AdsPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="64" column="51" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/AdsPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#1#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/DownloadPage2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/GameMasterPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/GameMasterTokenPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/GameResultVisiblePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/IndexPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/LeaderboardPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/LoginPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/NotFoundPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordChangeDonePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordChangePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetCompletePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetConfirmPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetDonePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/PasswordResetPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/ProfilePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/RegisterPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/VirusPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/WifiPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/DocumentationPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="62" lean-forward="true" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

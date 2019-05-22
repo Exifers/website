@@ -11,7 +11,7 @@ const styles = {
   }
 }
 
-class GameMasterTokenPanel extends Component {
+class GameMasterTokenPane extends Component {
   constructor (props) {
     super(props)
 
@@ -60,10 +60,10 @@ class GameMasterTokenPanel extends Component {
   }
 }
 
-GameMasterTokenPanel.propTypes = {}
+GameMasterTokenPane.propTypes = {}
 
-GameMasterTokenPanel.defaultProps = {}
+GameMasterTokenPane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(GameMasterTokenPanel)
+)(GameMasterTokenPane)

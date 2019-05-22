@@ -13,7 +13,7 @@ const styles = {
   }
 }
 
-class LoginPanel extends Component {
+class LoginPane extends Component {
   render () {
     return (
       <div className={this.props.classes.wrapper}>
@@ -52,10 +52,10 @@ class LoginPanel extends Component {
   }
 }
 
-LoginPanel.propTypes = {}
+LoginPane.propTypes = {}
 
-LoginPanel.defaultProps = {}
+LoginPane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(LoginPanel)
+)(LoginPane)

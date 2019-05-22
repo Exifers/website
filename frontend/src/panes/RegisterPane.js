@@ -11,7 +11,7 @@ const styles = {
   }
 }
 
-class RegisterPanel extends Component {
+class RegisterPane extends Component {
   render () {
     return (
       <div className={this.props.classes.wrapper}>
@@ -44,10 +44,10 @@ class RegisterPanel extends Component {
   }
 }
 
-RegisterPanel.propTypes = {}
+RegisterPane.propTypes = {}
 
-RegisterPanel.defaultProps = {}
+RegisterPane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(RegisterPanel)
+)(RegisterPane)

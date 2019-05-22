@@ -10,7 +10,7 @@ const styles = {
   }
 }
 
-class PasswordChangePanel extends Component {
+class PasswordChangePane extends Component {
   render () {
     return (
       <div className={this.props.classes.wrapper}>
@@ -48,10 +48,10 @@ class PasswordChangePanel extends Component {
   }
 }
 
-PasswordChangePanel.propTypes = {}
+PasswordChangePane.propTypes = {}
 
-PasswordChangePanel.defaultProps = {}
+PasswordChangePane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(PasswordChangePanel)
+)(PasswordChangePane)

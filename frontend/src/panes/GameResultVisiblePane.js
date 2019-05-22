@@ -9,7 +9,7 @@ const styles = {
   }
 }
 
-class GameResultVisiblePanel extends Component {
+class GameResultVisiblePane extends Component {
   render () {
     return (
       <div className={this.props.classes.wrapper}>
@@ -22,10 +22,10 @@ class GameResultVisiblePanel extends Component {
   }
 }
 
-GameResultVisiblePanel.propTypes = {}
+GameResultVisiblePane.propTypes = {}
 
-GameResultVisiblePanel.defaultProps = {}
+GameResultVisiblePane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(GameResultVisiblePanel)
+)(GameResultVisiblePane)

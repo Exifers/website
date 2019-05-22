@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
-import FeatureCard from '../panels/IndexPanel'
+import FeatureCard from '../panes/IndexPane'
 
 const styles = {}
 

@@ -27,7 +27,7 @@ const styles = {
   }
 }
 
-class DownloadPanel extends Component {
+class DownloadPane extends Component {
   render () {
     return (
       <div className={this.props.classes.wrapper}>
@@ -69,4 +69,4 @@ class DownloadPanel extends Component {
   }
 }
 
-export default withStyles(styles)(DownloadPanel)
+export default withStyles(styles)(DownloadPane)

@@ -4,7 +4,7 @@ import withStyles from 'react-jss'
 import classNames from 'classnames'
 import vr from '../resources/images/vr.png'
 import cybersecurity from '../resources/images/cybersecurity.png'
-import PresentationPane from '../panes/PresentationPane'
+import PresentationPane from './PresentationPane'
 import training from '../resources/images/training.png'
 import PitchTitle from '../elements/PitchTitle'
 
@@ -40,7 +40,7 @@ const styles = {
   }
 }
 
-class IndexPanel extends Component {
+class IndexPane extends Component {
   render () {
     return (
       <div className={this.props.classes.wrapper}>
@@ -90,4 +90,4 @@ class IndexPanel extends Component {
   }
 }
 
-export default withStyles(styles)(IndexPanel)
+export default withStyles(styles)(IndexPane)

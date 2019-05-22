@@ -23,7 +23,7 @@ const styles = {
   }
 }
 
-class PasswordPanel extends Component {
+class PasswordPane extends Component {
   render () {
     return (
       <div className={this.props.classes.passwordPanel}>
@@ -62,10 +62,10 @@ class PasswordPanel extends Component {
   }
 }
 
-PasswordPanel.propTypes = {}
+PasswordPane.propTypes = {}
 
-PasswordPanel.defaultProps = {}
+PasswordPane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(PasswordPanel)
+)(PasswordPane)

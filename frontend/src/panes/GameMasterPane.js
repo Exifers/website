@@ -4,7 +4,7 @@ import { compose } from 'redux'
 
 const styles = {}
 
-class GameMasterPanel extends Component {
+class GameMasterPane extends Component {
   render () {
     return (
       <div>Game master at {this.props.match.params.token}</div>
@@ -12,10 +12,10 @@ class GameMasterPanel extends Component {
   }
 }
 
-GameMasterPanel.propTypes = {}
+GameMasterPane.propTypes = {}
 
-GameMasterPanel.defaultProps = {}
+GameMasterPane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(GameMasterPanel)
+)(GameMasterPane)

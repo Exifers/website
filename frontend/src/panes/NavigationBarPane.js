@@ -22,7 +22,7 @@ const styles = {
   }
 }
 
-class NavigationBarPanel extends Component {
+class NavigationBarPane extends Component {
   render () {
     return (
       <div className={this.props.classes.navigationBarPanel}>
@@ -68,4 +68,4 @@ class NavigationBarPanel extends Component {
 
 export default compose(
   withStyles(styles)
-)(NavigationBarPanel)
+)(NavigationBarPane)

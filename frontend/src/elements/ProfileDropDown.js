@@ -40,7 +40,7 @@ class ProfileDropDown extends Component {
 ProfileDropDown.propTypes = {}
 
 ProfileDropDown.defaultProps = {
-  username: username || 'unknown' // eslint-disable-line no-undef
+  username: USERNAME || 'unknown' // eslint-disable-line no-undef
 }
 
 export default compose(

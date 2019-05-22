@@ -24,7 +24,7 @@ const styles = {
   }
 }
 
-class VirusPanel extends Component {
+class VirusPane extends Component {
   render () {
     return (
       <div className={this.props.classes.virusPanel}>
@@ -63,10 +63,10 @@ class VirusPanel extends Component {
   }
 }
 
-VirusPanel.propTypes = {}
+VirusPane.propTypes = {}
 
-VirusPanel.defaultProps = {}
+VirusPane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(VirusPanel)
+)(VirusPane)

@@ -15,7 +15,7 @@ const styles = {
   }
 }
 
-class WifiPanel extends Component {
+class WifiPane extends Component {
   render () {
     return (
       <div className={this.props.classes.wifiPanel}>
@@ -28,10 +28,10 @@ class WifiPanel extends Component {
   }
 }
 
-WifiPanel.propTypes = {}
+WifiPane.propTypes = {}
 
-WifiPanel.defaultProps = {}
+WifiPane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(WifiPanel)
+)(WifiPane)

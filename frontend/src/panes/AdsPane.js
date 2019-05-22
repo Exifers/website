@@ -48,7 +48,7 @@ const styles = {
   }
 }
 
-class AdsPanel extends Component {
+class AdsPane extends Component {
   constructor (props) {
     super(props)
 
@@ -109,10 +109,10 @@ class AdsPanel extends Component {
   }
 }
 
-AdsPanel.propTypes = {}
+AdsPane.propTypes = {}
 
-AdsPanel.defaultProps = {}
+AdsPane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(AdsPanel)
+)(AdsPane)
