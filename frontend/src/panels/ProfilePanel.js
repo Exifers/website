@@ -21,10 +21,10 @@ class ProfilePanel extends Component {
       <div className={this.props.classes.wrapper}>
         <ul className={'list-group'}>
           <li className={'list-group-item'}>Username: {
-            username // eslint-disable-line no-undef
+            USERNAME // eslint-disable-line no-undef
           }</li>
           <li className={'list-group-item'}>Email: {
-            email // eslint-disable-line no-undef
+            EMAIL // eslint-disable-line no-undef
           }</li>
           <li className={'list-group-item'}>
             Password :

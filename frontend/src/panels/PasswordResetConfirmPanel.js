@@ -14,13 +14,13 @@ class PasswordResetConfirmPanel extends Component {
   render () {
     return (
       <div className={this.props.classes.wrapper}>
-        {form_errors // eslint-disable-line no-undef
-          ? <p dangerouslySetInnerHTML={{ __html: form_errors }}/> // eslint-disable-line no-undef
+        {FORM_ERRORS // eslint-disable-line no-undef
+          ? <p dangerouslySetInnerHTML={{ __html: FORM_ERRORS }}/> // eslint-disable-line no-undef
           : null}
         <form className={this.props.classes.form} method={'POST'}>
           <input
             type={'hidden'}
-            value={csrf_token} // eslint-disable-line no-undef
+            value={CSRF_TOKEN} // eslint-disable-line no-undef
             name={'csrfmiddlewaretoken'}/>
           <div className="form-group">
             <label htmlFor="password1Input">New password</label>

@@ -40,7 +40,7 @@ class DownloadPanel extends Component {
             )
           }>
           <a
-            href={windows_build_file_url} // eslint-disable-line no-undef
+            href={WINDOWS_BUILD_FILE_URL} // eslint-disable-line no-undef
             download="cyberstories_windows.zip"
             className={classNames('card bg-success mx-auto my-3', this.props.classes.button)}>
             <div
@@ -49,7 +49,7 @@ class DownloadPanel extends Component {
               <i className="fas fa-download"/>
             </div>
           </a>
-          <a href={mac_build_file_url} download="cyberstories_mac.zip" // eslint-disable-line no-undef
+          <a href={MAC_BUILD_FILE_URL} download="cyberstories_mac.zip" // eslint-disable-line no-undef
             className={classNames('card bg-success mx-auto my-3', this.props.classes.button)}>
             <div className="card-body">
               MAC<br/>
@@ -57,7 +57,7 @@ class DownloadPanel extends Component {
             </div>
           </a>
           <a
-            href={linux_build_file_url} // eslint-disable-line no-undef
+            href={LINUX_BUILD_FILE_URL} // eslint-disable-line no-undef
             download="cyberstories_linux.zip"
             className={classNames('card bg-success mx-auto my-3', this.props.classes.button)}>
             <div className="card-body">LINUX<br/><i className="fas fa-download"/>

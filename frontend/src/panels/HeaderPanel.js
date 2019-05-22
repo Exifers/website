@@ -66,7 +66,7 @@ class HeaderPanel extends Component {
           <FacebookLink to={'https://www.facebook.com/Cyberstories-299621230935351/'}
             className={this.props.classes.facebook}/>
           <SearchInput className={classNames(this.props.classes.search)}/>
-          {user_authenticated ? <ProfileDropDown className={this.props.classes.profile}/> // eslint-disable-line no-undef
+          {USER_AUTHENCTICATED ? <ProfileDropDown className={this.props.classes.profile}/> // eslint-disable-line no-undef
             : <LoginRegisterLinks/>}
         </div>
       </div>

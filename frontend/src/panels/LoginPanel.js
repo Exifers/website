@@ -19,7 +19,7 @@ class LoginPanel extends Component {
       <div className={this.props.classes.wrapper}>
         <Formik
           onSubmit={(values, actions) => {
-            values['csrfmiddlewaretoken'] = csrf_token // eslint-disable-line no-undef
+            values['csrfmiddlewaretoken'] = CSRF_TOKEN // eslint-disable-line no-undef
             fetch('/accounts/login/', {
               method: 'POST',
               body: valuesToFormData(values)
