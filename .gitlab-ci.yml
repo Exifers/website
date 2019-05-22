@@ -8,6 +8,7 @@ frontend-tests:
     - cd frontend
     - npm install jest
     - npm run build
+    - npm run eslint
     - npm run test
     - cd ..
 

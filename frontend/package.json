@@ -7,7 +7,8 @@
     "test": "jest",
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "eslint": "eslint src"
   },
   "jest": {
     "testURL": "http://www.cybersecurityseriousgame.appspot.com/showcase/leaderboard?player_id=3"

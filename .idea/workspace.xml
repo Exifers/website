@@ -1,98 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fe802f5-7943-4337-861d-4b9b59a84a8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/emmanuel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/emmanuel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/bundles/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/actions/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/actions/leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/actions/leaderboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ArticleHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ArticleHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ArticleInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ArticleInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ArticleSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ArticleSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ArticleWarning.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ArticleWarning.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/FeatureCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/FeatureCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/GameResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/GameResult.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/IndexPresentationCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/IndexPresentationCards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/InnerFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/InnerFooter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LanguageSelectionDropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LanguageSelectionDropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Leaderboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavigationBarLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavigationBarLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavigationBarLinkGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavigationBarLinkGroup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavigationBarSubLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavigationBarSubLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavigationBarSubLinkGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavigationBarSubLinkGroup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/PlayerDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PlayerDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/SearchInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/SearchInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/elements/FacebookLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/FacebookLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/elements/GrowingBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/GrowingBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/elements/LoginRegisterLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/LoginRegisterLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/elements/PitchTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/PitchTitle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/elements/ProfileDropDown.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/ProfileDropDown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/elements/TwitterLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/TwitterLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/elements/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/buttons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/hocs/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hocs/async.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/AdsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/AdsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/DocumentationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/DocumentationPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/DownloadPage2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/DownloadPage2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/GameMasterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/GameMasterPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/GameMasterTokenPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/GameMasterTokenPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/GameResultVisiblePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/GameResultVisiblePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/IndexPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/IndexPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/LeaderboardPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/LeaderboardPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/NotFoundPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/NotFoundPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordChangeDonePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordChangeDonePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordChangePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordChangePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordResetCompletePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordResetCompletePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordResetConfirmPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordResetConfirmPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordResetDonePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordResetDonePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/PasswordResetPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/PasswordResetPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/ProfilePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/RegisterPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/VirusPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/VirusPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/WifiPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/WifiPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/AdsPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/AdsPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/DownloadPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/FooterPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/FooterPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/GameMasterPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/GameMasterPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/GameMasterTokenPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/GameMasterTokenPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/GameResultVisiblePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/GameResultVisiblePanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/HeaderPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/IndexPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/IndexPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/LoginPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/LoginPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/NavigationBarPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/NavigationBarPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/NotfoundPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/NotfoundPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordChangeDonePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordChangeDonePanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordChangePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordChangePanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetCompletePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordResetCompletePanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordResetConfirmPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetDonePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordResetDonePanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/PasswordResetPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/ProfilePanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/RegisterPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/RegisterPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/VirusPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/VirusPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panels/WifiPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panels/WifiPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panes/LeaderboardPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/LeaderboardPane.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panes/PresentationPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/PresentationPane.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/reducer/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducer/ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/reducer/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reducer/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/utils/color.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/color.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/utils/formData.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/formData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/utils/url.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/url.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tests/actions/actions.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tests/actions/actions.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tests/reducer/ajax.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tests/reducer/ajax.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tests/utils/color.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tests/utils/color.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tests/utils/url.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tests/utils/url.test.js" afterDir="false" />
-    </list>
+    <list default="true" id="9fe802f5-7943-4337-861d-4b9b59a84a8d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/src/utils/color.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
-              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+              <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -328,7 +237,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="277" />
     <option name="width" value="1890" />
     <option name="height" value="803" />
@@ -799,15 +708,15 @@
       <workItem from="1558371824475" duration="4898000" />
       <workItem from="1558386626862" duration="10212000" />
       <workItem from="1558456491809" duration="2539000" />
-      <workItem from="1558508736517" duration="11869000" />
+      <workItem from="1558508736517" duration="12288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226380000" />
+    <option name="totallyTimeSpent" value="226799000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26093918" />
@@ -1286,7 +1195,7 @@
     <entry file="file://$PROJECT_DIR$/frontend/src/utils/color.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
         </state>
       </provider>
     </entry>
