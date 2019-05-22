@@ -67,16 +67,12 @@ export const withWebSocketStoreData = (id, url) => (WrappedComponent) => {
     connect(mapStateToProps, mapDispatchToProps)(
       class extends Component {
         componentDidMount () {
-          console.log('Opening WS connection')
           let wsScheme = window.location.protocol === 'https:' ? 'wss' : 'ws'
           let webSocket = new WebSocket(
             wsScheme + '://' + window.location.host +
             url)
-          console.log('Websockets: ')
-          console.log(webSocket)
 
           webSocket.onmessage = (e) => {
-            console.log('Received WS message')
             this.props.update(JSON.parse(JSON.parse(e.data).message))
           }
 
