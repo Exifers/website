@@ -12,7 +12,8 @@ describe('async actions', () => {
   })
 
   test('fetchAjaxStoreData', () => {
-    fetchMock.getOnce('/leaderboard/list_leaderboard_entries', {
+    const url = '/leaderboard/players/'
+    fetchMock.getOnce(url, {
       body: [{ id: 0, pseudo: 'John', score: 100 }],
       headers: { 'content-type': 'application/json' }
     })
@@ -40,7 +41,7 @@ describe('async actions', () => {
     const store = mockStore({})
 
     return store.dispatch(
-      fetchAjaxStoreData('leaderboard_entries', '/leaderboard/list_leaderboard_entries')
+      fetchAjaxStoreData('leaderboard_entries', url)
     ).then(() => {
       expect(store.getActions()).toEqual(expectedActions)
     })

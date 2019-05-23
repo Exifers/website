@@ -24,6 +24,7 @@ import PasswordResetCompletePage from './pages/PasswordResetCompletePage'
 import GameMasterTokenPage from './pages/GameMasterTokenPage'
 import RegisterPage from './pages/RegisterPage'
 import GameMasterPage from './pages/GameMasterPage'
+import PlayerDetailsPage from './pages/PlayerDetailsPage'
 
 class App extends Component {
   render () {
@@ -38,6 +39,7 @@ class App extends Component {
             <Route exact path={'/articles/virus/'} component={VirusPage}/>
             <Route exact path={'/articles/wifi/'} component={WifiPage}/>
             <Route exact path={'/leaderboard/'} component={LeaderboardPage}/>
+            <Route exact path={'/leaderboard/:playerId/'} component={PlayerDetailsPage}/>
             <Route exact path={'/gameresult_visible/'} component={GameResultVisiblePage}/>
             <Route exact path={'/accounts/login/'} component={LoginPage}/>
             <Route exact path={'/accounts/profile/'} component={ProfilePage}/>

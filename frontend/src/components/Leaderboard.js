@@ -4,9 +4,7 @@ import withStyles from 'react-jss'
 import classNames from 'classnames'
 import { compose } from 'redux'
 import { withLeaderboardEntries, withWebsocketLeaderboardEntries } from '../actions/leaderboard'
-import { NavLink } from 'react-router-dom'
-import GrowingBar from '../elements/GrowingBar'
-import PitchTitle from '../elements/PitchTitle'
+import LeaderboardRow from '../elements/LeaderboardRow'
 
 const styles = {
   cell: {
@@ -19,25 +17,14 @@ const styles = {
     fontSize: '17px',
     fontWeight: 'bold'
   },
-  pseudo: {
-    cursor: 'pointer',
-    color: 'grey',
-    '&:hover': {
-      textDecoration: 'none',
-      fontWeight: 'bold',
-      color: 'grey'
-    }
-  },
   input: {
+    marginTop: '40px',
     width: '180px',
     marginBottom: '15px'
-  },
-  bar: {
-    marginLeft: '100px'
   }
 }
 
-class Leaderboard extends Component {
+export class Leaderboard extends Component {
   constructor (props) {
     super(props)
 
@@ -54,7 +41,7 @@ class Leaderboard extends Component {
   }
 
   render () {
-    const filter = (entry) => {
+    const searchFilter = (entry) => {
       if (this.state.search === '') {
         return true
       }
@@ -65,7 +52,9 @@ class Leaderboard extends Component {
       }
     }
 
-    const sort = (entry1, entry2) => {
+    const onlyNonEmptyFilter = (entry) => entry.gameResults.length > 0
+
+    const globalScoreSort = (entry1, entry2) => {
       return globalScore(entry1) < globalScore(entry2)
     }
 
@@ -81,10 +70,7 @@ class Leaderboard extends Component {
     )
 
     return (
-      <div className={'m-4 w-75 mx-auto'}>
-        <br/>
-        <PitchTitle className={'text-center'}>Leaderboard</PitchTitle>
-        <br/>
+      <React.Fragment>
         <div className={classNames('container', this.props.classes.leaderboard)}>
           <div className={classNames('row', this.props.classes.header)}>
             <div className={classNames('col-sm p-1', this.props.classes.cell)}>
@@ -98,40 +84,29 @@ class Leaderboard extends Component {
             </div>
           </div>
           {this.props.leaderboardEntries
-            .filter(filter)
-            .filter(entry => entry.gameResults.length > 0)
-            .sort(sort)
+            .filter(searchFilter)
+            .filter(onlyNonEmptyFilter)
+            .sort(globalScoreSort)
             .map((entry) => (
-              <div className={'row'} key={entry.pseudo}>
-                <div
-                  className={classNames('col-sm p-1', this.props.classes.cell)}>
-                  <NavLink to={`/leaderboard/?player_id=${entry.id}`} className={this.props.classes.pseudo}>
-                    {entry.pseudo}
-                  </NavLink>
-                </div>
-                <div className={classNames('col-sm p-1', this.props.classes.cell)}>
-                  <GrowingBar value={(() => {
-                    console.log(globalScore(entry))
-                    return globalScore(entry)
-                  })()} className={this.props.classes.bar}/>
-                </div>
-                <div className={classNames('col-sm p-1', this.props.classes.cell)}>
-                  {entry.gameResults.length > 10 ? '10+' : entry.gameResults.length}
-                </div>
-              </div>
+              <LeaderboardRow
+                entry={entry}
+                globalScore={globalScore}
+              />
             ))
           }
         </div>
-        <br/>
-        <br/>
-        <br/>
         <input
           type={'text'} className={this.props.classes.input} value={this.state.search}
           onChange={this.handleChange} placeholder={'Search pseudo'}/>
         <p>Click on a pseudo to see score details.</p>
-      </div>
+      </React.Fragment>
     )
   }
+}
+
+Leaderboard.defaultProps = {
+  classes: {},
+  leaderboardEntries: []
 }
 
 export default compose(

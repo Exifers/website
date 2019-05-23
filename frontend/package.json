@@ -11,7 +11,11 @@
     "eslint": "eslint src"
   },
   "jest": {
-    "testURL": "http://www.cybersecurityseriousgame.appspot.com/showcase/leaderboard?player_id=3"
+    "testURL": "http://www.cybersecurityseriousgame.appspot.com/showcase/leaderboard?player_id=3",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   },
   "author": "",
   "license": "ISC",
@@ -35,6 +39,7 @@
     "file-loader": "^3.0.1",
     "jest": "^24.5.0",
     "node-fetch": "^2.3.0",
+    "react-test-renderer": "^16.8.3",
     "redux-mock-store": "^1.5.3",
     "style-loader": "^0.23.1",
     "webpack": "^4.28.4",
@@ -47,11 +52,10 @@
     "formik": "^1.5.4",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react-dom": "^16.8.6",
     "react-jss": "^8.6.1",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
-    "react-test-renderer": "^16.8.3",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
   }

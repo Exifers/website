@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Leaderboard from '../components/Leaderboard'
-import PlayerDetails from '../components/PlayerDetails'
-import { getParameters } from '../utils/url'
 import withStyles from 'react-jss'
+import classNames from 'classnames'
+import PitchTitle from '../elements/PitchTitle'
 
 const styles = {
   wrapper: {
@@ -13,14 +13,12 @@ const styles = {
 
 class LeaderboardPane extends Component {
   render () {
-    let content = <Leaderboard/>
-    if (getParameters()['player_id'] !== undefined) {
-      content = <PlayerDetails/>
-    }
-
     return (
-      <div className={this.props.classes.wrapper}>
-        {content}
+      <div className={classNames('m-4 w-75 mx-auto', this.props.classes.wrapper)}>
+        <br/>
+        <PitchTitle className={'text-center'}>Leaderboard</PitchTitle>
+        <br/>
+        <Leaderboard/>
       </div>
     )
   }

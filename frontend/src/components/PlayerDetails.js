@@ -27,8 +27,10 @@ const styles = {
 
 class PlayerDetails extends Component {
   render () {
-    const playerId = getParameters()['player_id']
+    const playerId = this.props.playerId
     const playerData = this.props.leaderboardEntries.find(current => current.id === parseInt(playerId))
+
+    // todo: redirect to 404 if player is not found in leaderboardEntries
 
     const sort = (gr1, gr2) => {
       return globalScore(gr1) < globalScore(gr2)
