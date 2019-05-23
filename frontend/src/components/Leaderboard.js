@@ -52,7 +52,7 @@ export class Leaderboard extends Component {
       }
     }
 
-    const onlyNonEmptyFilter = (entry) => entry.gameResults.length > 0
+    const nonEmptyFilter = (entry) => entry.gameResults.length > 0
 
     const globalScoreSort = (entry1, entry2) => {
       return globalScore(entry1) < globalScore(entry2)
@@ -84,8 +84,8 @@ export class Leaderboard extends Component {
             </div>
           </div>
           {this.props.leaderboardEntries
+            .filter(nonEmptyFilter)
             .filter(searchFilter)
-            .filter(onlyNonEmptyFilter)
             .sort(globalScoreSort)
             .map((entry) => (
               <LeaderboardRow
@@ -98,7 +98,7 @@ export class Leaderboard extends Component {
         <input
           type={'text'} className={this.props.classes.input} value={this.state.search}
           onChange={this.handleChange} placeholder={'Search pseudo'}/>
-        <p>Click on a pseudo to see score details.</p>
+        <small>Click on a pseudo to see score details.</small>
       </React.Fragment>
     )
   }
