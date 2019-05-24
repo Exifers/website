@@ -41,6 +41,10 @@ if PRODUCTION:
         dsn="https://cd73368f734a46e29d2320949f2bdf7f@sentry.io/1463018",
         integrations=[DjangoIntegration()]
     )
+if PRODUCTION:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = not PRODUCTION
