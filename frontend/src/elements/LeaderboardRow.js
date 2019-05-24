@@ -30,7 +30,7 @@ class LeaderboardRow extends Component {
     const globalScore = this.props.globalScore
 
     return (
-      <div className={'row'} key={entry.pseudo}>
+      <div className={'row'}>
         <div
           className={classNames('col-sm p-1', this.props.classes.cell)}>
           <NavLink to={`/leaderboard/${entry.id}/`} className={this.props.classes.pseudo}>
@@ -40,7 +40,7 @@ class LeaderboardRow extends Component {
         <div className={classNames('col-sm p-1', this.props.classes.cell)}>
           <GrowingBar value={globalScore(entry)} className={this.props.classes.bar}/>
         </div>
-        <div className={classNames('col-sm p-1', this.props.classes.cell)}>
+        <div className={classNames('col-sm p-1', this.props.classes.cell)} data-test-class={'numberOfGamesCell'}>
           {entry.gameResults.length > 10 ? '10+' : entry.gameResults.length}
         </div>
       </div>

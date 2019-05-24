@@ -34,7 +34,7 @@ describe('async actions', () => {
             }
           ]
         },
-        type: SET_AJAX_RESPONSE,
+        type: SET_AJAX_RESPONSE
       }
     ]
 

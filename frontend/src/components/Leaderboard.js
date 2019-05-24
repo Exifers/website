@@ -41,6 +41,8 @@ export class Leaderboard extends Component {
   }
 
   render () {
+    const leaderboardEntries = this.props.leaderboardEntries
+
     const searchFilter = (entry) => {
       if (this.state.search === '') {
         return true
@@ -55,7 +57,11 @@ export class Leaderboard extends Component {
     const nonEmptyFilter = (entry) => entry.gameResults.length > 0
 
     const globalScoreSort = (entry1, entry2) => {
-      return globalScore(entry1) < globalScore(entry2)
+      const globalScore1 = globalScore(entry1)
+      const globalScore2 = globalScore(entry2)
+      return globalScore1 < globalScore2 ? 1
+        : globalScore1 === globalScore2 ? 0
+          : -1
     }
 
     const globalScore = (entry) => (
@@ -83,12 +89,13 @@ export class Leaderboard extends Component {
               Number of games
             </div>
           </div>
-          {this.props.leaderboardEntries
+          {leaderboardEntries
             .filter(nonEmptyFilter)
             .filter(searchFilter)
             .sort(globalScoreSort)
             .map((entry) => (
               <LeaderboardRow
+                key={entry.pseudo}
                 entry={entry}
                 globalScore={globalScore}
               />
