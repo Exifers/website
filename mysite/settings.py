@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 import dj_database_url
 from google.oauth2 import service_account
-from mysite.business_settings import *
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
@@ -43,6 +42,8 @@ if PRODUCTION:
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = not PRODUCTION
+
+SEND_EMAILS = True
 
 # SECURITY WARNING: App Engine's security features ensure that it is safe to
 # have ALLOWED_HOSTS = ['*'] when the app is deployed. If you deploy a Django
@@ -187,7 +188,7 @@ GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
 WEBPACK_LOADER = {
     'DEFAULT': {
         'CACHE': not DEBUG,
-        'BUNDLE_DIR_NAME': 'bundles/', # must end with slash
+        'BUNDLE_DIR_NAME': 'bundles/',  # must end with slash
         'STATS_FILE': os.path.join(
             BASE_DIR,
             'frontend/assets/webpack-stats.json'

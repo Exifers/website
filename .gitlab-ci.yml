@@ -7,6 +7,8 @@ frontend-tests:
     - apt-get install nodejs # contains nodejs and npm
     - cd frontend
     - npm install jest
+    - npm run build
+    - npm run eslint
     - npm run test
     - cd ..
 
@@ -15,4 +17,6 @@ backend-tests:
     - apt-get update
     - apt-get install -y python3-pip
     - pip3 install -r requirements.txt
-    - python3 manage.py test 
+    - find . -name  '*.py' -not -path './env/*' -not -path '*/migrations/*' -exec flake8 --max-line-length=120 {} \+
+    - python3 manage.py test
+

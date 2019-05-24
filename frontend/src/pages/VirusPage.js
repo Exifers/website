@@ -1,21 +1,4 @@
-import React, {Component} from "react";
-import HeaderPanel from "../panels/HeaderPanel";
-import NavigationBarPanel from "../panels/NavigationBarPanel";
-import FooterPanel from "../panels/FooterPanel";
-import BasicLayout from "../layouts/BasicLayout";
-import VirusPanel from "../panels/VirusPanel";
+import VirusPane from '../panes/VirusPane'
+import { withBasicLayout } from '../hocs/layout'
 
-class VirusPage extends Component {
-    render() {
-        return (
-            <BasicLayout
-                header={<HeaderPanel/>}
-                content={<VirusPanel/>}
-                navbar={<NavigationBarPanel/>}
-                footer={<FooterPanel/>}
-                />
-        );
-    }
-}
-
-export default VirusPage;
+export default withBasicLayout(VirusPane)

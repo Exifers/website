@@ -61,17 +61,17 @@
 
 {% block javascript %}
     <script>
-        let csrf_token = '{{ csrf_token }}';
-        let form_errors = '{{ form.errors }}';
+        let CSRF_TOKEN = '{{ csrf_token }}';
+        let FORM_ERRORS = '{{ form.errors }}';
 
         {% if request.user.is_authenticated %}
-            const user_authenticated = true;
-            const username = '{{ request.user.username }}';
-            const email = '{{ request.user.email }}';
+            const USER_AUTHENTICATED = true;
+            const USERNAME = '{{ request.user.username }}';
+            const EMAIL = '{{ request.user.email }}';
         {% else %}
-            const user_authenticated = false;
-            const username = 'unknown';
-            const email = 'unknown';
+            const USER_AUTHENTICATED = false;
+            const USERNAME = 'unknown';
+            const EMAIL = 'unknown';
         {% endif %}
     </script>
 {% endblock %}

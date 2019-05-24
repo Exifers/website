@@ -33,9 +33,9 @@
 
 <script type="text/javascript">
     {% autoescape off %}
-        let windows_build_file_url = "{{ windows_builds.first.file.url }}";
-        let mac_build_file_url = "{{ mac_builds.first.file.url }}";
-        let linux_build_file_url = "{{ linux_builds.first.file.url }}";
+        let WINDOWS_BUILD_FILE_URL = "{{ windows_builds.first.file.url }}";
+        let MAC_BUILD_FILE_URL = "{{ mac_builds.first.file.url }}";
+        let LINUX_BUILD_FILE_URL = "{{ linux_builds.first.file.url }}";
     {% endautoescape %}
 </script>
 
