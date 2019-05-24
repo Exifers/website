@@ -26,6 +26,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Update the secret key to a value of your own before deploying the app.
 SECRET_KEY = 'lldtg$9(wi49j_hpv8nnqlh!cj7kmbwq0$rj7vy(b(b30vlyzj'
 
+SITE_ID = 1
+
 PRODUCTION = False
 if 'PRODUCTION' in os.environ:
     PRODUCTION = True
@@ -66,16 +68,19 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_extensions',
     'webpack_loader',
-    'rest_framework',
-]
-
-MY_APPS = [
-    'showcase',
     'leaderboard',
-    'register'
+    'rest_framework',
+    'rest_framework.authtoken',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'rest_auth',
+    'rest_auth.registration',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.twitter',
+    'allauth.socialaccount.providers.facebook',
+    'showcase'
 ]
-
-INSTALLED_APPS += MY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -148,6 +153,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTHENTICATION_BACKENDS = (
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend'
+)
+
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
@@ -215,6 +228,8 @@ EMAIL_HOST_PASSWORD = "3MzNZFYU"
 # Email template
 TEMPLATED_EMAIL_BACKEND = 'templated_email.backends.vanilla_django'
 TEMPLATED_EMAIL_TEMPLATE_DIR = 'emails/'
+
+ACCOUNT_CONFIRM_EMAIL_ON_GET = True
 
 # Websocket Django channels
 ASGI_APPLICATION = "mysite.routing.application"

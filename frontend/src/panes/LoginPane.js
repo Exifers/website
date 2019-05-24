@@ -4,6 +4,7 @@ import { compose } from 'redux'
 import NavLink from 'react-router-dom/es/NavLink'
 import { Field, Form, Formik } from 'formik'
 import { valuesToFormData } from '../utils/formData'
+import { getCookie } from '../utils/cookie'
 
 const styles = {
   wrapper: {
@@ -19,17 +20,20 @@ class LoginPane extends Component {
       <div className={this.props.classes.wrapper}>
         <Formik
           onSubmit={(values, actions) => {
-            values['csrfmiddlewaretoken'] = CSRF_TOKEN // eslint-disable-line no-undef
+            values['csrfmiddlewaretoken'] = getCookie('csrftoken') // eslint-disable-line no-undef
             fetch('/accounts/login/', {
               method: 'POST',
-              body: valuesToFormData(values)
+              headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCookie('csrftoken')
+              },
+              body: JSON.stringify(values)
             })
               .then(response => response.json())
               .then(json => {
                 actions.setSubmitting(false)
               })
               .catch(error => {
-                console.log(error)
                 actions.setSubmitting(false)
                 actions.setErrors(error)
               })
