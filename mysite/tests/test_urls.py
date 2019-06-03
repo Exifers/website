@@ -4,25 +4,32 @@ from django.test import TestCase
 
 class UrlsTests(TestCase):
 
-    def test_login_get(self):
-        response = self.client.get('/rest-auth/login/')
-        self.assertEqual(response.status_code, 200)
-
-    def test_login_post(self):
+    def test_login_fail(self):
         response = self.client.post('/rest-auth/login/', {
             'username': 'John',
-            'password': 'password'
+            'password': '1234'
+        })
+        self.assertEqual(response.status_code, 400)
+
+    def test_login_success(self):
+        User.objects.create_user(username='John', password='1234')
+        response = self.client.post('/rest-auth/login/', {
+            'username': 'John',
+            'password': '1234'
         })
         self.assertEqual(response.status_code, 200)
 
     def test_logout(self):
-        response = self.client.get('/rest-auth/logout/')
+        response = self.client.post('/rest-auth/logout/')
         self.assertEqual(response.status_code, 200)
 
     def test_password_change_not_logged_in(self):
-        response = self.client.get('/rest-auth/password_change/')
-        self.assertEqual(response.status_code, 302)
-        self.assertEqual(response.get('location'), '/rest-auth/login/?next=/rest-auth/password_change/')
+        response = self.client.post('/rest-auth/password/change/', {
+            'new_password1': '1234',
+            'new_password2': '1234',
+            'old_password': '1234'
+        })
+        self.assertEqual(response.status_code, 403)
 
     def test_password_change_logged_in(self):
         User.objects.create_user(username='John', password='password')
@@ -33,29 +40,15 @@ class UrlsTests(TestCase):
         response = self.client.get('/rest-auth/password_change/')
         self.assertEqual(response.status_code, 200)
 
-    def test_password_change_done_not_logged_in(self):
+    def test_password_change_done(self):
         response = self.client.get('/rest-auth/password_change/done/')
-        self.assertEqual(response.status_code, 302)
-        self.assertEqual(response.get('location'), '/rest-auth/login/?next=/rest-auth/password_change/done/')
-
-    def test_password_change_done_logged_in(self):
-        User.objects.create_user(username='John', password='password')
-        self.client.post('/rest-auth/login/', {
-            'username': 'John',
-            'password': 'password'
-        })
-        response = self.client.get('/rest-auth/password_change/done/')
-        self.assertEqual(response.status_code, 200)
-
-    def test_password_reset_get(self):
-        response = self.client.get('/rest-auth/password_reset/')
         self.assertEqual(response.status_code, 200)
 
     def test_password_reset_post(self):
-        response = self.client.post('/rest-auth/password_reset/', {
+        response = self.client.post('/rest-auth/password/reset/', {
             'email': 'john.doe@gmail.com'
         })
-        self.assertEqual(response.get('location'), '/rest-auth/password_reset/done/')
+        self.assertEqual(response.status_code, 200)
 
     def test_password_reset_done(self):
         response = self.client.get('/rest-auth/password_reset_done/')

@@ -245,3 +245,6 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+# rest-auth
+OLD_PASSWORD_FIELD_ENABLED = True
