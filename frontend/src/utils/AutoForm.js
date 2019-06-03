@@ -26,7 +26,7 @@ class AutoForm extends Component {
         validate={(values) => {
           let errors = {}
           this.props.fields.forEach(field => {
-            const fieldErrors = field.clientSideValidation(values[field.name], values)
+            const fieldErrors = field.clientSideValidation ? field.clientSideValidation(values[field.name], values) : []
             if (fieldErrors.length > 0) { errors[field.name] = fieldErrors }
           })
           return errors
