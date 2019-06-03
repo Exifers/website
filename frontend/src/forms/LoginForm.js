@@ -37,8 +37,7 @@ class LoginForm extends Component {
             placeholder: 'Username',
             initialValue: '',
             type: 'text',
-            clientSideValidation: required,
-            serverSideValidation: (value, values) => new Promise(resolve => setTimeout(() => resolve([]), 10))
+            clientSideValidation: required
           },
           {
             name: 'password',
@@ -46,8 +45,7 @@ class LoginForm extends Component {
             placeholder: 'Password',
             initialValue: '',
             type: 'password',
-            clientSideValidation: required,
-            serverSideValidation: (value, values) => new Promise(resolve => setTimeout(() => resolve([]), 10))
+            clientSideValidation: required
           }
         ]}
       />

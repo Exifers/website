@@ -42,7 +42,7 @@ class ProfileDropDown extends Component {
       .then(() => {
         this.props.setProfile(null)
       })
-      .catch(error => {
+      .catch(() => {
         // todo : handle error
       })
   }
