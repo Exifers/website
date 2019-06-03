@@ -1,0 +1,22 @@
+<body style="min-height:400px;text-align:center;font-size:17px;margin-left:10%;margin-right:10%;background-color:#eaf0f9;padding:100px;">
+<img src="https://zupimages.net/up/19/16/fzw5.png" style="width:50%;height:auto;min-width:400px"/>
+<p>
+    Hi {{ user.username }},
+    your account has been created on <a href="http://{{ request.get_host}}/">Cyberstories</a>.
+</p>
+
+<p style="font-weight:bold">
+    Thank you for register !<br/>
+    To confirm your email address, go to <a href="{{ activate_url }}">{{ activate_url }}</a>.
+</p>
+
+<p>
+    You can play our game with a virtual reality setup such as HTC Vive or Oculus Rift. Then you can choose to share
+    your results in the <a href="http://{{ request.get_host }}/leaderboard">leaderboard</a>.
+</p>
+
+<br/>
+<p>
+    The Cyberstories team
+</p>
+</body>

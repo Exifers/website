@@ -31,7 +31,7 @@ class LoginRegisterLinks extends Component {
     return (
       <React.Fragment>
         <NavLink to={'/accounts/login/'} className={this.props.classes.login}>Login</NavLink>
-        <NavLink to={'/accounts/login/'} className={this.props.classes.register}>Register</NavLink>
+        <NavLink to={'/accounts/register/'} className={this.props.classes.register}>Register</NavLink>
       </React.Fragment>
     )
   }
