@@ -40,10 +40,7 @@ export const withAjaxStoreData = (id, url, config = {}) => (WrappedComponent) =>
 
           if (this.props.loading) {
             return config.skeleton || (
-              <React.Fragment>
-                <br/>
-                <LoadingRing/>
-              </React.Fragment>
+              <LoadingRing className={'mx-auto'}/>
             )
           }
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
-import AutoForm, { combineValidators, required, sameAs, validEmail } from '../utils/AutoForm'
+import AutoForm, { combineValidators, minimalLength, required, sameAs, validEmail } from '../utils/AutoForm'
 import { withRouter } from 'react-router-dom'
 
 const styles = {}
@@ -36,7 +36,7 @@ class RegisterForm extends Component {
             placeholder: 'Password',
             initialValue: '',
             type: 'password',
-            clientSideValidation: required
+            clientSideValidation: minimalLength(8)
           },
           {
             name: 'password2',
