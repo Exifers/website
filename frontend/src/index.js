@@ -25,6 +25,7 @@ import GameMasterTokenPage from './pages/GameMasterTokenPage'
 import RegisterPage from './pages/RegisterPage'
 import GameMasterPage from './pages/GameMasterPage'
 import PlayerDetailsPage from './pages/PlayerDetailsPage'
+import RegisterDonePage from './pages/RegisterDonePage'
 
 class App extends Component {
   render () {
@@ -42,6 +43,8 @@ class App extends Component {
             <Route exact path={'/leaderboard/:playerId/'} component={PlayerDetailsPage}/>
             <Route exact path={'/gameresult_visible/'} component={GameResultVisiblePage}/>
             <Route exact path={'/accounts/login/'} component={LoginPage}/>
+            <Route exact path={'/accounts/register/'} component={RegisterPage}/>
+            <Route exact path={'/accounts/register/done/'} component={RegisterDonePage}/>
             <Route exact path={'/accounts/profile/'} component={ProfilePage}/>
             <Route exact path={'/accounts/logout/'} component={IndexPage}/>
             <Route exact path={'/accounts/password_change/done/'} component={PasswordChangeDonePage}/>
@@ -52,7 +55,6 @@ class App extends Component {
             <Route exact path={'/accounts/reset/done/'} component={PasswordResetCompletePage}/>
             <Route exact path={'/game_master/token/'} component={GameMasterTokenPage}/>
             <Route exact path={'/game_master/:token/'} component={GameMasterPage}/>
-            <Route exact path={'/register/register/'} component={RegisterPage}/>
             <Route exact path={'/'} component={IndexPage}/>
             <Route component={NotFoundPage}/>
           </Switch>

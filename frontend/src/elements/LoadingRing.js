@@ -23,7 +23,7 @@ class LoadingRing extends Component {
 }
 
 LoadingRing.propTypes = {
-  size: PropTypes.oneOf('normal', 'small')
+  size: PropTypes.oneOf(['normal', 'small'])
 }
 
 LoadingRing.defaultProps = {

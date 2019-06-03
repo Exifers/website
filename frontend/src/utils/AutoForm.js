@@ -49,7 +49,7 @@ class AutoForm extends Component {
             {this.props.fields.map((field, index) => (
               <div className={'form-group'} key={index}>
                 <Field type={field.type}
-                  validate={(values) => field.serverSideValidation(values[field.name], values).then(errors => {
+                  validate={(values) => field.serverSideValidation && field.serverSideValidation(values[field.name], values).then(errors => {
                     if (errors && errors.length > 0) { throw errors }
                   })}
                   className={classNames(
