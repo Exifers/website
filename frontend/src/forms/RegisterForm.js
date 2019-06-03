@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
-import AutoForm, { required } from '../utils/AutoForm'
+import AutoForm, { combineValidators, required, sameAs, validEmail } from '../utils/AutoForm'
 import { withRouter } from 'react-router-dom'
 
 const styles = {}
@@ -28,7 +28,7 @@ class RegisterForm extends Component {
             placeholder: 'Email',
             initialValue: '',
             type: 'email',
-            clientSideValidation: required
+            clientSideValidation: validEmail
           },
           {
             name: 'password1',
@@ -44,7 +44,10 @@ class RegisterForm extends Component {
             initialValue: '',
             placeholder: 'Password confirm',
             type: 'password',
-            clientSideValidation: required
+            clientSideValidation: combineValidators([
+              required,
+              sameAs('password1', 'Confirmed password is different')
+            ])
           }
         ]}
         onSubmitted={() => {

@@ -5,6 +5,7 @@ import { Field, Form, Formik } from 'formik'
 import { fetchBase } from './fetch'
 import classNames from 'classnames'
 import LoadingRing from '../elements/LoadingRing'
+import settings from '../settings'
 
 const styles = {
   buttonWrapper: {
@@ -117,3 +118,23 @@ export default compose(
 )(AutoForm)
 
 export const required = (value) => value && value.length > 0 ? [] : ['This field is required']
+export const minimalLength = minimalLength => value => (
+  value && value.length >= minimalLength ? [] : [`This field must be at least ${minimalLength} characters long`]
+)
+export const validEmail = value => (
+  value && settings.EMAIL_REGEX.test(value.toLowerCase()) ? [] : ['This email is not valid']
+)
+export const sameAs = (otherFieldName, errorMessage) => (value, values) => (
+  value === values[otherFieldName] ? [] : [errorMessage || 'This field is different']
+)
+
+export const combineValidators = validators => (value, values) => {
+  let errors = []
+  validators.forEach(validator => {
+    errors = [
+      ...errors,
+      ...validator(value, values)
+    ]
+  })
+  return errors
+}
