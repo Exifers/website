@@ -8,8 +8,7 @@ import classNames from 'classnames'
 import SearchInput from '../components/SearchInput'
 import FacebookLink from '../elements/FacebookLink'
 import TwitterLink from '../elements/TwitterLink'
-import ProfileDropDown from '../elements/ProfileDropDown'
-import LoginRegisterLinks from '../elements/LoginRegisterLinks'
+import AuthenticationLinks from '../components/AuthenticationLinks'
 
 const styles = {
   headerPanel: {
@@ -48,8 +47,9 @@ const styles = {
   logoNavlink: {
     outline: '0'
   },
-  profile: {
-    marginLeft: '3px'
+  linksWrapper: {
+    width: '160px',
+    display: 'flex'
   }
 }
 
@@ -66,8 +66,9 @@ class HeaderPane extends Component {
           <FacebookLink to={'https://www.facebook.com/Cyberstories-299621230935351/'}
             className={this.props.classes.facebook}/>
           <SearchInput className={classNames(this.props.classes.search)}/>
-          {USER_AUTHENTICATED ? <ProfileDropDown className={this.props.classes.profile}/> // eslint-disable-line no-undef
-            : <LoginRegisterLinks/>}
+          <div className={this.props.classes.linksWrapper}>
+            <AuthenticationLinks/>
+          </div>
         </div>
       </div>
     )

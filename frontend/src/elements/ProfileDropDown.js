@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
 import { Link } from 'react-router-dom'
+import { getCookie } from '../utils/cookie'
+import { connect } from 'react-redux'
+import { setLoggedOut } from '../actions/authentication'
 
 const styles = {
   button: {
@@ -17,20 +20,46 @@ const styles = {
   }
 }
 
+const mapDispatchToProps = dispatch => ({
+  setProfile: profile => dispatch(setLoggedOut(profile))
+})
+
 class ProfileDropDown extends Component {
+  constructor (props) {
+    super(props)
+
+    this.handleLogout = this.handleLogout.bind(this)
+  }
+
+  handleLogout () {
+    fetch('/rest-auth/logout/', {
+      method: 'POST',
+      headers: {
+        'X-CSRFToken': getCookie('csrftoken')
+      }
+    })
+      .then(response => response.json())
+      .then(() => {
+        this.props.setProfile(null)
+      })
+      .catch(error => {
+        // todo : handle error
+      })
+  }
+
   render () {
     return (
       <div className={'dropdown'}>
         <div className={this.props.classes.button} id={'profileDropDownButton'}
           data-toggle={'dropdown'} aria-haspopup={'true'} aria-expanded={'false'}>
-          <i className="fas fa-user"/> {this.props.username} <i className="fas fa-caret-down"/>
+          <i className="fas fa-user"/> {this.props.profile.username} <i className="fas fa-caret-down"/>
         </div>
 
         <div className={'dropdown-menu'} aria-labelledby={'profileDropDownButton'}>
           <Link className={'dropdown-item'} to={'/accounts/profile/'}>Profile</Link>
           <Link className={'dropdown-item'} to={'/game_master/token/'}>Master a game</Link>
           <Link className={'dropdown-item'} to={'/'}>My games</Link>
-          <a className={'dropdown-item'} href={'/accounts/logout/'}>Logout</a>
+          <Link className={'dropdown-item'} to={'/'} onClick={this.handleLogout}>Logout</Link>
         </div>
       </div>
     )
@@ -40,9 +69,10 @@ class ProfileDropDown extends Component {
 ProfileDropDown.propTypes = {}
 
 ProfileDropDown.defaultProps = {
-  username: USERNAME || 'unknown' // eslint-disable-line no-undef
+  profile: {}
 }
 
 export default compose(
-  withStyles(styles)
+  withStyles(styles),
+  connect(null, mapDispatchToProps)
 )(ProfileDropDown)
