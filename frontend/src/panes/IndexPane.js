@@ -3,6 +3,7 @@ import LargeLink from '../elements/buttons'
 import withStyles from 'react-jss'
 import classNames from 'classnames'
 import PitchTitle from '../elements/PitchTitle'
+import vr from '../resources/images/vr.png'
 
 const styles = {
   video: {
@@ -33,6 +34,9 @@ const styles = {
     width: '500px',
     height: 'auto',
     marginTop: '20px'
+  },
+  vr: {
+    maxHeight: '200px'
   }
 }
 
@@ -42,6 +46,8 @@ class IndexPane extends Component {
       <div className={this.props.classes.wrapper}>
         <PitchTitle className={classNames('mx-auto', this.props.classes.title)}>A serious game in virtual
           reality about cybersecurity !</PitchTitle>
+
+        <img src={vr} className={classNames(this.props.classes.vr, 'mx-auto')}/>
 
         <LargeLink className={this.props.classes.tryButton} to={'/download'}>
           TRY OUT NOW !
