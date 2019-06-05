@@ -9,6 +9,7 @@ import SearchInput from '../components/SearchInput'
 import FacebookLink from '../elements/FacebookLink'
 import TwitterLink from '../elements/TwitterLink'
 import AuthenticationLinks from '../components/AuthenticationLinks'
+import NavigationBarPane from './NavigationBarPane'
 
 const styles = {
   headerPanel: {
@@ -17,8 +18,7 @@ const styles = {
     borderBottom: '5px solid #ffc000'
   },
   logo: {
-    margin: '10px',
-    maxHeight: '250px',
+    maxHeight: '180px',
     outline: '0'
   },
   search: {
@@ -31,7 +31,7 @@ const styles = {
     position: 'absolute',
     display: 'flex',
     flexDirection: 'row',
-    top: '15px',
+    top: '20px',
     right: '25px',
     height: '50px'
   },
@@ -50,6 +50,11 @@ const styles = {
   linksWrapper: {
     width: '160px',
     display: 'flex'
+  },
+  navbar: {
+    position: 'absolute',
+    top: '20px',
+    left: '200px'
   }
 }
 
@@ -60,6 +65,7 @@ class HeaderPane extends Component {
         <NavLink exact to={'/'} className={this.props.classes.logoNavlink}>
           <img src={logo} alt={'logo'} className={this.props.classes.logo}/>
         </NavLink>
+        <NavigationBarPane className={this.props.classes.navbar}/>
         <div className={this.props.classes.iconsWrapper}>
           <TwitterLink to={'https://twitter.com/Cyberstories1'}
             className={classNames(this.props.classes.twitter)}/>

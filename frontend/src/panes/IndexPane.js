@@ -2,10 +2,6 @@ import React, { Component } from 'react'
 import LargeLink from '../elements/buttons'
 import withStyles from 'react-jss'
 import classNames from 'classnames'
-import vr from '../resources/images/vr.png'
-import cybersecurity from '../resources/images/cybersecurity.png'
-import PresentationPane from './PresentationPane'
-import training from '../resources/images/training.png'
 import PitchTitle from '../elements/PitchTitle'
 
 const styles = {
@@ -46,41 +42,6 @@ class IndexPane extends Component {
       <div className={this.props.classes.wrapper}>
         <PitchTitle className={classNames('mx-auto', this.props.classes.title)}>A serious game in virtual
           reality about cybersecurity !</PitchTitle>
-        <iframe className={classNames('m-5', this.props.classes.video)} width="560" height="315"
-          src="https://www.youtube.com/embed/hyDthmfeCDk" frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen/>
-
-        <PresentationPane
-          title={'Discover virtual reality'}
-          className={this.props.classes.presentationPane}
-        >
-          <img
-            src={vr}
-            alt={'A man with a virtual reality headset'}
-          />
-        </PresentationPane>
-
-        <PresentationPane
-          title={'Discover cybersecurity'}
-          className={this.props.classes.presentationPane}
-        >
-          <img
-            src={cybersecurity}
-            alt={'A computer with a lock representing cybersecurity'}
-            className={this.props.classes.cybersecurityImage}
-          />
-        </PresentationPane>
-
-        <PresentationPane
-          title={'Train your employees'}
-          className={this.props.classes.presentationPane}
-        >
-          <img
-            src={training}
-            alt={'A man teaching something to a group of people'}
-          />
-        </PresentationPane>
 
         <LargeLink className={this.props.classes.tryButton} to={'/download'}>
           TRY OUT NOW !

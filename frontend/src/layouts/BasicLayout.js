@@ -46,9 +46,7 @@ class BasicLayout extends Component {
     const {
       header,
       content,
-      footer,
-      navbar,
-      filler
+      footer
     } = this.props
 
     return (
@@ -57,10 +55,8 @@ class BasicLayout extends Component {
           {header}
         </div>
         <div className={this.props.classes.body}>
-          <div>{navbar}</div>
           <div className={this.props.classes.content}>
             <div className={this.props.classes.innerContent}>{content}</div>
-            <div className={this.props.classes.rightFiller}>{filler}</div>
           </div>
         </div>
         <div className={this.props.classes.footer}>

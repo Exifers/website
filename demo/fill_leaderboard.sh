@@ -22,7 +22,7 @@ do
     score4=$(( ( RANDOM % 100 )  + 1 ))
     player=$(( ( RANDOM % 10  )  + 1 ))
 
-    curl -H 'Content-Type: application/json' --request POST --data "{\"date\":\"2019-10-10\",\"stage1Score\":$score1,\"stage2Score\":$score2,\"stage3Score\":$score3,\"stage4Score\":$score4,\"player\":$player}" http://localhost:8000/leaderboard/gameresults/
+    curl -H 'Content-Type: application/json' --request POST --data "{\"visible\":true,\"date\":\"2019-10-10\",\"stage1Score\":$score1,\"stage2Score\":$score2,\"stage3Score\":$score3,\"stage4Score\":$score4,\"player\":$player}" http://localhost:8000/leaderboard/gameresults/?push=true
 
     sleep 1
 done

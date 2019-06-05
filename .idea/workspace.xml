@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9fe802f5-7943-4337-861d-4b9b59a84a8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/tests/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/tests/test_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/fill_leaderboard.sh" beforeDir="false" afterPath="$PROJECT_DIR$/demo/fill_leaderboard.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/webpack-stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/webpack-stats.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/bundles/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavigationBarLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavigationBarLink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panes/HeaderPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/HeaderPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panes/IndexPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/IndexPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/panes/NavigationBarPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/NavigationBarPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/resources/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/resources/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,113 +39,116 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/elements/ProfileDropDown.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/forms/ChangePasswordForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/pages/RegisterDonePage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/panes/RegisterDonePane.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/forms/LoginForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mysite/tests/test_urls.py">
+        <entry file="file://$PROJECT_DIR$/frontend/src/panes/HeaderPane.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="50" column="51" lean-forward="true" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+            <state relative-caret-position="225">
+              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
               <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+        <entry file="file://$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="249" column="33" selection-start-line="249" selection-start-column="33" selection-end-line="249" selection-end-column="33" />
+            <state relative-caret-position="150">
+              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/utils/AutoForm.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/panes/NavigationBarPane.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/components/AuthenticationLinks.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/components/NavigationBarLink.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/panes/IndexPane.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leaderboard/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#83#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/utils/cookie.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/pages/IndexPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="45">
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/hocs/async.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -211,11 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/components/PlayerDetails.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panes/PlayerDetailsPane.js" />
-        <option value="$PROJECT_DIR$/frontend/tests/actions/actions.test.js" />
-        <option value="$PROJECT_DIR$/frontend/tests/utils/color.test.js" />
-        <option value="$PROJECT_DIR$/frontend/src/components/Leaderboard.js" />
         <option value="$PROJECT_DIR$/frontend/tests/components/leaderboard.test.js" />
         <option value="$PROJECT_DIR$/frontend/src/elements/LeaderboardRow.js" />
         <option value="$PROJECT_DIR$/frontend/tests/elements/LeaderboardRow.test.js" />
@@ -232,7 +237,6 @@
         <option value="$PROJECT_DIR$/frontend/src/reducer/ajax.js" />
         <option value="$PROJECT_DIR$/frontend/src/actions/actions.js" />
         <option value="$PROJECT_DIR$/frontend/src/panes/ProfilePane.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panes/HeaderPane.js" />
         <option value="$PROJECT_DIR$/frontend/src/actions/authentication.js" />
         <option value="$PROJECT_DIR$/frontend/src/components/AuthenticationLinks.js" />
         <option value="$PROJECT_DIR$/frontend/src/utils/form.js" />
@@ -262,6 +266,12 @@
         <option value="$PROJECT_DIR$/mysite/urls.py" />
         <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/mysite/tests/test_urls.py" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/IndexPane.js" />
+        <option value="$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/NavigationBarPane.js" />
+        <option value="$PROJECT_DIR$/frontend/src/components/NavigationBarLink.js" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/HeaderPane.js" />
       </list>
     </option>
   </component>
@@ -282,6 +292,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,13 +303,42 @@
             <path>
               <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="panes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="leaderboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="showcase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CyberStoriesWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CyberStoriesWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -782,7 +822,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -913,16 +952,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326172000" />
+    <option name="totallyTimeSpent" value="327171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29295623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29935965" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3293348" />
@@ -936,6 +974,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.116630666" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2497332" />
@@ -947,61 +986,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/core/mail/backends/locmem.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/core/mail/backends/smtp.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/core/mail/backends/filebased.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leaderboard/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/showcase/tests/test_urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/utils/color.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/ArticleInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/utils/formData.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/actions/leaderboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/store/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/reducer/authentication.js" />
     <entry file="file://$PROJECT_DIR$/frontend/src/utils/url.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1125,16 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panes/HeaderPane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/elements/LoginRegisterLinks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1144,8 +1118,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/AuthenticationLinks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+        <state relative-caret-position="570">
+          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -1190,8 +1164,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/hocs/async.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="511">
+          <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -1339,6 +1313,107 @@
           <caret line="50" column="51" lean-forward="true" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/NavigationBarLinkGroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leaderboard/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/pages/IndexPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/IndexPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/layouts/BasicLayout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/GameMasterTokenPane.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/AdsPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/NavigationBarLink.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/NavigationBarPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leaderboard/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/HeaderPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

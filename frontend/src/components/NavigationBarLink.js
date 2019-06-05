@@ -4,11 +4,9 @@ import { NavLink } from 'react-router-dom'
 
 const styles = {
   navigationLink: {
-    height: '80px',
     cursor: 'pointer',
     transition: 'all 0.3s',
     '&:hover': {
-      backgroundColor: '#6fa3eb',
       textDecoration: 'none'
     },
     '&:hover span': {
@@ -24,10 +22,9 @@ const styles = {
   navigationLinkContent: {
     margin: 'auto 0px auto 15px',
     textDecoration: 'none',
-    color: '#7194d2',
-    fontSize: '20px',
-    fontFamily: 'Russo One, sans-serif',
-    fontStyle: 'italic'
+    color: 'white',
+    fontSize: '18px',
+    fontFamily: 'Roboto, sans-serif'
   }
 }
 
