@@ -13,12 +13,14 @@ import NavigationBarPane from './NavigationBarPane'
 
 const styles = {
   headerPanel: {
-    backgroundColor: 'black',
-    height: '180px',
-    borderBottom: '5px solid #ffc000'
+    backgroundColor: '#fff',
+    height: '140px',
   },
   logo: {
-    maxHeight: '180px',
+    maxHeight: '120px',
+    marginTop: '10px',
+    marginBottom: '10px',
+    marginLeft: '10px',
     outline: '0'
   },
   search: {
@@ -61,7 +63,7 @@ const styles = {
 class HeaderPane extends Component {
   render () {
     return (
-      <div className={classNames(this.props.classes.headerPanel, 'cyberBackground')}>
+      <div className={classNames(this.props.classes.headerPanel)}>
         <NavLink exact to={'/'} className={this.props.classes.logoNavlink}>
           <img src={logo} alt={'logo'} className={this.props.classes.logo}/>
         </NavLink>
@@ -72,9 +74,7 @@ class HeaderPane extends Component {
           <FacebookLink to={'https://www.facebook.com/Cyberstories-299621230935351/'}
             className={this.props.classes.facebook}/>
           <SearchInput className={classNames(this.props.classes.search)}/>
-          <div className={this.props.classes.linksWrapper}>
-            <AuthenticationLinks/>
-          </div>
+          <AuthenticationLinks/>
         </div>
       </div>
     )

@@ -18,8 +18,7 @@ class NavigationBarPane extends Component {
         <NavigationBarLink to={'/'}>Home</NavigationBarLink>
         <NavigationBarLink to={'/download'}>Download</NavigationBarLink>
         <NavigationBarLink to={'/documentation'}>Documentation</NavigationBarLink>
-        <NavigationBarLink to={'/articles'}>Articles</NavigationBarLink>
-        <NavigationBarLink to={'/leaderboard'}>Leaderboard</NavigationBarLink>
+        <NavigationBarLink to={'/articles'}>Blog</NavigationBarLink>
       </div>
     )
   }

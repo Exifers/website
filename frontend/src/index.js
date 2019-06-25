@@ -26,6 +26,7 @@ import RegisterPage from './pages/RegisterPage'
 import GameMasterPage from './pages/GameMasterPage'
 import PlayerDetailsPage from './pages/PlayerDetailsPage'
 import RegisterDonePage from './pages/RegisterDonePage'
+import ArticlesPage from './pages/ArticlesPage'
 
 class App extends Component {
   render () {
@@ -35,6 +36,7 @@ class App extends Component {
           <Switch>
             <Route exact path={'/download/'} component={DownloadPage}/>
             <Route exact path={'/documentation/'} component={DocumentationPage}/>
+            <Route exact path={'/articles/'} component={ArticlesPage}/>
             <Route exact path={'/articles/ads/'} component={AdsPage}/>
             <Route exact path={'/articles/password/'} component={PasswordPage}/>
             <Route exact path={'/articles/virus/'} component={VirusPage}/>

@@ -1,1 +1,1 @@
-{"status":"done","chunks":{"main":[{"name":"main.js","path":"/home/emmanuel/Repositories/CyberStoriesWeb/frontend/dist/bundles/main.js"}]},"error":"ModuleBuildError","message":"Module build failed (from ./node_modules/file-loader/dist/cjs.js):\nError: ENOENT: no such file or directory, open '/home/emmanuel/Repositories/CyberStoriesWeb/frontend/src/resources/images/logo2.png'"}
+{"status":"done","chunks":{"main":[{"name":"main.js","path":"/home/emmanuel/Repositories/CyberStoriesWeb/frontend/dist/bundles/main.js"}]}}

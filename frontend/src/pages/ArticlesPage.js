@@ -1,5 +1,4 @@
 import { withBasicLayout } from '../hocs/layout'
 import React from 'react'
 
-export default withBasicLayout(() => <div>
-</div>)
+export default withBasicLayout(() => <div/>)

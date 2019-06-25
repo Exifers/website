@@ -4,8 +4,6 @@ import withStyles from 'react-jss'
 
 const styles = {
   pitchTitle: {
-    fontFamily: 'Russo One, sans-serif',
-    fontSize: '35px'
   }
 }
 

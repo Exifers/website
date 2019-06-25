@@ -2,8 +2,14 @@ import React, { Component } from 'react'
 import LargeLink from '../elements/buttons'
 import withStyles from 'react-jss'
 import classNames from 'classnames'
-import PitchTitle from '../elements/PitchTitle'
-import vr from '../resources/images/vr.png'
+import office from '../resources/images/office.jpeg'
+import computers from '../resources/images/computers.jpg'
+import scene from '../resources/images/scene.png'
+import commonMistake from '../resources/images/common_mistake.jpeg'
+import company from '../resources/images/company.jpg'
+import logoIcon from '../resources/images/logo_icon.png'
+import subtleThreat from '../resources/images/subtle_threat.jpeg'
+import CarouselWithSlider from '../components/CarouselWithSlider'
 
 const styles = {
   video: {
@@ -15,17 +21,12 @@ const styles = {
     fontWeight: 'bold',
     fontSize: '20px',
     color: '#f2f2f2',
-    marginBottom: '150px'
+    marginBottom: '150px',
+    marginTop: '200px'
   },
   wrapper: {
     display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    marginTop: '48px'
-  },
-  title: {
-    textShadow: '2px 2px 3px #ccc',
-    textAlign: 'center'
+    flexDirection: 'column'
   },
   presentationPane: {
     marginBottom: '150px'
@@ -37,6 +38,83 @@ const styles = {
   },
   vr: {
     maxHeight: '200px'
+  },
+  title: {
+    zIndex: '1',
+    color: 'white',
+    margin: '50px 0px 0px 0px',
+    fontFamily: 'Roboto, sans-serif',
+    fontWeight: 'bold'
+  },
+  subTitle: {
+    zIndex: '1',
+    color: 'white',
+    margin: '10px 0px 0px 0px',
+    fontFamily: 'Roboto, sans-serif'
+  },
+  vrImage: {
+    zIndex: '0',
+    width: '100%'
+  },
+  vrText: {
+    marginLeft: '100px',
+    top: '0px',
+    position: 'absolute'
+  },
+  computers: {
+    width: '50%',
+    margin: 'auto'
+  },
+  description: {
+    fontFamily: 'Roboto, sans-serif',
+    fontSize: '20px'
+  },
+  cards: {
+    minWidth: '1100px'
+  },
+  card: {
+    textAlign: 'center',
+    fontFamily: 'Roboto, sans-serif',
+    '& h3': {
+      fontWeight: 'bold'
+    }
+  },
+  cardImage: {
+    height: '200px',
+    width: '310px'
+  },
+  cardContent: {
+    maxWidth: '500px'
+  },
+  vrWrapper: {
+    position: 'relative',
+    marginTop: '300px'
+  },
+  mainText: {
+    zIndex: '1',
+    position: 'absolute',
+    top: '0px'
+  },
+  companyImage: {
+    zIndex: '0',
+    position: 'absolute',
+    top: '0px',
+    width: '100%'
+  },
+  logoIcon: {
+    maxWidth: '200px',
+    marginTop: '40px'
+  },
+  mainTitle: {
+    zIndex: '1',
+    color: '#240d3a',
+    marginTop: '20px',
+    fontFamily: 'Roboto, sans-serif',
+    fontWeight: 'bold'
+  },
+  carousel: {
+    marginTop: '100px',
+    margin: 'auto auto'
   }
 }
 
@@ -44,10 +122,56 @@ class IndexPane extends Component {
   render () {
     return (
       <div className={this.props.classes.wrapper}>
-        <PitchTitle className={classNames('mx-auto', this.props.classes.title)}>A serious game in virtual
-          reality about cybersecurity !</PitchTitle>
 
-        <img src={vr} className={classNames(this.props.classes.vr, 'mx-auto')}/>
+        <div className={'position-relative'}>
+          <div className={classNames(this.props.classes.mainText, 'text-center w-100')}>
+            <img src={logoIcon} className={this.props.classes.logoIcon}/>
+            <h1 className={this.props.classes.mainTitle}>The solution to cybersecurity<br/>training for companies.</h1>
+          </div>
+          <div className={'parallax-window'} data-parallax={'scroll'} data-image-src={company}
+            style={{ height: '750px' }} data-speed={'0.6'} data-position-y={'0px'}/>
+        </div>
+
+        <div className={classNames('mx-auto mt-5', this.props.classes.cards)}>
+          <div className={classNames('my-4 text-left d-flex flex-row', this.props.classes.card)}>
+            <div><img src={scene} className={classNames(this.props.classes.cardImage, 'mr-3')}/></div>
+            <div className={this.props.classes.cardContent}>
+              <h3>Train in real-life situations</h3>
+              <p>Virtual reality offers you a unique way to experience learning in cybersecurity. You'll find yourself
+                in
+                an office with various characters, and you'll have to take decisions to complete quests without security
+                failures.</p>
+            </div>
+          </div>
+          <div className={classNames('my-4 text-right d-flex flex-row justify-content-end', this.props.classes.card)}>
+            <div className={this.props.classes.cardContent}>
+              <h3>Avoid common mistakes</h3>
+              <p>Cyberstories comes shipped with basic scenarios including practice on common security mistakes. Is is
+                available for all levels and thus doesn't require advanced knowledge in cybersecurity.</p>
+            </div>
+            <div><img src={commonMistake} className={classNames(this.props.classes.cardImage, 'ml-3')}/></div>
+          </div>
+          <div className={classNames('my-4 text-left d-flex flex-row', this.props.classes.card)}>
+            <div><img src={subtleThreat} className={classNames(this.props.classes.cardImage, 'mr-3')}/></div>
+            <div className={this.props.classes.cardContent}>
+              <h3>Detect more subtle threats</h3>
+              <p>Once you've gained experience with basic scenarios, you can go into more complex scenarios and become a
+                real expert in cybersecurity.</p>
+            </div>
+          </div>
+        </div>
+
+        <CarouselWithSlider className={this.props.classes.carousel}/>
+
+        <div className={this.props.classes.vrWrapper}>
+          <div className={'parallax-window'} data-parallax={'scroll'} data-image-src={office}
+            style={{ height: '500px' }} data-speed={'0.8'}/>
+          <div className={this.props.classes.vrText}>
+            <h1 className={classNames(this.props.classes.title)}>Have a rich experience<br/>in learning cybersecurity
+            </h1>
+            <h4 className={classNames(this.props.classes.subTitle)}>Learn, practice, share</h4>
+          </div>
+        </div>
 
         <LargeLink className={this.props.classes.tryButton} to={'/download'}>
           TRY OUT NOW !

@@ -10,7 +10,7 @@ const styles = {
       textDecoration: 'none'
     },
     '&:hover span': {
-      color: 'white !important'
+      color: '#222'
     },
     display: 'flex',
     outline: '0'
@@ -22,7 +22,7 @@ const styles = {
   navigationLinkContent: {
     margin: 'auto 0px auto 15px',
     textDecoration: 'none',
-    color: 'white',
+    color: '#222',
     fontSize: '18px',
     fontFamily: 'Roboto, sans-serif'
   }
