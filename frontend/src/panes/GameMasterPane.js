@@ -1,13 +1,30 @@
 import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
+import GameMasterEmailPane from './GameMasterEmailPane'
+import { DragDropContext } from 'react-beautiful-dnd'
+import styled from 'styled-components'
+import GameMasterMapPane from './GameMasterMapPane'
 
-const styles = {}
+const styles = {
+  wrapper: {
+    margin: 'auto auto',
+    padding: '15px',
+    maxWidth: '600px'
+  }
+}
+
+const Container = styled.div`
+  display:flex;
+`
 
 class GameMasterPane extends Component {
   render () {
     return (
-      <div>Game master at {this.props.match.params.token}</div>
+      <div className={this.props.classes.wrapper}>
+        <GameMasterEmailPane/>
+        <GameMasterMapPane className={'mt-5'}/>
+      </div>
     )
   }
 }

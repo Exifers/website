@@ -7,6 +7,7 @@ from mysite.views import FacebookLogin, TwitterLogin
 
 urlpatterns = [
     path('leaderboard/', include('leaderboard.urls')),
+    path('gamemaster/', include('gamemaster.urls')),
     path('admin/', admin.site.urls),
     re_path('account-confirm-email/(?P<key>[-:\w]+)/$', ConfirmEmailView.as_view(),  # noqa: W605
             name='account_confirm_email'),
