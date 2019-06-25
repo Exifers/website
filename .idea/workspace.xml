@@ -1,36 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/frontend/src/panes/IndexPane.js" line="125" />
+    <bookmark url="file://$PROJECT_DIR$/frontend/src/panes/IndexPane.js" line="124" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fe802f5-7943-4337-861d-4b9b59a84a8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/CarouselWithSlider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ArticlesPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/webpack-stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/webpack-stats.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/bundles/cybersecurity-e3e12336348ef9c6b524f775025050a4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/bundles/logo-0434c596ba6979c9b77b9cb51efee4ed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/bundles/logo-b5f95e1b6e79369a49a69e996ade10f6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/bundles/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/bundles/training-af16978473f3d1435d187f79048719db.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/bundles/vr-5f4f10d1eb3441514a60ccea13575583.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/bundles/vr-df4249af4039f5212af1824e35b7bb21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavigationBarLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavigationBarLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/elements/PitchTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/elements/PitchTitle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/DocumentationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/DocumentationPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panes/FooterPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/FooterPane.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/panes/HeaderPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/HeaderPane.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/panes/IndexPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/IndexPane.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/panes/NavigationBarPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/panes/NavigationBarPane.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/resources/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/resources/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,14 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/panes/IndexPane.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="163" column="21" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -147,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/panes/HeaderPane.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="78" column="12" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+            <state relative-caret-position="240">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -288,9 +262,9 @@
         <option value="$PROJECT_DIR$/frontend/src/components/Slider.js" />
         <option value="$PROJECT_DIR$/frontend/src/components/Carousel.js" />
         <option value="$PROJECT_DIR$/frontend/src/pages/DocumentationPage.js" />
-        <option value="$PROJECT_DIR$/frontend/src/panes/IndexPane.js" />
         <option value="$PROJECT_DIR$/frontend/src/components/CarouselWithSlider.js" />
         <option value="$PROJECT_DIR$/frontend/src/panes/HeaderPane.js" />
+        <option value="$PROJECT_DIR$/frontend/src/panes/IndexPane.js" />
       </list>
     </option>
   </component>
@@ -627,12 +601,12 @@
       <workItem from="1560243200176" duration="1303000" />
       <workItem from="1560248979850" duration="6147000" />
       <workItem from="1560633930164" duration="30000" />
-      <workItem from="1561467977238" duration="5473000" />
+      <workItem from="1561467977238" duration="5647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="373103000" />
+    <option name="totallyTimeSpent" value="373277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
@@ -1025,16 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/panes/IndexPane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="163" column="21" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/CarouselWithSlider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1047,11 +1011,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/panes/HeaderPane.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="78" column="12" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+        <state relative-caret-position="240">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/panes/IndexPane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
         </state>
       </provider>
     </entry>

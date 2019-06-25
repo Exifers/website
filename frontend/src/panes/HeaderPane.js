@@ -14,7 +14,7 @@ import NavigationBarPane from './NavigationBarPane'
 const styles = {
   headerPanel: {
     backgroundColor: '#fff',
-    height: '140px',
+    height: '140px'
   },
   logo: {
     maxHeight: '120px',
