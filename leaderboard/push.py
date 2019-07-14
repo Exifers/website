@@ -12,6 +12,6 @@ def push_players():
 
     channel_layer = get_channel_layer()
     async_to_sync(channel_layer.group_send)('leaderboard', {
-        'type': 'chat_message',
+        'type': 'players',
         'message': players_response.content.decode('utf-8')
     })

@@ -1,32 +1,30 @@
 import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
-import RegisterForm from '../forms/RegisterForm'
-import { NavLink } from 'react-router-dom'
+import CreateEnterpriseForm from '../forms/CreateEnterpriseForm'
 
 const styles = {
   wrapper: {
     margin: 'auto auto',
     padding: '15px',
-    maxWidth: '400px'
+    maxWidth: '600px'
   }
 }
 
-class RegisterPane extends Component {
+class EntrepriseCreateAccountPane extends Component {
   render () {
     return (
       <div className={this.props.classes.wrapper}>
-        <RegisterForm/>
-        <NavLink to={'/enterprise/account/create/'}>Create enterprise account</NavLink>
+        <CreateEnterpriseForm/>
       </div>
     )
   }
 }
 
-RegisterPane.propTypes = {}
+EntrepriseCreateAccountPane.propTypes = {}
 
-RegisterPane.defaultProps = {}
+EntrepriseCreateAccountPane.defaultProps = {}
 
 export default compose(
   withStyles(styles)
-)(RegisterPane)
+)(EntrepriseCreateAccountPane)
