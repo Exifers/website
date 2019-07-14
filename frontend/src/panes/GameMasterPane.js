@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
 import GameMasterEmailPane from './GameMasterEmailPane'
-import { DragDropContext } from 'react-beautiful-dnd'
-import styled from 'styled-components'
 import GameMasterMapPane from './GameMasterMapPane'
 
 const styles = {
@@ -13,10 +11,6 @@ const styles = {
     maxWidth: '600px'
   }
 }
-
-const Container = styled.div`
-  display:flex;
-`
 
 class GameMasterPane extends Component {
   render () {

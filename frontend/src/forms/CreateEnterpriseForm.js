@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
-import AutoForm, { combineValidators, minimalLength, required, sameAs, validEmail } from '../utils/AutoForm'
+import AutoForm, { combineValidators, minimalLength, required, sameAs } from '../utils/AutoForm'
 
 const styles = {}
 
