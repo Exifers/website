@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
 import RegisterForm from '../forms/RegisterForm'
+import { NavLink } from 'react-router-dom'
 
 const styles = {
   wrapper: {
@@ -16,6 +17,7 @@ class RegisterPane extends Component {
     return (
       <div className={this.props.classes.wrapper}>
         <RegisterForm/>
+        <NavLink to={'/enterprise/account/create/'}>Create enterprise account</NavLink>
       </div>
     )
   }

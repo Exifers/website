@@ -5,8 +5,7 @@ import classNames from 'classnames'
 import office from '../resources/images/office.jpeg'
 import scene from '../resources/images/scene.png'
 import commonMistake from '../resources/images/common_mistake.jpeg'
-import company from '../resources/images/company.jpg'
-import logoIcon from '../resources/images/logo_icon.png'
+import company2 from '../resources/images/company2.jpg'
 import subtleThreat from '../resources/images/subtle_threat.jpeg'
 import CarouselWithSlider from '../components/CarouselWithSlider'
 
@@ -87,7 +86,7 @@ const styles = {
   },
   vrWrapper: {
     position: 'relative',
-    marginTop: '300px'
+    marginTop: '100px'
   },
   mainText: {
     zIndex: '1',
@@ -102,7 +101,7 @@ const styles = {
   },
   logoIcon: {
     maxWidth: '200px',
-    marginTop: '40px'
+    marginTop: '100px'
   },
   mainTitle: {
     zIndex: '1',
@@ -124,11 +123,23 @@ class IndexPane extends Component {
 
         <div className={'position-relative'}>
           <div className={classNames(this.props.classes.mainText, 'text-center w-100')}>
-            <img src={logoIcon} className={this.props.classes.logoIcon}/>
-            <h1 className={this.props.classes.mainTitle}>The solution to cybersecurity<br/>training for companies.</h1>
+            <h1 className={this.props.classes.mainTitle}>Cybersecurity<br/>training for employees.</h1>
           </div>
-          <div className={'parallax-window'} data-parallax={'scroll'} data-image-src={company}
+          <div className={'parallax-window'} data-parallax={'scroll'} data-image-src={company2}
             style={{ height: '750px' }} data-speed={'0.6'} data-position-y={'0px'}/>
+          <div style={{
+            width: '80%',
+            height: '400px',
+            backgroundColor: 'rgba(255, 255, 255, 0.5)',
+            position: 'absolute',
+            top: '200px',
+            margin: 'auto auto',
+            borderRadius: '5px',
+            transform: 'translate(-50%, 0%)',
+            left: '50%'
+          }}>
+            <h1>Cybersecurity</h1>
+          </div>
         </div>
 
         <div className={classNames('mx-auto mt-5', this.props.classes.cards)}>
@@ -160,8 +171,6 @@ class IndexPane extends Component {
           </div>
         </div>
 
-        <CarouselWithSlider className={this.props.classes.carousel}/>
-
         <div className={this.props.classes.vrWrapper}>
           <div className={'parallax-window'} data-parallax={'scroll'} data-image-src={office}
             style={{ height: '500px' }} data-speed={'0.8'}/>
@@ -171,6 +180,8 @@ class IndexPane extends Component {
             <h4 className={classNames(this.props.classes.subTitle)}>Learn, practice, share</h4>
           </div>
         </div>
+
+        <CarouselWithSlider className={this.props.classes.carousel}/>
 
         <LargeLink className={this.props.classes.tryButton} to={'/download'}>
           TRY OUT NOW !

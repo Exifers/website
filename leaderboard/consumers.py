@@ -24,21 +24,19 @@ class LeaderboardConsumer(WebsocketConsumer):
 
     # Receive message from WebSocket
     def receive(self, text_data):
-        print('WS:receiving from ws')
         message = text_data
 
         # Send message to room group
         async_to_sync(self.channel_layer.group_send)(
             self.group_name,
             {
-                'type': 'chat_message',
+                'type': 'players',
                 'message': message
             }
         )
 
-    # Receive message from room group
-    def chat_message(self, event):
-        print('WS: receiving from group')
+    # Receive players from leaderboard group
+    def players(self, event):
         message = event['message']
 
         # Send message to WebSocket

@@ -35,7 +35,10 @@ class AutoForm extends Component {
           fetchBase(this.props.url, {
             method: this.props.method,
             body: JSON.stringify(values)
-          }).then(this.props.onSubmitted)
+          }).then(() => {
+            actions.setSubmitting(false)
+            this.props.onSubmitted()
+          })
             .catch(json => {
               actions.setSubmitting(false)
               actions.setErrors(json)

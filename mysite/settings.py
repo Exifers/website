@@ -83,7 +83,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.twitter',
     'allauth.socialaccount.providers.facebook',
-    'showcase'
+    'showcase',
+    'gamemaster'
 ]
 
 MIDDLEWARE = [
