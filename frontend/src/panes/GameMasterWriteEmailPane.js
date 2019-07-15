@@ -36,7 +36,7 @@ class GameMasterWriteEmailPane
           ]}
           url={'/gamemaster/emails/'}
           method={'POST'}
-          onSubmitted={() => {this.props.history.push('/game_master/AVFFRE/')}}
+          onSubmitted={() => { this.props.history.push('/game_master/AVFFRE/') }}
           buttonDisplayText={'Create Email'}
           clientSideValidation={() => []}
           serverSideValidation={() => new Promise(resolve => setTimeout(() => resolve([])))}

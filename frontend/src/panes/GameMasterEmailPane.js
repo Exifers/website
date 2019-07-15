@@ -60,7 +60,7 @@ const getListStyle = isDraggingOver => ({
   width: 250
 })
 
-class DnDExample extends Component {
+class DnDExample extends Component { // eslint-disable-line
   constructor (props) {
     super(props)
 
@@ -202,7 +202,7 @@ class GameMasterEmailPane extends Component {
           <GameMasterEmailsList/>
           <GameMasterSentEmailsList/>
         </div>
-        <div style={{textAlign:'center', marginTop: '10px'}}>
+        <div style={{ textAlign: 'center', marginTop: '10px' }}>
           <NavLink to={'/game_master/write_email/'}>Write an email</NavLink>
         </div>
       </div>

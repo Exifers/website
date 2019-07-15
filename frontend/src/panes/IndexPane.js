@@ -126,7 +126,7 @@ class IndexPane extends Component {
           <div className={classNames(this.props.classes.mainText, 'text-center w-100')}>
             <h1 className={this.props.classes.mainTitle}>Cybersecurity<br/>training for employees.</h1>
           </div>
-          <ParallaxBanner style={{height:700}} tagOuter={'figure'} layers={[{ image: company2, amount: 0.4 }]}/>
+          <ParallaxBanner style={{ height: 700 }} tagOuter={'figure'} layers={[{ image: company2, amount: 0.4 }]}/>
         </div>
 
         <div className={classNames('mx-auto mt-5', this.props.classes.cards)}>
@@ -159,7 +159,7 @@ class IndexPane extends Component {
         </div>
 
         <div className={this.props.classes.vrWrapper}>
-          <ParallaxBanner style={{height:500}} tagOuter={'figure'} layers={[{ image: office, amount: 0.4 }]}/>
+          <ParallaxBanner style={{ height: 500 }} tagOuter={'figure'} layers={[{ image: office, amount: 0.4 }]}/>
           <div className={this.props.classes.vrText}>
             <h1 className={classNames(this.props.classes.title)}>Have a rich experience<br/>in learning cybersecurity
             </h1>

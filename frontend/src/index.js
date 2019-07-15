@@ -29,7 +29,7 @@ import RegisterDonePage from './pages/RegisterDonePage'
 import ArticlesPage from './pages/ArticlesPage'
 import GameMasterWriteEmailPage from './pages/GameMasterWriteEmailPage'
 import EntrepriseCreateAccountPage from './pages/EntrepriseCreateAccountPage'
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 class App extends Component {
   render () {
