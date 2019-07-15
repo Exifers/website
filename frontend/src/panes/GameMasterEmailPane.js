@@ -204,7 +204,6 @@ class GameMasterEmailPane extends Component {
           <GameMasterEmailsList/>
           <GameMasterSentEmailsList/>
         </div>
-        <DnDExample/>
       </div>
     )
   }

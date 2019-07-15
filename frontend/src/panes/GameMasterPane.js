@@ -7,8 +7,7 @@ import GameMasterMapPane from './GameMasterMapPane'
 const styles = {
   wrapper: {
     margin: 'auto auto',
-    padding: '15px',
-    maxWidth: '600px'
+    padding: '15px'
   }
 }
 
@@ -16,8 +15,8 @@ class GameMasterPane extends Component {
   render () {
     return (
       <div className={this.props.classes.wrapper}>
-        <GameMasterEmailPane/>
-        <GameMasterMapPane className={'mt-5'}/>
+        <GameMasterMapPane className={'mt-5 mx-auto'}/>
+        <GameMasterEmailPane className={'mt-5 mx-auto'}/>
       </div>
     )
   }

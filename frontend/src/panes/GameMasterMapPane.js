@@ -62,13 +62,11 @@ class GameMasterMapPane extends Component {
 
   render () {
     return (
-      <div className={classNames(this.props.className)}>
-        <div className={this.props.classes.mapWrapper}>
-          <svg className={this.props.classes.svgMap}>
-            <circle cx={this.state.x} cy={this.state.y} r={'20'} fill={'#eeaaaa'}/>
-          </svg>
-          <img src={map} className={this.props.classes.map}/>
-        </div>
+      <div className={classNames(this.props.classes.mapWrapper, this.props.className)}>
+        <svg className={this.props.classes.svgMap}>
+          <circle cx={this.state.x} cy={this.state.y} r={'20'} fill={'#eeaaaa'}/>
+        </svg>
+        <img src={map} className={this.props.classes.map}/>
       </div>
     )
   }
