@@ -23,6 +23,14 @@ const styles = {
     width: 755,
     height: 245,
     position: 'relative'
+  },
+  beacon: {
+    backgroundColor: 'red',
+    width: '8px',
+    height: '8px',
+    borderRadius: '4px',
+    boxShadow: '0px 0px 4px 4px rgba(255, 0, 0, 0.8)',
+    position: 'absolute'
   }
 }
 
@@ -63,9 +71,9 @@ class GameMasterMapPane extends Component {
   render () {
     return (
       <div className={classNames(this.props.classes.mapWrapper, this.props.className)}>
-        <svg className={this.props.classes.svgMap}>
-          <circle cx={this.state.x} cy={this.state.y} r={'20'} fill={'#eeaaaa'}/>
-        </svg>
+        <div className={this.props.classes.svgMap}>
+          <div className={this.props.classes.beacon} style={{ top: this.state.y, left: this.state.x }}/>
+        </div>
         <img src={map} className={this.props.classes.map}/>
       </div>
     )
