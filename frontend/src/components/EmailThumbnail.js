@@ -9,7 +9,7 @@ class EmailThumbnail extends Component {
   render () {
     return (
       <div className={classNames('card', this.props.className)}>
-        <h6 className={'card-title p-2 m-2'}>{this.props.email.object}</h6>
+        <h6 className={'card-title p-2 m-2'} style={{width:200}}>{this.props.email.object}</h6>
       </div>
     )
   }

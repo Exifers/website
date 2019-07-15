@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
 import AutoForm from '../utils/AutoForm'
+import { withRouter } from 'react-router-dom'
 
 const styles = {
   wrapper: {
@@ -35,7 +36,7 @@ class GameMasterWriteEmailPane
           ]}
           url={'/gamemaster/emails/'}
           method={'POST'}
-          onSubmitted={() => {}}
+          onSubmitted={() => {this.props.history.push('/game_master/AVFFRE/')}}
           buttonDisplayText={'Create Email'}
           clientSideValidation={() => []}
           serverSideValidation={() => new Promise(resolve => setTimeout(() => resolve([])))}
@@ -53,6 +54,6 @@ GameMasterWriteEmailPane
   .defaultProps = {}
 
 export default compose(
-  withStyles(styles)
-)(GameMasterWriteEmailPane
-)
+  withStyles(styles),
+  withRouter
+)(GameMasterWriteEmailPane)
