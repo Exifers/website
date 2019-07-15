@@ -60,7 +60,7 @@ const getListStyle = isDraggingOver => ({
   width: 250
 })
 
-class DnDExample extends Component {
+class DnDExample extends Component { // eslint-disable-line
   constructor (props) {
     super(props)
 
@@ -197,14 +197,14 @@ const styles = {}
 class GameMasterEmailPane extends Component {
   render () {
     return (
-      <div>
-        <NavLink to={'/game_master/write_email/'}>Write an email</NavLink>
-
+      <div className={'d-flex flex-column justify-content-center mt-4'}>
         <div className={'d-flex flex-row justify-content-center'}>
           <GameMasterEmailsList/>
           <GameMasterSentEmailsList/>
         </div>
-        <DnDExample/>
+        <div style={{ textAlign: 'center', marginTop: '10px' }}>
+          <NavLink to={'/game_master/write_email/'}>Write an email</NavLink>
+        </div>
       </div>
     )
   }

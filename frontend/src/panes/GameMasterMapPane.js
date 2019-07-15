@@ -2,11 +2,27 @@ import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
 import classNames from 'classnames'
+import map from '../resources/images/map.jpeg'
 
 const styles = {
   map: {
-    height: '800px',
-    width: '800px'
+    height: 245,
+    width: 755,
+    position: 'absolute',
+    top: 0,
+    zIndex: 1
+  },
+  svgMap: {
+    height: 245,
+    width: 755,
+    position: 'absolute',
+    zIndex: 2,
+    top: 0
+  },
+  mapWrapper: {
+    width: 755,
+    height: 245,
+    position: 'relative'
   }
 }
 
@@ -15,39 +31,42 @@ class GameMasterMapPane extends Component {
     super(props)
 
     this.state = {
-      x: 100,
-      y: 500
+      x: 350,
+      y: 50
     }
+
+    this.webSocket = null
   }
 
   componentDidMount () {
     let wsScheme = window.location.protocol === 'https:' ? 'wss' : 'ws'
-    let webSocket = new WebSocket(
+    this.webSocket = new WebSocket(
       wsScheme + '://' + window.location.host + '/ws/game-master/position/')
 
-    webSocket.onmessage = (e) => {
+    this.webSocket.onmessage = (e) => {
       const message = JSON.parse(JSON.parse(e.data).message)
       const x = parseInt(message.x)
       const y = parseInt(message.y)
       this.setState({ x, y })
     }
 
-    webSocket.onClose = () => console.warn('Websocket closed unexpectedly')
+    this.webSocket.onClose = () => {
+      console.warn('Websocket closed unexpectedly')
+      this.websocket = null
+    }
+  }
+
+  componentWillUnmount () {
+    this.webSocket.close()
   }
 
   render () {
     return (
-      <div className={classNames(this.props.className)}>
-        <svg className={this.props.classes.map}>
-          <rect width={'600'} height={'20'} x={'0'} fill={'#aaa'}/>
-          <rect width={'20'} height={'600'} x={'0'} fill={'#aaa'}/>
-          <rect width={'20'} height={'300'} x={'200'} y={'0'} fill={'#aaa'}/>
-          <rect width={'300'} height={'20'} y={'280'} x={'200'} fill={'#aaa'}/>
-          <rect width={'40'} height={'20'} y={'280'} x={'540'} fill={'#aaa'}/>
-          <rect width={'20'} height={'600'} x={'580'} fill={'#aaa'}/>
-          <rect width={'600'} height={'20'} x={'0'} y={'580'} fill={'#aaa'}/>
+      <div className={classNames(this.props.classes.mapWrapper, this.props.className)}>
+        <svg className={this.props.classes.svgMap}>
           <circle cx={this.state.x} cy={this.state.y} r={'20'} fill={'#eeaaaa'}/>
         </svg>
+        <img src={map} className={this.props.classes.map}/>
       </div>
     )
   }
