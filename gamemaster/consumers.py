@@ -5,7 +5,7 @@ import json
 
 class GameMasterPositionConsumer(WebsocketConsumer):
     def connect(self):
-        self.group_name = 'gameMaster'
+        self.group_name = 'gameMasterPosition'
 
         # Join group
         async_to_sync(self.channel_layer.group_add)(
@@ -47,7 +47,7 @@ class GameMasterPositionConsumer(WebsocketConsumer):
 
 class GameMasterEmailConsumer(WebsocketConsumer):
     def connect(self):
-        self.group_name = 'gameMaster'
+        self.group_name = 'gameMasterEmail'
 
         # Join group
         async_to_sync(self.channel_layer.group_add)(
