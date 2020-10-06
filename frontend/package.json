@@ -38,7 +38,7 @@
     "fetch-mock": "^7.3.1",
     "file-loader": "^3.0.1",
     "jest": "^24.5.0",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^2.6.1",
     "react-test-renderer": "^16.8.3",
     "redux-mock-store": "^1.5.3",
     "style-loader": "^0.23.1",
